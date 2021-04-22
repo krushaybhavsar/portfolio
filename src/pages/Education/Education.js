@@ -3,7 +3,10 @@ import React from "react";
 const Education = () => {
   return (
     <div className="container">
-      <h1 className="text-center" style={{ paddingTop: "30%" }}>
+      <h1
+        className="text-center"
+        style={{ paddingTop: "30%", fontFamily: "montserrat" }}
+      >
         Education
       </h1>
     </div>

@@ -3,7 +3,10 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="container">
-      <h1 className="text-center" style={{ paddingTop: "30%" }}>
+      <h1
+        className="text-center"
+        style={{ paddingTop: "30%", fontFamily: "montserrat" }}
+      >
         Contact
       </h1>
     </div>

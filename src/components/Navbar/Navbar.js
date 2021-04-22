@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import $ from "jquery";
+import clearBgLogo from "../../media/logo-white-font.png";
 
 const Navbar = () => {
   function animation() {
@@ -53,6 +54,16 @@ const Navbar = () => {
         to="/"
         exact
       >
+        {/* <img
+          src={clearBgLogo}
+          style={{
+            maxWidth: 20,
+            marginLeft: 10,
+            marginRight: 10,
+            marginBottom: 10,
+            marginTop: 10,
+          }}
+        /> */}
         Krushay Bhavsar
       </NavLink>
 
