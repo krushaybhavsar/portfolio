@@ -1,0 +1,82 @@
+@import "../../global.scss";
+
+.home {
+  background-color: white;
+  display: flex;
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+
+    .imgContainer {
+      width: 700px;
+      height: 700px;
+      // background-color: crimson;
+      // border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+      position: relative;
+
+      .me {
+        position: relative;
+        height: 66.5%;
+        margin-bottom: 9.47%;
+        margin-right: 70px;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+      }
+
+      .blob {
+        position: absolute;
+        height: 120%;
+        width: 120%;
+        padding-top: 20%;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+      }
+    }
+  }
+
+  .right {
+    flex: 0.5;
+    position: relative;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+      font-weight: 500;
+      overflow: hidden;
+    }
+    h2 {
+      font-size: 35px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+  }
+  a {
+    position: absolute;
+    bottom: 10px;
+    img {
+      width: 50px;
+      height: 45px;
+    }
+  }
+}
