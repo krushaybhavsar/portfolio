@@ -1,20 +1,5 @@
 import { ExpandMore } from "@material-ui/icons";
 import "./home.scss";
-// import greenBlob from "../../media/green-blob.svg";
-
-/* 
-REFERENCES
-http://findmatthew.com/   --> Project cards 
-https://www.youtube.com/watch?v=I2UBjN5ER4s --> project cards
-https://sebkay.com/ --> Top home header
-https://www.youtube.com/watch?v=74eaw_nM5tY --> custom scrollbar
-
-MAIN REFERANCE
-https://www.youtube.com/watch?v=7WwtzsSHdpI
-
-REACT SMOOTH SCROLL
-https://www.youtube.com/watch?v=7f0QXAgFtrE
-*/
 
 export default function Home() {
   return (
