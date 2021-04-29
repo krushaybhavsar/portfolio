@@ -23,6 +23,7 @@ export default function Home() {
   useEffect(() => {
     init(textRef.current, {
       showCursor: true,
+      backDelay: 1500,
       strings: ["Programmer", "Game Developer", "Web Developer"],
     });
   }, []);

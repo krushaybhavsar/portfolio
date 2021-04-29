@@ -35,7 +35,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        transition: all 0.2s ease;
+        transition: all 0.8s ease;
 
         &:hover {
           letter-spacing: 0.7px;
@@ -78,14 +78,14 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
-        transition: all ease 0.4s;
+        transition: all ease 0.8s;
 
         span {
           width: 100%;
           height: 2.5px;
           background-color: $mainColor;
           transform-origin: left;
-          transition: all 0.4s ease;
+          transition: all 0.8s ease;
         }
       }
     }

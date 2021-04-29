@@ -81,6 +81,19 @@
       span {
         font-size: inherit;
       }
+
+      .ityped-cursor {
+        animation: blink 0.9s infinite;
+      }
+
+      @keyframes blink {
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
     }
   }
   a {
