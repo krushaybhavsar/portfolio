@@ -3,7 +3,9 @@
 .menu {
   width: 300px;
   height: 100vh;
-  background-color: $mainColor;
+  // background-color: $mainColor;
+  transition: all ease 0.8s;
+
   position: fixed;
   top: 0;
   right: -300px;
@@ -12,6 +14,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: rgb(43, 77, 89);
+  background: linear-gradient(
+    rgba(43, 77, 89, 1) 30%,
+    rgba(57, 153, 142, 1) 100%
+  );
   transition: all ease 0.8s;
 
   &.active {
@@ -25,8 +32,11 @@
     font-size: 30px;
     color: white;
     width: 60%;
+    line-height: 50px;
     li {
       margin-bottom: 25px;
+      transition: all ease 0.2s;
+
       a {
         font-size: inherit;
         color: inherit;
@@ -34,7 +44,7 @@
       }
 
       &:hover {
-        font-weight: 500;
+        font-size: 33px;
       }
     }
   }
