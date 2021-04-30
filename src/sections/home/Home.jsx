@@ -17,6 +17,8 @@ REACT SMOOTH SCROLL
 https://www.youtube.com/watch?v=7f0QXAgFtrE
 */
 
+// https://hookagency.com/color-schemes/
+
 export default function Home() {
   const textRef = useRef();
 
@@ -31,8 +33,8 @@ export default function Home() {
     <div className="home" id="about">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/green-blob.svg" className="blob" />
-          <img src="assets/me_new.png" className="me" />
+          <img src="assets/about/green-blob.svg" className="blob" />
+          <img src="assets/about/me_new.png" className="me" />
           {/* <img src="assets/mask.png" className="mask" /> */}
         </div>
       </div>
@@ -45,7 +47,7 @@ export default function Home() {
             <span ref={textRef}></span>
           </h3>
           <a href="#education">
-            <img src="assets/down.png" />
+            <img src="assets/about/down.png" />
           </a>
         </div>
       </div>
