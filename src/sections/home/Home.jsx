@@ -46,7 +46,7 @@ export default function Home() {
             {"Passionate "}
             <span ref={textRef}></span>
           </h3>
-          <a href="#education">
+          <a href="#projects">
             <img src="assets/about/down.png" />
           </a>
         </div>

@@ -39,16 +39,17 @@
   }
 
   .container {
-    width: 60%;
+    width: 55%;
     height: 65%;
     margin-top: 20px;
     margin-bottom: 50px;
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     border-radius: 30px;
     background-color: rgb(245, 245, 245);
+    scrollbar-width: none;
 
     .item {
       width: 200px;
