@@ -16,6 +16,10 @@
     align-items: center;
     justify-content: space-between;
 
+    @include mobile {
+      padding-top: 11px;
+    }
+
     .left {
       display: flex;
       align-items: center;
@@ -37,6 +41,10 @@
         -webkit-text-fill-color: transparent;
         transition: all 0.8s ease;
 
+        @include mobile {
+          font-size: 28px;
+        }
+
         &:hover {
           letter-spacing: 0.7px;
         }
@@ -50,6 +58,10 @@
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
+
+          @include mobile {
+            font-size: 28px;
+          }
         }
       }
 
@@ -57,6 +69,10 @@
         display: flex;
         align-items: center;
         margin-right: 30px;
+
+        @include mobile {
+          display: none;
+        }
 
         .icon {
           font-size: 18px;
@@ -79,6 +95,11 @@
         justify-content: space-between;
         cursor: pointer;
         transition: all ease 0.8s;
+
+        @include mobile {
+          width: 28px;
+          height: 23px;
+        }
 
         span {
           width: 100%;

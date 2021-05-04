@@ -1,5 +1,10 @@
 $mainColor: #2b4d59;
-// $mainColor: #004d4d;
-// $mainColor: #2f4f4f;
-// $mainColor: #15023a;
-// $mainColor: #000000;
+
+$mobileWidth: 768px;
+// $tabletWidth: 1439px;
+
+@mixin mobile {
+  @media (max-width: #{$mobileWidth}) {
+    @content;
+  }
+}
