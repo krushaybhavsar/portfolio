@@ -8,55 +8,43 @@ export default function Skills() {
       id: "1",
       icon: "./assets/skills/mobile.png",
       title: "1",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
     },
     {
       id: "2",
       icon: "./assets/skills/mobile.png",
       title: "2",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
     },
     {
       id: "3",
       icon: "./assets/skills/mobile.png",
       title: "3",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
     },
     {
       id: "4",
       icon: "./assets/skills/mobile.png",
       title: "4",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
     },
     {
       id: "5",
       icon: "./assets/skills/mobile.png",
       title: "5",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
     },
     {
       id: "6",
       icon: "./assets/skills/mobile.png",
       title: "6",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
     },
   ];
 
@@ -70,7 +58,7 @@ export default function Skills() {
     <div className="skills" id="skills">
       <div
         className="slider"
-        style={{ transform: `translateX(-${currentSlide * 75}vw)` }}
+        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
           <div className="container">
@@ -96,13 +84,13 @@ export default function Skills() {
         ))}
       </div>
       <img
-        src="assets/skills/arrow.png"
+        src="./assets/skills/arrow.png"
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src="assets/skills/arrow.png"
+        src="./assets/skills/arrow.png"
         className="arrow right"
         alt=""
         onClick={() => handleClick()}

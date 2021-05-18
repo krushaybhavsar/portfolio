@@ -76,6 +76,11 @@ export default function Projects() {
           </div>
         ))}
       </div>
+      <div className="wrapper">
+        <a href="#skills">
+          <img src="assets/about/down.png" />
+        </a>
+      </div>
     </div>
   );
 }
