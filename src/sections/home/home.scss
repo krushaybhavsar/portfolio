@@ -145,19 +145,19 @@
   }
   a {
     position: absolute;
-    bottom: 40px;
+    // bottom: 0px;
+    top: 75%;
     left: 40%;
     @include mobile {
       justify-content: center;
       margin-left: 5%;
-      margin-bottom: 10%;
     }
     img {
       width: 40px;
       height: 35px;
       animation: arrowBlink 2.5s infinite;
       @include mobile {
-        margin-top: 3%;
+        // margin-top: 3%;
       }
     }
 
