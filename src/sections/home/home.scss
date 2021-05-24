@@ -148,6 +148,7 @@
     // bottom: 0px;
     top: 75%;
     left: 40%;
+    height: 50px;
     @include mobile {
       justify-content: center;
       margin-left: 5%;
@@ -163,13 +164,13 @@
 
     @keyframes arrowBlink {
       from {
-        margin-bottom: 0px;
+        margin-top: 0;
       }
       to {
-        margin-bottom: 0px;
+        margin-top: 0;
       }
       50% {
-        margin-bottom: 10px;
+        margin-top: 10px;
       }
     }
   }

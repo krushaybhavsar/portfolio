@@ -1,6 +1,7 @@
 import React from "react";
 import "./topbar.scss";
 import { Person, Mail } from "@material-ui/icons";
+import "../../sections/projects/Projects.jsx";
 
 export default function Navbar({ menuOpen, setMenuOpen }) {
   return (
