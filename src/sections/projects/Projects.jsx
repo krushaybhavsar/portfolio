@@ -14,9 +14,13 @@ export default function Projects() {
   const [modalState, setModalState] = useState(false);
   const [modalInfo, setModalInfo] = useState([]);
 
-  const openModal = () => {
-    console.log(data[0]);
+  const openModal = (projectID) => {
+    setModalInfo(data[projectID - 1]);
     setModalState(true);
+  };
+
+  const redirectToLink = (linkURL) => {
+    window.open(linkURL, "_blank");
   };
 
   // Categories
@@ -71,28 +75,15 @@ export default function Projects() {
         <div id="modal" className="modalInner">
           <div className="rightWrapper">
             <div className="modalText">
-              <h2 className="modalHeaderText">Grab It</h2>
-              <h6 className="toolsUsedText">
-                Java, XML, Android Studio, Firebase
-              </h6>
-              <p className="modalBodyText">
-                Grab It is a two-sided e-commerce marketplace app template for
-                businesses to use. With the app that users will be able to
-                download, they can purchase the goods or services the business
-                offers. Through the admin panel, businesses can receive
-                real-time statistics on customer engagement, manage reviews,
-                list products, send push notifications, manage accounts, receive
-                delivery information (if applicable to business), promote
-                adverts, and have access to many other functionalities.
-              </p>
-              <form
-                className="buttonContainer"
-                action="https://play.google.com/store/apps/details?id=com.krutons.grabit"
-                target="_blank"
-                method="post"
-              >
-                <button className="linkButton" type="submit">
-                  Link to Project
+              <h2 className="modalHeaderText">{modalInfo.modalHeader}</h2>
+              <h6 className="toolsUsedText">{modalInfo.modalTools}</h6>
+              <p className="modalBodyText">{modalInfo.modalDesc}</p>
+              <form className="buttonContainer">
+                <button
+                  className="linkButton"
+                  onClick={() => redirectToLink(modalInfo.modalLink)}
+                >
+                  {modalInfo.modalButtonTxt}
                 </button>
               </form>
             </div>
@@ -125,7 +116,7 @@ export default function Projects() {
       </ul>
       <div className="container">
         {data.map((d) => (
-          <div className="item" onClick={() => openModal()}>
+          <div className="item" onClick={() => openModal(d.id)}>
             <img src={d.img} alt="" />
             <h3>{d.title}</h3>
           </div>
