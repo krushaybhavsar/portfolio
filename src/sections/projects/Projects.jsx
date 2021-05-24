@@ -9,13 +9,18 @@ import {
   otherProjects,
 } from "../../data";
 
-export default function Projects() {
+export default function Projects({
+  modalState,
+  setModalState,
+  menuOpen,
+  setMenuOpen,
+}) {
   // Modal
-  const [modalState, setModalState] = useState(false);
   const [modalInfo, setModalInfo] = useState([]);
 
   const openModal = (projectID) => {
     setModalInfo(data[projectID - 1]);
+    setMenuOpen(false);
     setModalState(true);
   };
 
@@ -71,7 +76,10 @@ export default function Projects() {
 
   return (
     <div className="projects" id="projects">
-      <div className={`modalBackground modalShowing-${modalState}`}>
+      <div
+        className={`modalBackground modalShowing-${modalState}`}
+        onClick={() => setModalState(false)}
+      >
         <div id="modal" className="modalInner">
           <div className="rightWrapper">
             <div className="modalText">

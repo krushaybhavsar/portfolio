@@ -10,13 +10,24 @@ import Menu from "./components/menu/Menu.jsx";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [modalState, setModalState] = useState(false);
   return (
     <div className="app">
-      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Navbar
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        modalState={modalState}
+        setModalState={setModalState}
+      />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Home />
-        <Projects />
+        <Projects
+          modalState={modalState}
+          setModalState={setModalState}
+          menuOpen={menuOpen}
+          setMenuOpen={setMenuOpen}
+        />
         {/* <Skills /> */}
         {/* <Education />
         <Contact /> */}

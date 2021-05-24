@@ -3,7 +3,22 @@ import "./topbar.scss";
 import { Person, Mail } from "@material-ui/icons";
 import "../../sections/projects/Projects.jsx";
 
-export default function Navbar({ menuOpen, setMenuOpen }) {
+export default function Navbar({
+  menuOpen,
+  setMenuOpen,
+  modalState,
+  setModalState,
+}) {
+  const logoActions = () => {
+    setMenuOpen(false);
+    setModalState(false);
+  };
+
+  const hamburgerActions = () => {
+    setMenuOpen(!menuOpen);
+    setModalState(false);
+  };
+
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
@@ -11,7 +26,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
           <a
             href="#about"
             className={"logo " + (menuOpen && "active")}
-            onClick={() => setMenuOpen(false)}
+            onClick={() => logoActions()}
           >
             {"<krushay/>"}
           </a>
@@ -25,7 +40,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
           </div>
         </div>
         <div className="right">
-          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          <div className="hamburger" onClick={() => hamburgerActions()}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
