@@ -1,3 +1,4 @@
+// ===============v Projects section v===============
 export const allProjects = [
   {
     id: 1,
@@ -310,3 +311,124 @@ export const otherProjects = [
     modalImg: "",
   },
 ];
+// ===============^ Projects section ^===============
+
+// ===============v Skills section v===============
+export const skillsData = [
+  {
+    id: 1,
+    title: "Python",
+    skillIcon: "assets/skills/python.svg",
+    desc: "Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation.",
+    projectsUsedIn:
+      "Racecar AI, Flappy Bird AI, Lane Detection Algorithm, Understanding the Basics of Machine Learning",
+    exp: "80",
+  },
+  {
+    id: 2,
+    title: "Java",
+    skillIcon: "assets/skills/java.svg",
+    desc: "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let application developers write once.",
+    projectsUsedIn: "Grab It - An E-commerce Application",
+    exp: "70",
+  },
+  {
+    id: 3,
+    title: "JavaScript",
+    skillIcon: "assets/skills/javascript.svg",
+    desc: "JavaScript is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.",
+    projectsUsedIn: "Grab It Admin, Portfolio",
+    exp: "65",
+  },
+  {
+    id: 5,
+    title: "ReactJS",
+    skillIcon: "assets/skills/react.svg",
+    desc: "React is an open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React applications usually require the use of additional libraries for routing, as well as certain client-side functionality.",
+    projectsUsedIn: "Grab It Admin, Portfolio",
+    exp: "55",
+  },
+  {
+    id: 6,
+    title: "HTML",
+    skillIcon: "assets/skills/html.svg",
+    desc: "The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.",
+    projectsUsedIn: "Grab It Admin, Portfolio",
+    exp: "70",
+  },
+  {
+    id: 7,
+    title: "CSS",
+    skillIcon: "assets/skills/css.svg",
+    desc: "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.",
+    projectsUsedIn: "Grab It Admin, Portfolio",
+    exp: "65",
+  },
+  {
+    id: 4,
+    title: "C#",
+    skillIcon: "assets/skills/csharp.svg",
+    desc: "C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines.",
+    projectsUsedIn: "Cubiglide",
+    exp: "40",
+  },
+  {
+    id: 8,
+    title: "Firebase",
+    skillIcon: "assets/skills/firebase.png",
+    desc: "Firebase is a platform developed by Google for creating mobile and web applications. It was originally an independent company founded in 2011. In 2014, Google acquired the platform and it is now their flagship offering for app development.",
+    projectsUsedIn: "Grab It - An E-commerce Application, Grab It Admin",
+    exp: "70",
+  },
+  {
+    id: 9,
+    title: "Git",
+    skillIcon: "assets/skills/git.svg",
+    desc: "Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows.",
+    projectsUsedIn: "All projects",
+    exp: "75",
+  },
+  {
+    id: 10,
+    title: "OpenCV",
+    skillIcon: "assets/skills/opencv.svg",
+    desc: "OpenCV is a library of programming functions mainly aimed at real-time computer vision. The library is cross-platform and under the open-source Apache 2 License. OpenCV is written in C++ and its primary interface is in C++, but there are bindings in Python, Java and MATLAB/OCTAVE.",
+    projectsUsedIn: "Lane Detection Algorithm",
+    exp: "50",
+  },
+  {
+    id: 11,
+    title: "NumPy",
+    skillIcon: "assets/skills/numpy.png",
+    desc: "NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
+    projectsUsedIn:
+      "Lane Detection Algorithm, Understanding the Basics of Machine Learning",
+    exp: "40",
+  },
+  {
+    id: 12,
+    title: "TensorFlow",
+    skillIcon: "assets/skills/tensorflow.png",
+    desc: "TensorFlow is a free and open-source software library for machine learning. It can be used across a range of tasks but has a particular focus on training and inference of deep neural networks. Tensorflow is a symbolic math library based on dataflow and differentiable programming.",
+    projectsUsedIn: "Understanding the Basics of Machine Learning",
+    exp: "50",
+  },
+  {
+    id: 13,
+    title: "Unity",
+    skillIcon: "assets/skills/unity.svg",
+    desc: "Unity is a cross-platform game engine developed by Unity Technologies, first announced and released in June 2005. The engine has been gradually extended to support a variety of desktop, mobile, console and virtual reality platforms.",
+    projectsUsedIn: "Cubiglide",
+    exp: "75",
+  },
+  {
+    id: 14,
+    title: "Processing",
+    skillIcon: "assets/skills/processing.png",
+    desc: "Processing is a graphical library and integrated development environment built for the electronic arts, new media art, and visual design communities.",
+    projectsUsedIn:
+      "Terrain Generation, Rubiks Cube Simulation, Circle Packing Algorithm, Heightmap Renderer",
+    exp: "80",
+  },
+];
+// ===============^ Skills section ^===============

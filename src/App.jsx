@@ -28,7 +28,7 @@ function App() {
           menuOpen={menuOpen}
           setMenuOpen={setMenuOpen}
         />
-        {/* <Skills /> */}
+        <Skills />
         {/* <Education />
         <Contact /> */}
       </div>

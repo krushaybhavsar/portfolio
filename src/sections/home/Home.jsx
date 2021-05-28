@@ -40,7 +40,7 @@ export default function Home() {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>My name is</h2>
+          <h2 style={{ overflow: "hidden" }}>My name is</h2>
           <h1>Krushay Bhavsar</h1>
           <h3>
             {"Passionate "}

@@ -1,100 +1,77 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./skills.scss";
+import ProgressBar from "../../components/progressBar/ProgressBar.jsx";
+import { skillsData } from "../../data";
 
 export default function Skills() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const data = [
-    {
-      id: "1",
-      icon: "./assets/skills/mobile.png",
-      title: "1",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
-    },
-    {
-      id: "2",
-      icon: "./assets/skills/mobile.png",
-      title: "2",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    },
-    {
-      id: "3",
-      icon: "./assets/skills/mobile.png",
-      title: "3",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    },
-    {
-      id: "4",
-      icon: "./assets/skills/mobile.png",
-      title: "4",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    },
-    {
-      id: "5",
-      icon: "./assets/skills/mobile.png",
-      title: "5",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    },
-    {
-      id: "6",
-      icon: "./assets/skills/mobile.png",
-      title: "6",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    },
-  ];
+  const [sliderData, setSliderData] = useState([]);
 
-  const handleClick = (way) => {
-    way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 5)
-      : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
-  };
+  useEffect(() => {
+    setSliderData(skillsData);
+  });
 
   return (
     <div className="skills" id="skills">
-      <div
-        className="slider"
-        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
-      >
-        {data.map((d) => (
-          <div className="container">
-            <div className="item">
-              <div className="left">
-                <div className="leftContainer">
-                  <div className="imgContainer">
-                    <img src={d.icon} alt="" />
+      <h1 className="sectionTitle">Skills</h1>
+      <div className="skillsCarouselContainer">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="2000"
+          data-bs-touch="true"
+          data-bs-interval="true"
+        >
+          <div class="carousel-inner">
+            {sliderData.map((sd) => (
+              <div
+                className={
+                  sd.id === 1 ? "carousel-item active" : "carousel-item"
+                }
+              >
+                <div className="skillItem">
+                  <div className="topWrapper">
+                    <h1 className="skillName">{sd.title}</h1>
+                    <img className="skillIcon" src={sd.skillIcon} />
                   </div>
-                  <h2>{d.title}</h2>
-                  <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <div className="bottomWrapper">
+                    <p className="skillDescription">
+                      <b>Description: </b>
+                      {sd.desc}
+                    </p>
+                    <p className="skillProjectsUsedIn">
+                      <b>Projects skill was required for: </b>
+                      {sd.projectsUsedIn}
+                    </p>
+                    <div className="skillExperiance">
+                      <b>Experience Level:</b>
+                      <div className="experianceProgressBar">
+                        <ProgressBar done={sd.exp} />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="right">
-                <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
-                  alt=""
-                />
-              </div>
-            </div>
+            ))}
           </div>
-        ))}
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <img src="assets/about/down.png" className="previousButton" />
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <img src="assets/about/down.png" className="nextButton" />
+          </a>
+        </div>
       </div>
-      <img
-        src="./assets/skills/arrow.png"
-        className="arrow left"
-        alt=""
-        onClick={() => handleClick("left")}
-      />
-      <img
-        src="./assets/skills/arrow.png"
-        className="arrow right"
-        alt=""
-        onClick={() => handleClick()}
-      />
     </div>
   );
 }
