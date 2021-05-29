@@ -60,6 +60,7 @@
           .skillName {
             font-size: 35px;
             margin: 0;
+            overflow: hidden;
 
             @include mobile {
               font-size: 25px;
