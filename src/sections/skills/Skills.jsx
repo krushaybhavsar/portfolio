@@ -29,7 +29,7 @@ export default function Skills() {
           id="carouselExampleIndicators"
           class="carousel slide"
           data-ride="carousel"
-          data-interval="2000"
+          data-interval="5000"
           data-bs-touch="true"
           data-bs-interval="true"
         >
