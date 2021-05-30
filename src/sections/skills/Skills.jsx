@@ -13,6 +13,17 @@ export default function Skills() {
   return (
     <div className="skills" id="skills">
       <h1 className="sectionTitle">Skills</h1>
+      <div className="labelContainer">
+        {sliderData.map((ld) => (
+          <div
+            className="label"
+            data-target="#carouselExampleIndicators"
+            data-slide-to={ld.id - 1}
+          >
+            <p className="labelText">{ld.title}</p>
+          </div>
+        ))}
+      </div>
       <div className="skillsCarouselContainer">
         <div
           id="carouselExampleIndicators"

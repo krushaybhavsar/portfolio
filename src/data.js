@@ -341,7 +341,7 @@ export const skillsData = [
     exp: "65",
   },
   {
-    id: 5,
+    id: 4,
     title: "ReactJS",
     skillIcon: "assets/skills/react.svg",
     desc: "React is an open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React applications usually require the use of additional libraries for routing, as well as certain client-side functionality.",
@@ -349,7 +349,7 @@ export const skillsData = [
     exp: "55",
   },
   {
-    id: 6,
+    id: 5,
     title: "HTML",
     skillIcon: "assets/skills/html.svg",
     desc: "The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.",
@@ -357,7 +357,7 @@ export const skillsData = [
     exp: "70",
   },
   {
-    id: 7,
+    id: 6,
     title: "CSS",
     skillIcon: "assets/skills/css.svg",
     desc: "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.",
@@ -365,7 +365,7 @@ export const skillsData = [
     exp: "65",
   },
   {
-    id: 4,
+    id: 7,
     title: "C#",
     skillIcon: "assets/skills/csharp.svg",
     desc: "C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines.",

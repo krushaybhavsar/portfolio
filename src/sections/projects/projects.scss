@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: white;
   width: 100%;
   height: 100%;
@@ -168,49 +169,53 @@
   h1 {
     font-size: 50px;
     overflow: hidden;
-    margin-top: 35px;
+    padding-top: 35px;
 
     @include mobile {
       font-size: 32px;
       // margin-bottom: 20px;
-      margin: 0;
       padding-top: 20px;
-      padding-bottom: 20px;
+
+      padding-bottom: 10px;
     }
   }
 
   ul {
     list-style: none;
     display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 10px 0;
 
     @include mobile {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      margin-top: 0px;
-      margin-right: 25px;
-      margin-left: -25px;
-      margin-bottom: 0px;
-      padding-left: 50px;
-      padding-right: 0px;
+      margin: 0;
+      padding: 0px 10px;
+      width: 90%;
       height: 70px;
+      margin-bottom: 20px;
     }
 
     li {
       overflow: hidden;
       font-size: 16px;
-      margin-right: 50px;
-      padding: 7px 10px;
+      margin: 0px 25px;
+      padding: 7px 15px;
       border-radius: 10px;
       cursor: pointer;
+      box-shadow: 0 2px 8px 0 rgba(51, 122, 114, 0.15),
+        0 2px 5px 0 rgba(51, 122, 114, 0.1);
+      background-color: white;
 
       @include mobile {
         font-size: 13px;
         padding: 4px 10px;
         text-align: center;
-        margin-right: 0;
+        margin: 0;
+
+        &:hover {
+          box-shadow: none;
+        }
       }
 
       &.active {
@@ -227,7 +232,6 @@
   .container {
     width: 55%;
     height: 60%;
-    margin-top: 20px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;

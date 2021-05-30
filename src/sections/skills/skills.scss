@@ -21,6 +21,46 @@
     }
   }
 
+  .labelContainer {
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    margin: 0;
+
+    @include mobile {
+      width: 90%;
+    }
+
+    .label {
+      transition: all 0.15s ease-in-out;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 2px 8px 0 rgba(51, 122, 114, 0.15),
+        0 2px 5px 0 rgba(51, 122, 114, 0.1);
+      background: white;
+      &:hover {
+        background: linear-gradient(
+          90deg,
+          rgba(43, 77, 89, 1) 0%,
+          rgba(57, 153, 142, 1) 100%
+        );
+      }
+      padding: 4px;
+      border-radius: 14px;
+      cursor: pointer;
+      margin: 3px;
+      .labelText {
+        font-size: 13px;
+        padding: 5px 8px;
+        margin: 0;
+        background-color: white;
+        border-radius: 10px;
+      }
+    }
+  }
+
   .skillsCarouselContainer {
     display: flex;
     width: 80%;
