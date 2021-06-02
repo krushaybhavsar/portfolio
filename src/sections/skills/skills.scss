@@ -24,6 +24,7 @@
   .labelContainer {
     display: flex;
     width: 40%;
+    height: fit-content;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -50,7 +51,7 @@
       padding: 4px;
       border-radius: 14px;
       cursor: pointer;
-      margin: 3px;
+      margin: 4px;
       .labelText {
         font-size: 13px;
         padding: 5px 8px;
@@ -168,6 +169,7 @@
     width: fit-content;
     height: fit-content;
     margin: auto;
+    left: 80%;
     @include mobile {
       display: none;
     }
@@ -177,6 +179,7 @@
     width: fit-content;
     height: fit-content;
     margin: auto;
+    right: 80%;
     @include mobile {
       display: none;
     }

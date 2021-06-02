@@ -260,7 +260,9 @@
       width: 200px;
       height: 136px;
       border-radius: 20px;
-      border: 2px solid rgb(184, 184, 184);
+      // border: 2px solid rgb(184, 184, 184);
+      box-shadow: 0 2px 8px 0 rgba(51, 122, 114, 0.15),
+        0 2px 5px 0 rgba(51, 122, 114, 0.1);
       margin-top: 15px;
       margin-bottom: 15px;
       margin-left: 15px;
@@ -268,10 +270,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
       position: relative;
       transition: all 0.3s ease-in-out;
       cursor: pointer;
+      background: rgba(43, 77, 89, 1);
+      color: white;
 
       @include mobile {
         width: 130px;
@@ -297,11 +300,13 @@
         height: 100%;
         object-fit: cover;
         z-index: 1;
+        opacity: 1;
       }
 
       &:hover {
-        background-color: $mainColor;
-        border-radius: 35px;
+        background: rgba(43, 77, 89, 1);
+        color: white;
+        border-radius: 30px;
         img {
           opacity: 0.15;
           z-index: 0;
