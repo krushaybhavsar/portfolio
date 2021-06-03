@@ -17,7 +17,7 @@ export default function Skills() {
         {sliderData.map((ld) => (
           <div
             className="label"
-            data-target="#carouselExampleIndicators"
+            data-target="#skillsCarousel"
             data-slide-to={ld.id - 1}
           >
             <p className="labelText">{ld.title}</p>
@@ -26,7 +26,7 @@ export default function Skills() {
       </div>
       <div className="skillsCarouselContainer">
         <div
-          id="carouselExampleIndicators"
+          id="skillsCarousel"
           class="carousel slide"
           data-ride="carousel"
           data-interval="5000"
@@ -67,7 +67,7 @@ export default function Skills() {
           </div>
           <a
             class="carousel-control-prev"
-            href="#carouselExampleIndicators"
+            href="#skillsCarousel"
             role="button"
             data-slide="prev"
           >
@@ -75,7 +75,7 @@ export default function Skills() {
           </a>
           <a
             class="carousel-control-next"
-            href="#carouselExampleIndicators"
+            href="#skillsCarousel"
             role="button"
             data-slide="next"
           >
