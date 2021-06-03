@@ -184,15 +184,14 @@
     list-style: none;
     display: flex;
     padding: 10px 0;
+    text-align: center;
 
     @include mobile {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      margin: 0;
-      padding: 0px 10px;
       width: 90%;
-      height: 70px;
+      height: fit-content;
       margin-bottom: 20px;
     }
 
@@ -211,11 +210,7 @@
         font-size: 13px;
         padding: 4px 10px;
         text-align: center;
-        margin: 0;
-
-        &:hover {
-          box-shadow: none;
-        }
+        margin: 5px;
       }
 
       &.active {
@@ -249,11 +244,13 @@
     }
 
     @include mobile {
-      width: 85%;
-      // height: 100%;
-      // padding-top: 20px;
-      // margin-bottom: 0px;
-      // border-radius: 0px;
+      min-width: 350px;
+      width: calc(100% - 40px);
+      height: 55vh;
+      &:hover {
+        border-radius: 30px;
+      }
+      margin-bottom: 0;
     }
 
     .item {
@@ -321,32 +318,27 @@
   .wrapper {
     width: 100%;
     position: relative;
-    height: 80px;
-    align-items: center;
-    justify-content: center;
-    // margin-top: 30px;
+    height: 50px;
     text-align: center;
-    margin-right: 40px;
     overflow: hidden;
+    margin: auto;
 
     a {
-      position: absolute;
-      height: 70px;
+      height: fit-content;
       img {
         width: 40px;
         height: 35px;
-        // margin-top: 35px;
-        animation: arrowBlink 2.5s infinite;
+        animation: projectsArrowBlink 2.5s infinite;
       }
-      @keyframes arrowBlink {
+      @keyframes projectsArrowBlink {
         from {
-          margin-top: 20px;
+          margin-top: 0px;
         }
         to {
-          margin-top: 20px;
+          margin-top: 0px;
         }
         50% {
-          margin-top: 30px;
+          margin-top: 10px;
         }
       }
     }

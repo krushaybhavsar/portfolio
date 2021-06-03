@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 * {
   box-sizing: border-box;
 }
@@ -8,6 +10,9 @@
   min-height: 25px;
   width: 100%;
   overflow: hidden;
+  @include mobile {
+    min-height: 20px;
+  }
 }
 
 .progress-done {
@@ -27,4 +32,8 @@
   width: 0;
   opacity: 0;
   transition: 1s ease 0.3s;
+  @include mobile {
+    height: 20px;
+    box-shadow: none;
+  }
 }

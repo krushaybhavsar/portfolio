@@ -8,9 +8,11 @@
   flex-direction: column;
 
   .sectionTitle {
-    font-size: 50px;
+    font-size: 3.25vw;
+    // font-size: 50px;
     overflow: hidden;
-    margin-bottom: 35px;
+    // margin-bottom: 35px;
+    margin-bottom: 1vw;
 
     @include mobile {
       font-size: 32px;
@@ -28,7 +30,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     margin: 0;
 
     @include mobile {
@@ -52,12 +54,23 @@
       border-radius: 14px;
       cursor: pointer;
       margin: 4px;
+
+      @include mobile {
+        border-radius: 10px;
+        padding: 3px;
+      }
       .labelText {
-        font-size: 13px;
+        font-size: 0.85vw;
         padding: 5px 8px;
         margin: 0;
         background-color: white;
         border-radius: 10px;
+        @include mobile {
+          font-size: 10px;
+          padding: 4px;
+          margin: 1px;
+          border-radius: 6px;
+        }
       }
     }
   }
@@ -67,8 +80,8 @@
     width: 80%;
     height: fit-content;
     display: flex;
-    // justify-content: center;
-    // align-items: center;
+    margin: 0;
+    overflow: hidden;
 
     .carousel.slide {
       display: flex;
@@ -89,6 +102,7 @@
         @include mobile {
           padding: 20px;
           width: 90%;
+          height: 45vh;
         }
 
         .topWrapper {
@@ -97,14 +111,16 @@
           justify-content: center;
           align-items: center;
           margin-bottom: 15px;
+          overflow: hidden;
 
           .skillName {
-            font-size: 35px;
+            // font-size: 35px;
+            font-size: 2.3vw;
             margin: 0;
             overflow: hidden;
 
             @include mobile {
-              font-size: 25px;
+              font-size: 20px;
             }
           }
 
@@ -120,8 +136,9 @@
         }
 
         .bottomWrapper {
+          font-size: 1.03vw;
           @include mobile {
-            font-size: 15px;
+            font-size: 12px;
           }
           .skillDescription {
             margin-bottom: 15px;
@@ -135,6 +152,9 @@
             margin: 0;
             min-height: 50px;
             overflow: hidden;
+            @include mobile {
+              min-height: 20px;
+            }
             .experianceProgressBar {
               min-height: fit-content;
               overflow: hidden;
@@ -187,5 +207,40 @@
 
   .carousel-item {
     width: 100%;
+    // margin: 0;
+  }
+
+  .skillsArrowWrapper {
+    width: 100%;
+    position: relative;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    // margin-top: 30px;
+    text-align: center;
+    margin-right: 40px;
+    overflow: hidden;
+
+    .skillsA {
+      position: absolute;
+      height: 70px;
+      .skillsArrowImg {
+        width: 40px;
+        height: 35px;
+        // margin-top: 35px;
+        animation: skillsArrowBlink 2.5s infinite;
+      }
+      @keyframes skillsArrowBlink {
+        from {
+          margin-top: 20px;
+        }
+        to {
+          margin-top: 20px;
+        }
+        50% {
+          margin-top: 30px;
+        }
+      }
+    }
   }
 }
