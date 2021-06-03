@@ -84,7 +84,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="skillsArrowWrapper">
-        <a className="skillsA" href="#education">
+        <a className="skillsA" href="#contact">
           <img className="skillsArrowImg" src="assets/about/down.png" />
         </a>
       </div>
