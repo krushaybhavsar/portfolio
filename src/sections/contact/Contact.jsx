@@ -113,7 +113,7 @@ class Contact extends Component {
               </p>
               <div class="recaptchaContainer">
                 <Recaptcha
-                  sitekey="6Ld3GxEbAAAAAKZQfuNA5oen4BVC3BbOweVro7cd"
+                  sitekey="6LezMxEbAAAAAAfqx_Cy_84zqdVCOQPg2zWUUrO8"
                   render="explicit"
                   onloadCallback={this.reCaptchaLoaded}
                   verifyCallback={this.verifyCallback}
