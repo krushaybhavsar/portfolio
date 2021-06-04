@@ -1,10 +1,142 @@
 .contact {
   background-color: white;
   display: flex;
-  text-align: center;
-  h1 {
-    margin: auto;
-    font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+
+  .contactTitle {
+    font-size: 3.25vw;
+    // font-size: 50px;
     overflow: hidden;
+    // margin-bottom: 35px;
+    margin-bottom: 2.25vw;
+  }
+
+  .formContainer {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 10px 0 rgba(51, 122, 114, 0.15),
+      0 6px 20px 0 rgba(51, 122, 114, 0.1);
+
+    .formInner {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      margin: 20px 25px;
+
+      p {
+        margin: 0;
+      }
+
+      .formTopWrapper {
+        display: flex;
+        flex-direction: row;
+
+        .topP {
+          margin: 0;
+          width: 100%;
+        }
+      }
+
+      .formLabel {
+        display: block;
+        margin: 5px;
+        color: rgb(100, 100, 100);
+        width: 100%;
+      }
+
+      .formInput {
+        width: calc(100% - 8px);
+        border-style: solid;
+        border-color: rgb(230, 230, 230);
+        border-radius: 10px;
+        border-width: 2px;
+        padding: 6px 8px;
+        font-size: 15px;
+        margin: 5px;
+        transition: all 0.2s ease-in-out;
+        &:focus {
+          outline: none !important;
+          box-shadow: 0 1px 5px 0 rgba(51, 122, 114, 0.15),
+            0 3px 10px 0 rgba(51, 122, 114, 0.1);
+        }
+        &:hover {
+          outline: none !important;
+          box-shadow: 0 1px 5px 0 rgba(51, 122, 114, 0.15),
+            0 3px 10px 0 rgba(51, 122, 114, 0.1);
+        }
+      }
+
+      .formTextArea {
+        border-style: solid;
+        border-color: rgb(230, 230, 230);
+        border-radius: 10px;
+        border-width: 2px;
+        padding: 4px 8px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        resize: none;
+        transition: all 0.2s ease-in-out;
+        &:focus {
+          outline: none !important;
+          box-shadow: 0 1px 5px 0 rgba(51, 122, 114, 0.15),
+            0 3px 10px 0 rgba(51, 122, 114, 0.1);
+        }
+        &:hover {
+          outline: none !important;
+          box-shadow: 0 1px 5px 0 rgba(51, 122, 114, 0.15),
+            0 3px 10px 0 rgba(51, 122, 114, 0.1);
+        }
+      }
+
+      .submitButton {
+        width: 115px;
+        padding: 6px 10px;
+        border-radius: 10px;
+        font-size: 16px;
+        color: white;
+        border: none;
+        display: block;
+        display: block;
+        margin: 0px auto;
+        position: relative;
+        background-image: linear-gradient(
+          90deg,
+          rgba(43, 77, 89, 1) 0%,
+          rgba(57, 153, 142, 1) 100%
+        );
+        z-index: 1;
+
+        &:before {
+          position: absolute;
+          border-radius: 10px;
+          content: "";
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(
+            90deg,
+            rgba(57, 153, 142, 1) 0%,
+            rgba(43, 77, 89, 1) 100%
+          );
+          z-index: -1;
+          transition: opacity 0.7s linear;
+          opacity: 0;
+        }
+
+        &:hover::before {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
