@@ -38,6 +38,7 @@
       height: fit-content;
       display: flex;
       margin: 23px;
+      text-align: center;
 
       @include mobile {
         margin: 10px;
@@ -129,9 +130,17 @@
             0 3px 10px 0 rgba(51, 122, 114, 0.1);
         }
       }
+      .sentText-false {
+        display: none;
+      }
+      .sentText-true {
+        color: green;
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
 
       .submitButton {
-        width: 115px;
+        width: fit-content;
         padding: 6px 10px;
         border-radius: 10px;
         font-size: 16px;

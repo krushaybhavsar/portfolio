@@ -1,23 +1,24 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 import "./contact.scss";
 import Recaptcha from "react-recaptcha";
+import $ from "jquery";
 
 class Contact extends Component {
-  // https://www.youtube.com/watch?v=QrVYLLpoyMw
   constructor(props) {
     super(props);
     this.handleOnSubmit = this.handleOnSubmit.bind(this);
     this.reCaptchaLoaded = this.reCaptchaLoaded.bind(this);
     this.verifyCallback = this.verifyCallback.bind(this);
+    this.disableIsSent = this.disableIsSent.bind(this);
     this.state = {
       isVerified: false,
+      isSent: false,
     };
   }
 
   handleOnSubmit(e) {
     e.preventDefault();
-    console.log(this.state.isVerified);
     if (this.state.isVerified) {
       emailjs
         .sendForm(
@@ -35,19 +36,20 @@ class Contact extends Component {
           }
         );
       e.target.reset();
+      this.setState({
+        isSent: true,
+      });
     } else {
       alert("Please verify that you are a human!");
     }
+  }
 
-    // const formData = {};
-    // Array.from(e.currentTarget.elements).forEach((field) => {
-    //   if (!field.name) return;
-    //   formData[field.name] = field.value;
-    // });
+  disableIsSent() {
+    this.setState({ isSent: false });
   }
 
   reCaptchaLoaded() {
-    console.log("recaptcha successfully loaded");
+    console.log("Recaptcha successfully Loaded");
   }
 
   verifyCallback(response) {
@@ -113,15 +115,23 @@ class Contact extends Component {
               </p>
               <div class="recaptchaContainer">
                 <Recaptcha
+                  ////////////krushaybhavsar.netlify.app////////////
                   sitekey="6LezMxEbAAAAAAfqx_Cy_84zqdVCOQPg2zWUUrO8"
+                  ////////////////////localhost/////////////////////
+                  // sitekey="6Ld3GxEbAAAAAKZQfuNA5oen4BVC3BbOweVro7cd"
                   render="explicit"
                   onloadCallback={this.reCaptchaLoaded}
                   verifyCallback={this.verifyCallback}
                   size="normal"
                 />
               </div>
+              <p className={`sentText-${this.state.isSent}`}>
+                Your email has been sent! I'll be sure to reply back soon.
+              </p>
               <p>
-                <button className="submitButton">Send Email</button>
+                <button className="submitButton" id="submitButton">
+                  Send Email
+                </button>
               </p>
             </form>
           </div>
