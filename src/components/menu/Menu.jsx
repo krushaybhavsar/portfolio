@@ -1,4 +1,5 @@
 import "./menu.scss";
+import { Link, Redirect, BrowserRouter as Router } from "react-router-dom";
 
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (
@@ -16,6 +17,11 @@ export default function Menu({ menuOpen, setMenuOpen }) {
         {/* <li onClick={() => setMenuOpen(false)}>
           <a href="#education">Education</a>
         </li> */}
+        <li onClick={() => setMenuOpen(false)}>
+          <a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:80bbedde-479c-402a-9d00-fde974204f18#pageNum=1">
+            Resume
+          </a>
+        </li>
         <li onClick={() => setMenuOpen(false)}>
           <a href="#contact">Contact</a>
         </li>

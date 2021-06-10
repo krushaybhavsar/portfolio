@@ -4,6 +4,12 @@ import Education from "./sections/education/Education.jsx";
 import Projects from "./sections/projects/Projects.jsx";
 import Skills from "./sections/skills/Skills.jsx";
 import Contact from "./sections/contact/Contact.jsx";
+import {
+  Switch,
+  Route,
+  Redirect,
+  BrowserRouter as Router,
+} from "react-router-dom";
 import "./app.scss";
 import { useState } from "react";
 import Menu from "./components/menu/Menu.jsx";
