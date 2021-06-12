@@ -3,6 +3,8 @@
 .home {
   background-color: white;
   display: flex;
+  align-items: center;
+  overflow: hidden;
 
   @include mobile {
     flex-direction: column;
@@ -18,25 +20,28 @@
     }
 
     .imgContainer {
-      width: 700px;
-      height: 700px;
+      width: 45vw;
+      height: 45vw;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       float: right;
       position: relative;
+      min-width: 400px;
+      min-height: 400px;
 
       @include mobile {
         align-items: flex-start;
-        justify-content: center;
-        margin-top: 3vh;
+        width: 80vh;
+        height: 80vh;
+        margin-top: 7vh;
       }
 
       .me {
         position: relative;
         height: 66.5%;
         margin-bottom: 9.47%;
-        margin-right: 70px;
+        margin-right: 4.5vw;
         user-select: none;
         -moz-user-select: none;
         -webkit-user-drag: none;
@@ -72,6 +77,8 @@
   .right {
     flex: 0.5;
     position: relative;
+    overflow: hidden;
+    height: 100%;
   }
 
   @include mobile {
@@ -93,7 +100,7 @@
     }
 
     h1 {
-      font-size: 60px;
+      font-size: 3.9vw;
       margin-bottom: 10px;
       font-weight: 600;
       overflow: hidden;
@@ -112,14 +119,14 @@
       }
     }
     h2 {
-      font-size: 35px;
+      font-size: 2.22vw;
 
       @include mobile {
         font-size: 25px;
       }
     }
     h3 {
-      font-size: 30px;
+      font-size: 1.95vw;
 
       @include mobile {
         font-size: 20px;
@@ -145,20 +152,21 @@
   }
   a {
     position: absolute;
-    // bottom: 0px;
-    top: 75%;
-    left: 40%;
-    height: 50px;
+    text-align: center;
+    left: 25%;
+    top: 85%;
     @include mobile {
-      justify-content: center;
-      margin-left: 5%;
+      left: calc(50% - 20px);
+      top: 70%;
     }
     img {
-      width: 40px;
-      height: 35px;
+      width: 2.6vw;
+      height: 2.27vw;
       animation: arrowBlink 2.5s infinite;
+
       @include mobile {
-        // margin-top: 3%;
+        width: 40px;
+        height: 35px;
       }
     }
 

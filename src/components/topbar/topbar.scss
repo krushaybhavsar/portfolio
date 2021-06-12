@@ -2,22 +2,24 @@
 
 .topbar {
   width: 100%;
-  height: 70px;
+  height: 4.55vw;
   background-color: white;
   color: $mainColor;
   position: fixed;
   top: 0;
   z-index: 3;
   transition: all 1s ease;
+  min-height: 70px;
 
   .wrapper {
-    padding: 8px 35px;
+    // padding: 8px 35px;
+    padding: 0.5vw 2.27vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     @include mobile {
-      padding-top: 11px;
+      padding: 12px 25px;
     }
 
     .left {
@@ -25,11 +27,13 @@
       align-items: center;
 
       .logo {
-        font-size: 35px;
+        // font-size: 35px;
+        font-size: 2.27vw;
         font-weight: 700;
         text-decoration: none;
         color: inherit;
-        margin-right: 40px;
+        // margin-right: 40px;
+        margin-right: 2.6vw;
         background: rgb(43, 77, 89);
         background: linear-gradient(
           90deg,
@@ -46,14 +50,14 @@
         }
 
         &:hover {
-          letter-spacing: 0.7px;
+          letter-spacing: 0.0455vw;
         }
 
         &.active {
-          font-size: 35px;
+          font-size: 2.27vw;
           font-weight: 700;
           text-decoration: none;
-          margin-right: 40px;
+          margin-right: 2.6vw;
           background: rgb(255, 255, 255);
           -webkit-background-clip: text;
           background-clip: text;
@@ -68,19 +72,19 @@
       .itemContainer {
         display: flex;
         align-items: center;
-        margin-right: 30px;
+        margin-right: 1.95vw;
 
         @include mobile {
           display: none;
         }
 
         .icon {
-          font-size: 18px;
-          margin-right: 5px;
+          font-size: 1.17vw;
+          margin-right: 0.325vw;
         }
 
         span {
-          font-size: 15px;
+          font-size: 0.97vw;
           font-weight: 400;
         }
       }
@@ -90,10 +94,13 @@
       display: flex;
 
       .socialsContainer {
-        width: 200px;
+        width: 13vw;
         height: 100%;
         overflow: hidden;
-        margin-right: 50px;
+        margin-right: 3.25vw;
+        @include mobile {
+          display: none;
+        }
 
         .socials {
           width: 100%;
@@ -103,8 +110,8 @@
 
           .linkedInDiv {
             display: flex;
-            width: 35px;
-            height: 35px;
+            width: 2.27vw;
+            height: 2.27vw;
             overflow: hidden;
             border-radius: 100%;
             background: transparent;
@@ -114,7 +121,7 @@
             transition: all 0.3s ease-in-out;
             border: 2px solid rgba(0, 0, 0, 0.3);
             i {
-              font-size: 20px;
+              font-size: 1.3vw;
               margin: auto;
             }
 
@@ -131,8 +138,8 @@
 
           .githubDiv {
             display: flex;
-            width: 35px;
-            height: 35px;
+            width: 2.27vw;
+            height: 2.27vw;
             overflow: hidden;
             border-radius: 100%;
             background: transparent;
@@ -142,7 +149,7 @@
             transition: all 0.3s ease-in-out;
             border: 2px solid rgba(0, 0, 0, 0.3);
             i {
-              font-size: 20px;
+              font-size: 1.3vw;
               margin: auto;
             }
 
@@ -159,8 +166,8 @@
 
           .instaDiv {
             display: flex;
-            width: 35px;
-            height: 35px;
+            width: 2.27vw;
+            height: 2.27vw;
             overflow: hidden;
             border-radius: 100%;
             background: transparent;
@@ -170,7 +177,7 @@
             transition: all 0.3s ease-in-out;
             border: 2px solid rgba(0, 0, 0, 0.3);
             i {
-              font-size: 20px;
+              font-size: 1.3vw;
               margin: auto;
             }
 
@@ -229,8 +236,8 @@
 
           .youtubeDiv {
             display: flex;
-            width: 35px;
-            height: 35px;
+            width: 2.27vw;
+            height: 2.27vw;
             overflow: hidden;
             border-radius: 100%;
             background: transparent;
@@ -240,7 +247,7 @@
             transition: all 0.2s ease-in-out;
             border: 2px solid rgba(0, 0, 0, 0.3);
             i {
-              font-size: 20px;
+              font-size: 1.3vw;
               margin: auto;
             }
 
@@ -259,8 +266,8 @@
         }
       }
       .hamburger {
-        width: 32px;
-        height: 25px;
+        width: 2.08vw;
+        height: 1.625vw;
         margin: auto 0px;
         display: flex;
         flex-direction: column;
@@ -275,10 +282,14 @@
 
         span {
           width: 100%;
-          height: 2.5px;
+          height: 0.1625vw;
           background-color: $mainColor;
           transform-origin: left;
           transition: all 0.8s ease;
+
+          @include mobile {
+            height: 2.5px;
+          }
         }
       }
     }

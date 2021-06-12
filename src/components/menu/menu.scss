@@ -1,13 +1,13 @@
 @import "../../global.scss";
 
 .menu {
-  width: 300px;
+  width: 19.5vw;
   height: 100vh;
   transition: all ease 0.8s;
 
   position: fixed;
   top: 0;
-  right: -300px;
+  right: -19.5vw;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -20,8 +20,8 @@
   );
   transition: all ease 0.8s;
   @include mobile {
-    width: 65%;
-    right: -65%;
+    width: 60%;
+    right: -60%;
   }
 
   &.active {
@@ -32,10 +32,10 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 30px;
+    font-size: 1.95vw;
     color: white;
     width: 60%;
-    line-height: 50px;
+    line-height: 3.25vw;
 
     @include mobile {
       font-size: 24px;
@@ -43,8 +43,12 @@
     }
 
     li {
-      margin-bottom: 25px;
+      margin-bottom: 1.625vw;
       transition: all ease 0.2s;
+
+      @include mobile {
+        margin-bottom: 25px;
+      }
 
       a {
         font-size: inherit;
@@ -53,7 +57,7 @@
       }
 
       &:hover {
-        font-size: 33px;
+        font-size: 2.145vw;
 
         @include mobile {
           font-size: 26px;
