@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import "./contact.scss";
 import Recaptcha from "react-recaptcha";
 import $ from "jquery";
+import "dotenv";
 
 class Contact extends Component {
   constructor(props) {
@@ -115,10 +116,8 @@ class Contact extends Component {
               </p>
               <div class="recaptchaContainer">
                 <Recaptcha
-                  ////////////krushaybhavsar.netlify.app////////////
-                  sitekey="6LezMxEbAAAAAAfqx_Cy_84zqdVCOQPg2zWUUrO8"
-                  ////////////////////localhost/////////////////////
-                  // sitekey="6Ld3GxEbAAAAAKZQfuNA5oen4BVC3BbOweVro7cd"
+                  // sitekey={process.env.REACT_APP_LOCALHOST_RECAPTCHA}
+                  sitekey={process.env.REACT_APP_NETLIFY_RECAPTCHA}
                   render="explicit"
                   onloadCallback={this.reCaptchaLoaded}
                   verifyCallback={this.verifyCallback}
