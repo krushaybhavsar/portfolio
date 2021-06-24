@@ -115,6 +115,11 @@ class Contact extends Component {
                 ></textarea>
               </p>
               <div class="recaptchaContainer">
+                <script
+                  src="https://www.google.com/recaptcha/api.js"
+                  async
+                  defer
+                ></script>
                 <Recaptcha
                   // sitekey={process.env.REACT_APP_LOCALHOST_RECAPTCHA}
                   sitekey={process.env.REACT_APP_NETLIFY_RECAPTCHA}
