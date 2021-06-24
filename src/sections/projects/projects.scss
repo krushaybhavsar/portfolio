@@ -48,6 +48,9 @@
         width: 80%;
         max-width: none;
         text-align: center;
+        border-radius: 6vw;
+        -webkit-border-radius: 6vw;
+        -moz-border-radius: 6vw;
       }
 
       .rightWrapper {
@@ -72,6 +75,9 @@
           .toolsUsedText {
             overflow: hidden;
             font-size: 1.05vw;
+            @include mobile {
+              font-size: 12px;
+            }
           }
 
           .modalBodyText {
@@ -107,8 +113,11 @@
               margin: 0 auto;
 
               @include mobile {
-                font-size: 13px;
+                font-size: 12px;
                 padding: 4px 10px;
+                border-radius: 2.3vw;
+                -webkit-border-radius: 2.3vw;
+                -moz-border-radius: 2.3vw;
               }
             }
           }
@@ -199,6 +208,11 @@
         padding: 4px 10px;
         text-align: center;
         margin: 5px;
+        border-radius: 2.3vw;
+        -webkit-border-radius: 2.3vw;
+        -moz-border-radius: 2.3vw;
+        box-shadow: 0 2px 8px 0 rgba(51, 122, 114, 0.15),
+          0 2px 5px 0 rgba(51, 122, 114, 0.1);
       }
 
       &.active {
@@ -231,15 +245,12 @@
     padding: 0.7vw;
 
     @include mobile {
-      min-width: 350px;
-      width: calc(100% - 40px);
+      width: 86.5vw;
       height: 55vh;
-      &:hover {
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-      }
-      margin-bottom: 0;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      padding: 2vw;
     }
 
     .item {
@@ -261,8 +272,12 @@
       color: white;
 
       @include mobile {
-        width: 130px;
-        height: 100px;
+        width: 37vw;
+        height: 25vw;
+        border-radius: 4vw;
+        -webkit-border-radius: 4vw;
+        -moz-border-radius: 4vw;
+        margin: 2vw;
       }
 
       h3 {
@@ -309,12 +324,13 @@
     height: 50px;
     text-align: center;
     overflow: hidden;
-
     a {
       height: fit-content;
       img {
         width: 2.6vw;
         height: 2.27vw;
+        min-width: 35px;
+        min-height: 30px;
         animation: projectsArrowBlink 2.5s infinite;
       }
       @keyframes projectsArrowBlink {
