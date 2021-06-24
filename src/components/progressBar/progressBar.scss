@@ -7,7 +7,7 @@
 .progress {
   background-color: #d8d8d8;
   position: relative;
-  min-height: 25px;
+  min-height: 3.4vh;
   width: 100%;
   overflow: hidden;
   @include mobile {
@@ -28,12 +28,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25px;
+  min-height: 3.4vh;
   width: 0;
   opacity: 0;
   transition: 1s ease 0.3s;
+  font-size: 1.8vh;
   @include mobile {
-    height: 20px;
+    font-size: 12px;
+    min-height: 20px;
     box-shadow: none;
   }
 }
