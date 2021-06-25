@@ -4,7 +4,6 @@
   width: 19.5vw;
   height: 100vh;
   transition: all ease 0.8s;
-
   position: fixed;
   top: 0;
   right: -19.5vw;
@@ -30,6 +29,7 @@
 
   ul {
     margin: 0;
+    margin-top: 5vw;
     padding: 0;
     list-style: none;
     font-size: 1.95vw;
@@ -40,6 +40,7 @@
     @include mobile {
       font-size: 24px;
       line-height: 35px;
+      margin-top: 0;
     }
 
     li {
@@ -62,6 +63,100 @@
 
         @include mobile {
           font-size: 26px;
+        }
+      }
+    }
+  }
+
+  .socialsContainer {
+    display: none;
+    @include mobile {
+      display: flex;
+      align-self: center;
+      overflow: hidden;
+      position: absolute;
+      bottom: 10%;
+      width: 45vw;
+    }
+
+    .socials {
+      display: none;
+      @include mobile {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .linkedInDiv {
+        display: flex;
+        width: 8vw;
+        height: 8vw;
+        overflow: hidden;
+        border-radius: 100%;
+        background: transparent;
+        color: rgba(255, 255, 255, 1);
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        transition: all 0.3s ease-in-out;
+        border: 0.4vw solid rgba(255, 255, 255, 1);
+        i {
+          font-size: 5vw;
+          margin: auto;
+        }
+      }
+      .githubDiv {
+        display: flex;
+        width: 8vw;
+        height: 8vw;
+        overflow: hidden;
+        border-radius: 100%;
+        background: transparent;
+        color: rgba(255, 255, 255, 1);
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        transition: all 0.3s ease-in-out;
+        border: 0.4vw solid rgba(255, 255, 255, 1);
+        i {
+          font-size: 5vw;
+          margin: auto;
+        }
+      }
+
+      .instaDiv {
+        display: flex;
+        width: 8vw;
+        height: 8vw;
+        overflow: hidden;
+        border-radius: 100%;
+        background: transparent;
+        color: rgba(255, 255, 255, 1);
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        transition: all 0.3s ease-in-out;
+        border: 0.4vw solid rgba(255, 255, 255, 1);
+        i {
+          font-size: 5vw;
+          margin: auto;
+        }
+      }
+
+      .youtubeDiv {
+        display: flex;
+        width: 8vw;
+        height: 8vw;
+        overflow: hidden;
+        border-radius: 100%;
+        background: transparent;
+        color: rgba(255, 255, 255, 1);
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        transition: all 0.3s ease-in-out;
+        border: 0.4vw solid rgba(255, 255, 255, 1);
+        i {
+          font-size: 5vw;
+          margin: auto;
         }
       }
     }
