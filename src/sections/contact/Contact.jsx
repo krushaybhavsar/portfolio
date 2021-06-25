@@ -1,9 +1,7 @@
-import React, { Component, useEffect, useRef } from "react";
+import React, { Component } from "react";
 import emailjs from "emailjs-com";
 import "./contact.scss";
 import Recaptcha from "react-recaptcha";
-import $ from "jquery";
-import "dotenv";
 
 class Contact extends Component {
   constructor(props) {
@@ -103,21 +101,16 @@ class Contact extends Component {
                   type="message"
                   name="message"
                   rows="4"
-                  cols={
-                    (window.innerWidth ||
-                      document.documentElement.clientWidth ||
-                      document.body.clientWidth) > 768
-                      ? 60
-                      : 35
-                  }
                   placeholder="Message"
                   required
                 ></textarea>
               </p>
               <div class="recaptchaContainer">
                 <Recaptcha
-                  // sitekey={process.env.REACT_APP_LOCALHOST_RECAPTCHA}
-                  sitekey={process.env.REACT_APP_NETLIFY_RECAPTCHA}
+                  //============= localhost =============
+                  // sitekey="6Ld3GxEbAAAAAKZQfuNA5oen4BVC3BbOweVro7cd"
+                  //============== netlify ==============
+                  sitekey="6LezMxEbAAAAAAfqx_Cy_84zqdVCOQPg2zWUUrO8"
                   render="explicit"
                   onloadCallback={this.reCaptchaLoaded}
                   verifyCallback={this.verifyCallback}

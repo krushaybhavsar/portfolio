@@ -11,9 +11,7 @@
 
   .contactTitle {
     font-size: 3.25vw;
-    // font-size: 50px;
     overflow: hidden;
-    // margin-bottom: 35px;
     margin-bottom: 2.25vw;
 
     @include mobile {
@@ -25,60 +23,82 @@
   }
 
   .formContainer {
-    width: fit-content;
+    width: 45vw;
     height: fit-content;
-    border-radius: 20px;
-    border-radius: 30px;
+    border-radius: 1.9vw;
+    -webkit-border-radius: 1.9vw;
+    -moz-border-radius: 1.9vw;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 10px 0 rgba(51, 122, 114, 0.15),
       0 6px 20px 0 rgba(51, 122, 114, 0.1);
 
+    @include mobile {
+      width: 85%;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+    }
+
     .formInner {
-      width: fit-content;
-      height: fit-content;
       display: flex;
-      margin: 23px;
-      text-align: center;
+      align-items: center;
+      justify-content: center;
+      height: fit-content;
+      margin: 1.3vw;
 
       @include mobile {
-        margin: 10px;
+        margin: 14px 18px;
       }
 
       p {
         margin: 0;
+        font-size: 1vw;
         @include mobile {
           font-size: 14px;
         }
       }
 
       .formTopWrapper {
+        width: 42.5vw;
         display: flex;
         flex-direction: row;
+        align-items: center;
 
         .topP {
           margin: 0;
           width: 100%;
 
           @include mobile {
-            width: 145px;
           }
         }
 
         @include mobile {
-          width: 290px;
+          width: 100%;
         }
       }
 
       .formInput {
-        width: calc(100% - 8px);
+        width: calc(100% - 7px);
         border-style: solid;
         border-color: rgb(230, 230, 230);
-        border-radius: 10px;
+        border-radius: 0.6vw;
+        -webkit-border-radius: 0.6vw;
+        -moz-border-radius: 0.6vw;
         border-width: 2px;
-        padding: 6px 8px;
-        font-size: 15px;
-        margin: 7px 5px;
+        padding: 0.4vw 0.7vw;
+        font-size: 1vw;
+        margin: 0.5vw 0.3vw;
         transition: all 0.2s ease-in-out;
+        @include mobile {
+          font-size: 14px;
+          border-width: 1.5px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          padding: 5px 7px;
+          margin: 7px 0;
+        }
+
         &:focus {
           outline: none !important;
           box-shadow: 0 1px 5px 0 rgba(51, 122, 114, 0.15),
@@ -101,23 +121,20 @@
         &:valid {
           border-color: rgb(230, 230, 230);
         }
-
-        @include mobile {
-          font-size: 14px;
-        }
       }
 
       .formTextArea {
         border-style: solid;
         border-color: rgb(230, 230, 230);
-        border-radius: 10px;
+        border-radius: 0.6vw;
+        -webkit-border-radius: 0.6vw;
+        -moz-border-radius: 0.6vw;
         border-width: 2px;
-        padding: 4px 8px;
-        margin-bottom: 10px;
-        margin-top: 7px;
-        margin-left: 5px;
-        margin-right: 5px;
+        padding: 0.4vw 0.55vw;
+        margin: 0.5vw 0.3vw;
         resize: none;
+        width: 98.8%;
+        font-size: 1vw;
         transition: all 0.2s ease-in-out;
         &:focus {
           outline: none !important;
@@ -129,21 +146,32 @@
           box-shadow: 0 1px 5px 0 rgba(51, 122, 114, 0.15),
             0 3px 10px 0 rgba(51, 122, 114, 0.1);
         }
+
+        @include mobile {
+          width: 98%;
+          font-size: 14px;
+          border-width: 1.5px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          padding: 5px 7px;
+          margin-top: 7px 0;
+        }
       }
       .sentText-false {
         display: none;
       }
       .sentText-true {
         color: green;
-        font-size: 15px;
-        margin-bottom: 10px;
+        font-size: 1vw;
+        margin-bottom: 0.8vw;
       }
 
       .submitButton {
         width: fit-content;
-        padding: 6px 10px;
-        border-radius: 10px;
-        font-size: 16px;
+        padding: 0.3vw 0.7vw;
+        border-radius: 0.7vw;
+        font-size: 1vw;
         color: white;
         border: none;
         display: block;
@@ -157,9 +185,15 @@
         );
         z-index: 1;
 
+        @include mobile {
+          border-radius: 10px;
+          padding: 4px 10px;
+          font-size: 14px;
+        }
+
         &:before {
           position: absolute;
-          border-radius: 10px;
+          border-radius: 0.7vw;
           content: "";
           top: 0;
           right: 0;

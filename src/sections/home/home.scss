@@ -127,6 +127,7 @@
     }
     h3 {
       font-size: 1.95vw;
+      overflow: hidden;
 
       @include mobile {
         font-size: 20px;
