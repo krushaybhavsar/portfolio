@@ -168,6 +168,9 @@
         font-size: 1vw;
         margin-bottom: 0.8vw;
         text-align: center;
+        @include mobile {
+          font-size: 11px;
+        }
       }
 
       .submitButton {

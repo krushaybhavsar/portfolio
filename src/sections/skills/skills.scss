@@ -226,7 +226,7 @@
   .skillsArrowWrapper {
     width: 100%;
     position: relative;
-    height: 80px;
+    height: 10vh;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -236,6 +236,7 @@
     .skillsA {
       position: absolute;
       height: 70px;
+      overflow: hidden;
 
       .skillsArrowImg {
         width: 2.6vw;
@@ -243,6 +244,7 @@
         min-width: 35px;
         min-height: 30px;
         animation: skillsArrowBlink 2.5s infinite;
+        overflow: hidden;
       }
       @keyframes skillsArrowBlink {
         from {

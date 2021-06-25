@@ -1,7 +1,8 @@
 import React from "react";
 import "./topbar.scss";
-import { Person, Mail } from "@material-ui/icons";
+import { Person, Mail, GetApp, GetAppRounded } from "@material-ui/icons";
 import "../../sections/projects/Projects.jsx";
+import { Link } from "react-router-dom";
 
 // https://uicookies.com/html-social-media-icons/
 // https://codepen.io/michaelrossi/pen/NPRzwO
@@ -45,6 +46,19 @@ export default function Navbar({
             <Mail className="icon" />
             <span>krushaybhavsar@gmail.com</span>
           </div>
+        </div>
+        <div className={"center " + (menuOpen && "active")}>
+          <a
+            className={"resumeContainer " + (menuOpen && "active")}
+            href="/assets/Krushay-Bhavsar-Resume.pdf"
+            target="_blank"
+            download
+          >
+            <GetAppRounded
+              className={"downloadIcon " + (menuOpen && "active")}
+            />
+            <p className="downloadText">Download Resume</p>
+          </a>
         </div>
         <div className="right">
           <div className="socialsContainer">
