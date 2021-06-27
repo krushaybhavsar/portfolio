@@ -1,2 +1,2 @@
 <p>Currently deployed:</p>
-<h3>https://krushaybhavsar.netlify.app/</h3>
+<h3>https://krushaybhavsar.com/</h3>
