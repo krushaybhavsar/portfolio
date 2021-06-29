@@ -50,7 +50,7 @@ export default function Navbar({
         <div className={"center " + (menuOpen && "active")}>
           <a
             className={"resumeContainer " + (menuOpen && "active")}
-            href="/assets/Krushay-Bhavsar-Resume.pdf"
+            href="/assets/Krushay_Bhavsar_Resume.pdf"
             target="_blank"
             download
           >
