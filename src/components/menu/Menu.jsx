@@ -24,7 +24,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           <a
             onClick={() =>
               redirectToLink(
-                "https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:705aa29c-5a72-4513-95c0-016c6b248e27#pageNum=1"
+                "https://krushaybhavsar.com/assets/Krushay_Bhavsar_Resume.pdf"
               )
             }
           >
