@@ -169,9 +169,9 @@ export const webApps = [
     title: "Portfolio",
     img: "./assets/projects/portfoliopic.png",
     modalHeader: "Portfolio",
-    modalTools: "Java, XML, Android Studio, Firebase",
+    modalTools: "ReactJS, JavaScript, HTML, CSS, SASS",
     modalDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Built completely with ReactJS, my portfolio is one of the projects I used to learn ReactJS. The site features a landing page, a projects page, a skills page displayed with a Bootstrap slider, and a fully functioning contact me page with ReCAPTCHA verification. The site also contains the link to my resume.",
     modalButtonTxt: "View Project",
     modalLink: "https://krushaybhavsar.netlify.app/",
     modalImg: "",
@@ -239,7 +239,7 @@ export const machineLearning = [
     modalHeader: "Lane Detection Algorithm",
     modalTools: "Python, OpenCV, NumPy",
     modalDesc:
-      "The project consists of a program that is able to detect lanes from pictures and videos of real roads. The program makes use of a library called OpenCV for image processing and computer vision. It is essentially a series of filters that manipulates images to allow the computer to easily recognize pixel patterns.",
+      "The project consists of a program that can detect lanes from pictures and videos of real roads. The program makes use of a library called OpenCV for image processing and computer vision. It is essentially a series of filters that manipulates images to allow the computer to easily recognize pixel patterns.",
     modalButtonTxt: "View Project on GitHub",
     modalLink: "https://github.com/krushaybhavsar/lane-detection",
     modalImg: "",
@@ -251,7 +251,7 @@ export const machineLearning = [
     modalHeader: "Understanding the Basics of Machine Learning",
     modalTools: "Python, Tensorflow, NumPy, Pandas, Scikit Learn",
     modalDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "In this project, I began learning the fundamental concepts of machine learning and neural networks. I explored the topics of image classification, text classification, linear regression, K-nearest neighbors, support vector machine, and K-means clustering. The two images and text classification neural networks made use of the Fashion MNIST dataset and the Sentiment Analysis training data compiled by Stanford.",
     modalButtonTxt: "View Project on GitHub",
     modalLink: "https://github.com/krushaybhavsar/learning-machine-learning",
     modalImg: "",
@@ -266,7 +266,7 @@ export const otherProjects = [
     modalHeader: "Terrain Generation",
     modalTools: "Processing",
     modalDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "In this project, I used the Processing environment to create an infinite computer-generated terrain. The terrain gets generated using Perlin noise. Perlin noise is a type of gradient noise used by many games for terrain generation and realism.",
     modalButtonTxt: "View Project on GitHub",
     modalLink: "https://github.com/krushaybhavsar/terrain-generator-processing",
     modalImg: "",
@@ -278,7 +278,7 @@ export const otherProjects = [
     modalHeader: "Rubiks Cube Simulation",
     modalTools: "Processing",
     modalDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "This project consists of a three-dimensional Rubiks Cube. Users can interact with the Rubiks Cube by spinning it around and moving it across the screen. The cube can scramble itself as well by performing a series of rotations that are also fully animated. Although the cube can not solve itself, I hope to create an AI in the future that can solve the cube in a short amount of time.",
     modalButtonTxt: "View Project on GitHub",
     modalLink:
       "https://github.com/krushaybhavsar/rubiks-cube-simulation-processing",
@@ -291,7 +291,7 @@ export const otherProjects = [
     modalHeader: "Circle Packing Algorithm",
     modalTools: "Processing",
     modalDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "This project consists of an algorithm that takes in images and animates circles being drawing using the circle packing algorithm. The program spawns a random number of circles at random locations and slowly increases their radius. If one circle touches the border of another, it stops growing. This continues until most of the image is drawn using circles. The program also works with colored images.",
     modalButtonTxt: "View Project on GitHub",
     modalLink:
       "https://github.com/krushaybhavsar/circle-packing-algo-processing",
@@ -304,7 +304,7 @@ export const otherProjects = [
     modalHeader: "Heightmap Renderer",
     modalTools: "Processing",
     modalDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "This project takes grayscale heightmap images and outputs a three-dimensional model. The grayscale value of each pixel in the original heightmap represents the height of a specific area in the 3D model. Heightmaps are commonly used in geographic information systems, where they are called digital elevation models.",
     modalButtonTxt: "View Project on GitHub",
     modalLink:
       "https://github.com/krushaybhavsar/heightmap-renderer-processing",
@@ -338,7 +338,7 @@ export const skillsData = [
     skillIcon: "assets/skills/javascript.svg",
     desc: "JavaScript is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.",
     projectsUsedIn: "Grab It Admin, Portfolio",
-    exp: "65",
+    exp: "80",
   },
   {
     id: 4,
@@ -346,7 +346,7 @@ export const skillsData = [
     skillIcon: "assets/skills/react.svg",
     desc: "React is an open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React applications usually require the use of additional libraries for routing, as well as certain client-side functionality.",
     projectsUsedIn: "Grab It Admin, Portfolio",
-    exp: "55",
+    exp: "70",
   },
   {
     id: 5,
