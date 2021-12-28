@@ -1,5 +1,4 @@
 import "./menu.scss";
-import { Link, Redirect, BrowserRouter as Router } from "react-router-dom";
 
 export default function Menu({ menuOpen, setMenuOpen }) {
   const redirectToLink = (linkURL) => {

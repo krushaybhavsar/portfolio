@@ -15,6 +15,30 @@ export const allProjects = [
   },
   {
     id: 2,
+    title: "Privalink",
+    img: "./assets/projects/privalink.png",
+    modalHeader: "Privalink",
+    modalTools: "JavaScript, HTML, CSS, ReactJS, React Native, Firebase",
+    modalDesc:
+      "Privalink is a tool that allows users to send and receive sensitive data securely via private self-destructing links. The website automatically encrypts data a user would like to privately send and uploads the data to a Firebase database where it is temporarily stored until a Privalink generated link is opened by the recipient.",
+    modalButtonTxt: "View Project",
+    modalLink: "https://privalink.netlify.app/",
+    modalImg: "",
+  },
+  {
+    id: 3,
+    title: "Signslate",
+    img: "./assets/projects/signslate.png",
+    modalHeader: "Signslate",
+    modalTools: "JavaScript, HTML, CSS, ReactJS, Python",
+    modalDesc:
+      "Signslate is a web application that allows users to speak and translate English to American Sign Language (ASL) and ASL to English via webcam or microphone input and displays the ASL translation using web-scraped videos. The site web-scrapes videos using a Flask python server and displays them on a ReactJS frontend for translating speech to ASL, and uses a pre-trained video processing model for translating ASL to speech.",
+    modalButtonTxt: "View Project on GitHub",
+    modalLink: "https://github.com/krushaybhavsar/signslate",
+    modalImg: "",
+  },
+  {
+    id: 4,
     title: "Cubiglide",
     img: "./assets/projects/cubiglide.jpg",
     modalHeader: "Cubiglide",
@@ -27,7 +51,7 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 3,
+    id: 5,
     title: "Grab It Admin",
     img: "./assets/projects/grabitadmin.png",
     modalHeader: "Grab It Admin",
@@ -39,19 +63,19 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 4,
+    id: 6,
     title: "Portfolio",
     img: "./assets/projects/portfoliopic.png",
     modalHeader: "Portfolio",
     modalTools: "ReactJS, JavaScript, HTML, CSS, SASS",
     modalDesc:
       "Built completely with ReactJS, my portfolio is one of the projects I used to learn ReactJS. The site features a landing page, a projects page, a skills page displayed with a Bootstrap slider, and a fully functioning contact me page with ReCAPTCHA verification. The site also contains the link to my resume.",
-    modalButtonTxt: "View Project",
-    modalLink: "https://krushaybhavsar.netlify.app/",
+    modalButtonTxt: "View Project on GitHub",
+    modalLink: "https://github.com/krushaybhavsar/portfolio",
     modalImg: "",
   },
   {
-    id: 5,
+    id: 7,
     title: "Racecar AI",
     img: "./assets/projects/racecars.png",
     modalHeader: "Racecar AI",
@@ -63,7 +87,7 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 6,
+    id: 8,
     title: "Flappy Bird AI",
     img: "./assets/projects/flappy.png",
     modalHeader: "Flappy Bird AI",
@@ -75,7 +99,7 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 7,
+    id: 9,
     title: "Lane Detection Algorithm",
     img: "./assets/projects/lane.png",
     modalHeader: "Lane Detection Algorithm",
@@ -87,7 +111,7 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 8,
+    id: 10,
     title: "Understanding the Basics of ML",
     img: "./assets/projects/basicsml.png",
     modalHeader: "Understanding the Basics of Machine Learning",
@@ -99,7 +123,7 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 9,
+    id: 11,
     title: "Terrain Generation",
     img: "./assets/projects/terrain.png",
     modalHeader: "Terrain Generation",
@@ -111,7 +135,7 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 10,
+    id: 12,
     title: "Rubiks Cube Simulation",
     img: "./assets/projects/rubiks.png",
     modalHeader: "Rubiks Cube Simulation",
@@ -124,7 +148,7 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 11,
+    id: 13,
     title: "Circle Packing Algorithm",
     img: "./assets/projects/circlepacking.png",
     modalHeader: "Circle Packing Algorithm",
@@ -137,7 +161,7 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 12,
+    id: 14,
     title: "Heightmap Renderer",
     img: "./assets/projects/map.png",
     modalHeader: "Heightmap Renderer",
@@ -166,14 +190,38 @@ export const webApps = [
   },
   {
     id: 2,
+    title: "Privalink",
+    img: "./assets/projects/privalink.png",
+    modalHeader: "Privalink",
+    modalTools: "JavaScript, HTML, CSS, ReactJS, React Native, Firebase",
+    modalDesc:
+      "Privalink is a tool that allows users to send and receive sensitive data securely via private self-destructing links. The website automatically encrypts data a user would like to privately send and uploads the data to a Firebase database where it is temporarily stored until a Privalink generated link is opened by the recipient.",
+    modalButtonTxt: "View Project",
+    modalLink: "https://privalink.netlify.app/",
+    modalImg: "",
+  },
+  {
+    id: 3,
+    title: "Signslate",
+    img: "./assets/projects/signslate.png",
+    modalHeader: "Signslate",
+    modalTools: "JavaScript, HTML, CSS, ReactJS, Python",
+    modalDesc:
+      "Signslate is a web application that allows users to speak and translate English to American Sign Language (ASL) and ASL to English via webcam or microphone input and displays the ASL translation using web-scraped videos. The site web-scrapes videos using a Flask python server and displays them on a ReactJS frontend for translating speech to ASL, and uses a pre-trained video processing model for translating ASL to speech.",
+    modalButtonTxt: "View Project on GitHub",
+    modalLink: "https://github.com/krushaybhavsar/signslate",
+    modalImg: "",
+  },
+  {
+    id: 4,
     title: "Portfolio",
     img: "./assets/projects/portfoliopic.png",
     modalHeader: "Portfolio",
     modalTools: "ReactJS, JavaScript, HTML, CSS, SASS",
     modalDesc:
       "Built completely with ReactJS, my portfolio is one of the projects I used to learn ReactJS. The site features a landing page, a projects page, a skills page displayed with a Bootstrap slider, and a fully functioning contact me page with ReCAPTCHA verification. The site also contains the link to my resume.",
-    modalButtonTxt: "View Project",
-    modalLink: "https://krushaybhavsar.netlify.app/",
+    modalButtonTxt: "View Project on GitHub",
+    modalLink: "https://github.com/krushaybhavsar/portfolio",
     modalImg: "",
   },
 ];
@@ -194,6 +242,18 @@ export const mobileApps = [
   },
   {
     id: 2,
+    title: "Privalink",
+    img: "./assets/projects/privalink.png",
+    modalHeader: "Privalink",
+    modalTools: "JavaScript, HTML, CSS, ReactJS, React Native, Firebase",
+    modalDesc:
+      "Privalink is a tool that allows users to send and receive sensitive data securely via private self-destructing links. The website automatically encrypts data a user would like to privately send and uploads the data to a Firebase database where it is temporarily stored until a Privalink generated link is opened by the recipient.",
+    modalButtonTxt: "View Project",
+    modalLink: "https://privalink.netlify.app/",
+    modalImg: "",
+  },
+  {
+    id: 3,
     title: "Cubiglide",
     img: "./assets/projects/cubiglide.jpg",
     modalHeader: "Cubiglide",
@@ -321,7 +381,7 @@ export const skillsData = [
     skillIcon: "assets/skills/python.svg",
     desc: "Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation.",
     projectsUsedIn:
-      "Racecar AI, Flappy Bird AI, Lane Detection Algorithm, Understanding the Basics of Machine Learning",
+      "Signslate, Racecar AI, Flappy Bird AI, Lane Detection Algorithm, Understanding the Basics of Machine Learning",
     exp: "80",
   },
   {
@@ -337,7 +397,7 @@ export const skillsData = [
     title: "JavaScript",
     skillIcon: "assets/skills/javascript.svg",
     desc: "JavaScript is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.",
-    projectsUsedIn: "Grab It Admin, Portfolio",
+    projectsUsedIn: "Grab It Admin, Privalink, Signslate, Portfolio",
     exp: "80",
   },
   {
@@ -345,7 +405,7 @@ export const skillsData = [
     title: "ReactJS",
     skillIcon: "assets/skills/react.svg",
     desc: "React is an open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React applications usually require the use of additional libraries for routing, as well as certain client-side functionality.",
-    projectsUsedIn: "Grab It Admin, Portfolio",
+    projectsUsedIn: "Grab It Admin, Privalink, Signslate, Portfolio",
     exp: "70",
   },
   {
@@ -353,7 +413,7 @@ export const skillsData = [
     title: "HTML",
     skillIcon: "assets/skills/html.svg",
     desc: "The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.",
-    projectsUsedIn: "Grab It Admin, Portfolio",
+    projectsUsedIn: "Grab It Admin, Privalink, Signslate, Portfolio",
     exp: "70",
   },
   {
@@ -361,7 +421,7 @@ export const skillsData = [
     title: "CSS",
     skillIcon: "assets/skills/css.svg",
     desc: "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.",
-    projectsUsedIn: "Grab It Admin, Portfolio",
+    projectsUsedIn: "Grab It Admin, Privalink, Signslate, Portfolio",
     exp: "65",
   },
   {
@@ -377,7 +437,8 @@ export const skillsData = [
     title: "Firebase",
     skillIcon: "assets/skills/firebase.png",
     desc: "Firebase is a platform developed by Google for creating mobile and web applications. It was originally an independent company founded in 2011. In 2014, Google acquired the platform and it is now their flagship offering for app development.",
-    projectsUsedIn: "Grab It - An E-commerce Application, Grab It Admin",
+    projectsUsedIn:
+      "Grab It - An E-commerce Application, Grab It Admin, Privalink",
     exp: "70",
   },
   {
