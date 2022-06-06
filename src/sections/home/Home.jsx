@@ -1,4 +1,4 @@
-import { ExpandMore } from "@material-ui/icons";
+// import { ExpandMore } from "@material-ui/icons";
 import "./home.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";

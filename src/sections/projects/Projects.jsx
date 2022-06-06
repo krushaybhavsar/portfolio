@@ -24,10 +24,6 @@ export default function Projects({
     setModalState(true);
   };
 
-  const redirectToLink = (linkURL) => {
-    window.open(linkURL, "_blank");
-  };
-
   // Categories
   const [selected, setSelected] = useState("all");
   const [data, setData] = useState([]);
@@ -80,7 +76,11 @@ export default function Projects({
         className={`modalBackground modalShowing-${modalState}`}
         onClick={() => setModalState(false)}
       >
-        <div id="modal" className="modalInner">
+        <div
+          id="modal"
+          className="modalInner"
+          onClick={(e) => e.stopPropagation()}
+        >
           <div className="rightWrapper">
             <div className="modalText">
               <h2 className="modalHeaderText">{modalInfo.modalHeader}</h2>
@@ -89,7 +89,7 @@ export default function Projects({
               <form className="buttonContainer">
                 <button
                   className="linkButton"
-                  onClick={() => redirectToLink(modalInfo.modalLink)}
+                  onClick={() => window.open(modalInfo.modalLink, "_blank")}
                 >
                   {modalInfo.modalButtonTxt}
                 </button>
@@ -113,7 +113,7 @@ export default function Projects({
       </div>
       <h1>Featured Projects</h1>
       <ul>
-        {list.map((item) => (
+        {list.map((item, index) => (
           <ProjectList
             title={item.title}
             active={selected === item.id}
@@ -123,8 +123,8 @@ export default function Projects({
         ))}
       </ul>
       <div className="container">
-        {data.map((d) => (
-          <div className="item" onClick={() => openModal(d.id)}>
+        {data.map((d, index) => (
+          <div className="item" onClick={() => openModal(index + 1)}>
             <img src={d.img} alt="" />
             <h3>{d.title}</h3>
           </div>

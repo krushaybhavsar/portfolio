@@ -1,6 +1,6 @@
 import React from "react";
 import "./topbar.scss";
-import { Person, Mail, GetApp, GetAppRounded } from "@material-ui/icons";
+import { GetAppRounded, Mail, Person } from "@mui/icons-material";
 import "../../sections/projects/Projects.jsx";
 import { Link } from "react-router-dom";
 

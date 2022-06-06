@@ -14,11 +14,11 @@ export default function Skills() {
     <div className="skills" id="skills">
       <h1 className="sectionTitle">Skills</h1>
       <div className="labelContainer">
-        {sliderData.map((ld) => (
+        {sliderData.map((ld, id) => (
           <div
             className="label"
             data-target="#skillsCarousel"
-            data-slide-to={ld.id - 1}
+            data-slide-to={id}
           >
             <p className="labelText">{ld.title}</p>
           </div>
@@ -34,10 +34,10 @@ export default function Skills() {
           data-bs-interval="true"
         >
           <div class="carousel-inner">
-            {sliderData.map((sd) => (
+            {sliderData.map((sd, index) => (
               <div
                 className={
-                  sd.id === 1 ? "carousel-item active" : "carousel-item"
+                  index === 0 ? "carousel-item active" : "carousel-item"
                 }
               >
                 <div className="skillItem">

@@ -1,7 +1,6 @@
 // ===============v Projects section v===============
 export const allProjects = [
   {
-    id: 1,
     title: "Grab It",
     img: "./assets/projects/grabitapp.png",
     modalHeader: "Grab It",
@@ -14,7 +13,6 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 2,
     title: "Privalink",
     img: "./assets/projects/privalink.png",
     modalHeader: "Privalink",
@@ -26,7 +24,17 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 3,
+    title: "Tileshift",
+    img: "./assets/projects/tileshift.png",
+    modalHeader: "Tileshift",
+    modalTools: "Typescript, JavaScript, HTML, CSS, ReactJS, Firebase",
+    modalDesc:
+      "Tileshift is a daily web-based word puzzle game. The goal of the game is to align tiles to spell a word and turn them green. To win the game, players must use all the tiles at least within thirty moves. In addition, players can compete against friends and share their results.",
+    modalButtonTxt: "View Project",
+    modalLink: "https://tileshiftgame.com/",
+    modalImg: "",
+  },
+  {
     title: "Signslate",
     img: "./assets/projects/signslate.png",
     modalHeader: "Signslate",
@@ -38,7 +46,17 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 4,
+    title: "Mind Board",
+    img: "./assets/projects/mind-board.png",
+    modalHeader: "Mind Board",
+    modalTools: "JavaScript, HTML, CSS, ReactJS, Python",
+    modalDesc:
+      "Mind Board is a platform that allows users to track their daily mental health by providing text or video information on how different aspects of their day went. Using deep learning and statistical analysis, users are provided a mental health score, depending on the data they provide on the website. In addition, users can view graphs of how their mental health scores have changed over time, alongside graphs of what factors contribute most to their mental health.",
+    modalButtonTxt: "View Project on GitHub",
+    modalLink: "https://github.com/krushaybhavsar/mood-tracker",
+    modalImg: "",
+  },
+  {
     title: "Cubiglide",
     img: "./assets/projects/cubiglide.jpg",
     modalHeader: "Cubiglide",
@@ -51,7 +69,6 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 5,
     title: "Grab It Admin",
     img: "./assets/projects/grabitadmin.png",
     modalHeader: "Grab It Admin",
@@ -63,7 +80,6 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 6,
     title: "Portfolio",
     img: "./assets/projects/portfoliopic.png",
     modalHeader: "Portfolio",
@@ -75,7 +91,6 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 7,
     title: "Racecar AI",
     img: "./assets/projects/racecars.png",
     modalHeader: "Racecar AI",
@@ -87,7 +102,6 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 8,
     title: "Flappy Bird AI",
     img: "./assets/projects/flappy.png",
     modalHeader: "Flappy Bird AI",
@@ -99,7 +113,6 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 9,
     title: "Lane Detection Algorithm",
     img: "./assets/projects/lane.png",
     modalHeader: "Lane Detection Algorithm",
@@ -111,7 +124,6 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 10,
     title: "Understanding the Basics of ML",
     img: "./assets/projects/basicsml.png",
     modalHeader: "Understanding the Basics of Machine Learning",
@@ -123,7 +135,6 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 11,
     title: "Terrain Generation",
     img: "./assets/projects/terrain.png",
     modalHeader: "Terrain Generation",
@@ -135,7 +146,6 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 12,
     title: "Rubiks Cube Simulation",
     img: "./assets/projects/rubiks.png",
     modalHeader: "Rubiks Cube Simulation",
@@ -148,7 +158,6 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 13,
     title: "Circle Packing Algorithm",
     img: "./assets/projects/circlepacking.png",
     modalHeader: "Circle Packing Algorithm",
@@ -161,7 +170,6 @@ export const allProjects = [
     modalImg: "",
   },
   {
-    id: 14,
     title: "Heightmap Renderer",
     img: "./assets/projects/map.png",
     modalHeader: "Heightmap Renderer",
@@ -177,7 +185,6 @@ export const allProjects = [
 
 export const webApps = [
   {
-    id: 1,
     title: "Grab It Admin",
     img: "./assets/projects/grabitadmin.png",
     modalHeader: "Grab It Admin",
@@ -189,7 +196,6 @@ export const webApps = [
     modalImg: "",
   },
   {
-    id: 2,
     title: "Privalink",
     img: "./assets/projects/privalink.png",
     modalHeader: "Privalink",
@@ -201,7 +207,17 @@ export const webApps = [
     modalImg: "",
   },
   {
-    id: 3,
+    title: "Tileshift",
+    img: "./assets/projects/tileshift.png",
+    modalHeader: "Tileshift",
+    modalTools: "Typescript, JavaScript, HTML, CSS, ReactJS, Firebase",
+    modalDesc:
+      "Tileshift is a daily web-based word puzzle game. The goal of the game is to align tiles to spell a word and turn them green. To win the game, players must use all the tiles at least within thirty moves. In addition, players can compete against friends and share their results.",
+    modalButtonTxt: "View Project",
+    modalLink: "https://tileshiftgame.com/",
+    modalImg: "",
+  },
+  {
     title: "Signslate",
     img: "./assets/projects/signslate.png",
     modalHeader: "Signslate",
@@ -213,7 +229,17 @@ export const webApps = [
     modalImg: "",
   },
   {
-    id: 4,
+    title: "Mind Board",
+    img: "./assets/projects/mind-board.png",
+    modalHeader: "Mind Board",
+    modalTools: "JavaScript, HTML, CSS, ReactJS, Python",
+    modalDesc:
+      "Mind Board is a platform that allows users to track their daily mental health by providing text or video information on how different aspects of their day went. Using deep learning and statistical analysis, users are provided a mental health score, depending on the data they provide on the website. In addition, users can view graphs of how their mental health scores have changed over time, alongside graphs of what factors contribute most to their mental health.",
+    modalButtonTxt: "View Project on GitHub",
+    modalLink: "https://github.com/krushaybhavsar/mood-tracker",
+    modalImg: "",
+  },
+  {
     title: "Portfolio",
     img: "./assets/projects/portfoliopic.png",
     modalHeader: "Portfolio",
@@ -228,7 +254,6 @@ export const webApps = [
 
 export const mobileApps = [
   {
-    id: 1,
     title: "Grab It",
     img: "./assets/projects/grabitapp.png",
     modalHeader: "Grab It",
@@ -241,7 +266,6 @@ export const mobileApps = [
     modalImg: "",
   },
   {
-    id: 2,
     title: "Privalink",
     img: "./assets/projects/privalink.png",
     modalHeader: "Privalink",
@@ -253,7 +277,6 @@ export const mobileApps = [
     modalImg: "",
   },
   {
-    id: 3,
     title: "Cubiglide",
     img: "./assets/projects/cubiglide.jpg",
     modalHeader: "Cubiglide",
@@ -269,7 +292,28 @@ export const mobileApps = [
 
 export const machineLearning = [
   {
-    id: 1,
+    title: "Signslate",
+    img: "./assets/projects/signslate.png",
+    modalHeader: "Signslate",
+    modalTools: "JavaScript, HTML, CSS, ReactJS, Python",
+    modalDesc:
+      "Signslate is a web application that allows users to speak and translate English to American Sign Language (ASL) and ASL to English via webcam or microphone input and displays the ASL translation using web-scraped videos. The site web-scrapes videos using a Flask python server and displays them on a ReactJS frontend for translating speech to ASL, and uses a pre-trained video processing model for translating ASL to speech.",
+    modalButtonTxt: "View Project on GitHub",
+    modalLink: "https://github.com/krushaybhavsar/signslate",
+    modalImg: "",
+  },
+  {
+    title: "Mind Board",
+    img: "./assets/projects/mind-board.png",
+    modalHeader: "Mind Board",
+    modalTools: "JavaScript, HTML, CSS, ReactJS, Python",
+    modalDesc:
+      "Mind Board is a platform that allows users to track their daily mental health by providing text or video information on how different aspects of their day went. Using deep learning and statistical analysis, users are provided a mental health score, depending on the data they provide on the website. In addition, users can view graphs of how their mental health scores have changed over time, alongside graphs of what factors contribute most to their mental health.",
+    modalButtonTxt: "View Project on GitHub",
+    modalLink: "https://github.com/krushaybhavsar/mood-tracker",
+    modalImg: "",
+  },
+  {
     title: "Racecar AI",
     img: "./assets/projects/racecars.png",
     modalHeader: "Racecar AI",
@@ -281,7 +325,6 @@ export const machineLearning = [
     modalImg: "",
   },
   {
-    id: 2,
     title: "Flappy Bird AI",
     img: "./assets/projects/flappy.png",
     modalHeader: "Flappy Bird AI",
@@ -293,7 +336,6 @@ export const machineLearning = [
     modalImg: "",
   },
   {
-    id: 3,
     title: "Lane Detection Algorithm",
     img: "./assets/projects/lane.png",
     modalHeader: "Lane Detection Algorithm",
@@ -305,7 +347,6 @@ export const machineLearning = [
     modalImg: "",
   },
   {
-    id: 4,
     title: "Understanding the Basics of ML",
     img: "./assets/projects/basicsml.png",
     modalHeader: "Understanding the Basics of Machine Learning",
@@ -320,7 +361,6 @@ export const machineLearning = [
 
 export const otherProjects = [
   {
-    id: 1,
     title: "Terrain Generation",
     img: "./assets/projects/terrain.png",
     modalHeader: "Terrain Generation",
@@ -332,7 +372,6 @@ export const otherProjects = [
     modalImg: "",
   },
   {
-    id: 2,
     title: "Rubiks Cube Simulation",
     img: "./assets/projects/rubiks.png",
     modalHeader: "Rubiks Cube Simulation",
@@ -345,7 +384,6 @@ export const otherProjects = [
     modalImg: "",
   },
   {
-    id: 3,
     title: "Circle Packing Algorithm",
     img: "./assets/projects/circlepacking.png",
     modalHeader: "Circle Packing Algorithm",
@@ -358,7 +396,6 @@ export const otherProjects = [
     modalImg: "",
   },
   {
-    id: 4,
     title: "Heightmap Renderer",
     img: "./assets/projects/map.png",
     modalHeader: "Heightmap Renderer",
@@ -376,7 +413,6 @@ export const otherProjects = [
 // ===============v Skills section v===============
 export const skillsData = [
   {
-    id: 1,
     title: "Python",
     skillIcon: "assets/skills/python.svg",
     desc: "Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation.",
@@ -385,7 +421,6 @@ export const skillsData = [
     exp: "80",
   },
   {
-    id: 2,
     title: "Java",
     skillIcon: "assets/skills/java.svg",
     desc: "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let application developers write once.",
@@ -393,7 +428,13 @@ export const skillsData = [
     exp: "70",
   },
   {
-    id: 3,
+    title: "TypeScript",
+    skillIcon: "assets/skills/typescript.png",
+    desc: "TypeScript is a programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language. It is designed for the development of large applications and transpiles to JavaScript.",
+    projectsUsedIn: "Tileshift, Mind Board",
+    exp: "80",
+  },
+  {
     title: "JavaScript",
     skillIcon: "assets/skills/javascript.svg",
     desc: "JavaScript is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.",
@@ -401,7 +442,6 @@ export const skillsData = [
     exp: "80",
   },
   {
-    id: 4,
     title: "ReactJS",
     skillIcon: "assets/skills/react.svg",
     desc: "React is an open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React applications usually require the use of additional libraries for routing, as well as certain client-side functionality.",
@@ -409,7 +449,6 @@ export const skillsData = [
     exp: "70",
   },
   {
-    id: 5,
     title: "HTML",
     skillIcon: "assets/skills/html.svg",
     desc: "The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.",
@@ -417,7 +456,6 @@ export const skillsData = [
     exp: "70",
   },
   {
-    id: 6,
     title: "CSS",
     skillIcon: "assets/skills/css.svg",
     desc: "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.",
@@ -425,7 +463,6 @@ export const skillsData = [
     exp: "65",
   },
   {
-    id: 7,
     title: "C#",
     skillIcon: "assets/skills/csharp.svg",
     desc: "C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines.",
@@ -433,7 +470,6 @@ export const skillsData = [
     exp: "40",
   },
   {
-    id: 8,
     title: "Firebase",
     skillIcon: "assets/skills/firebase.png",
     desc: "Firebase is a platform developed by Google for creating mobile and web applications. It was originally an independent company founded in 2011. In 2014, Google acquired the platform and it is now their flagship offering for app development.",
@@ -442,7 +478,6 @@ export const skillsData = [
     exp: "70",
   },
   {
-    id: 9,
     title: "Git",
     skillIcon: "assets/skills/git.svg",
     desc: "Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows.",
@@ -450,7 +485,6 @@ export const skillsData = [
     exp: "75",
   },
   {
-    id: 10,
     title: "OpenCV",
     skillIcon: "assets/skills/opencv.svg",
     desc: "OpenCV is a library of programming functions mainly aimed at real-time computer vision. The library is cross-platform and under the open-source Apache 2 License. OpenCV is written in C++ and its primary interface is in C++, but there are bindings in Python, Java and MATLAB/OCTAVE.",
@@ -458,7 +492,6 @@ export const skillsData = [
     exp: "50",
   },
   {
-    id: 11,
     title: "NumPy",
     skillIcon: "assets/skills/numpy.png",
     desc: "NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.",
@@ -467,7 +500,6 @@ export const skillsData = [
     exp: "40",
   },
   {
-    id: 12,
     title: "TensorFlow",
     skillIcon: "assets/skills/tensorflow.png",
     desc: "TensorFlow is a free and open-source software library for machine learning. It can be used across a range of tasks but has a particular focus on training and inference of deep neural networks. Tensorflow is a symbolic math library based on dataflow and differentiable programming.",
@@ -475,7 +507,6 @@ export const skillsData = [
     exp: "50",
   },
   {
-    id: 13,
     title: "Unity",
     skillIcon: "assets/skills/unity.svg",
     desc: "Unity is a cross-platform game engine developed by Unity Technologies, first announced and released in June 2005. The engine has been gradually extended to support a variety of desktop, mobile, console and virtual reality platforms. It is particularly popular for iOS and Android mobile game development.",
@@ -483,7 +514,6 @@ export const skillsData = [
     exp: "75",
   },
   {
-    id: 14,
     title: "Processing",
     skillIcon: "assets/skills/processing.png",
     desc: "Processing is a graphical library and integrated development environment built for the electronic arts, new media art, and visual design communities.",
