@@ -1,8 +1,5 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +7,64 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Monarcha', sans-serif;
+}
+
+html {
+  --darkBackground: #1E1F23;
+  --mainWhite: #fafafa;
+
+  /* intro section bg colors */
+  --color-bg1: rgb(108, 0, 162);
+  --color-bg2: rgb(0, 17, 82);
+  --color1: 18, 113, 255;
+  --color2: 221, 74, 255;
+  --color3: 100, 220, 255;
+  --color4: 200, 50, 50;
+  --color5: 180, 180, 50;
+  --color-interactive: 140, 100, 255;
+  --circle-size: 75%;
+  --blending: hard-light;
+
+  /* blob colors */
+  --yellow: #F9CE34;
+  --pink: #ee2a7b;
+  --purple: #6228d7;
+
+  /* --primaryYellow: #f9d423;
+  --lighterYellow: #FDF2BD;
+  --cookieBrown: #b28a62;
+  --whiteBackground: #fafafa;
+  --blackText: #000000;
+  --lightGrey: #e2e2e2;
+  --darkerGrey: #6b6b6b;
+  --errorRed: #ff403b;
+  --successGreen: #4bb543; */
+}
+
+@font-face {
+  font-family: 'Monarcha';
+  src: url('./assets/fonts/Monarcha/Monarcha.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.noise {}
+
+.noise::before {
+  content: "";
+  background-image: url('./assets/noise-light.png');
+  background-size: repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.33;
 }
