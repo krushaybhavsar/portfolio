@@ -1,0 +1,40 @@
+.navbar {
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+  z-index: 100;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 100%;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+.navbar__menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--mainWhite);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
