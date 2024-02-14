@@ -5,6 +5,8 @@ import Navbar from "../../components/Navbar/Navbar";
 import { Coord } from "../../types";
 
 const LandingScreen = () => {
+  const interactiveBlobIsEnabled = false;
+
   const [targetXY, setTargetXY] = useState<Coord>({
     x: 0,
     y: 0,
@@ -16,6 +18,7 @@ const LandingScreen = () => {
   });
 
   useEffect(() => {
+    if (!interactiveBlobIsEnabled) return;
     const update = (e: any) => {
       const { clientX, clientY } = e.touches ? e.touches[0] : e;
       setTargetXY({ x: clientX, y: clientY });
@@ -29,6 +32,7 @@ const LandingScreen = () => {
   }, []);
 
   const moveInteractiveBlob = () => {
+    if (!interactiveBlobIsEnabled) return;
     const newX = blobCurrXY.x + (targetXY.x - blobCurrXY.x) / 10;
     const newY = blobCurrXY.y + (targetXY.y - blobCurrXY.y) / 10;
     setBlobCurrXY({ x: newX, y: newY });
@@ -41,7 +45,10 @@ const LandingScreen = () => {
       onTouchMove={moveInteractiveBlob}
     >
       <Navbar />
-      <IntroSection blobCurrXY={blobCurrXY} />
+      <IntroSection
+        blobCurrXY={blobCurrXY}
+        iblobEnabled={interactiveBlobIsEnabled}
+      />
     </div>
   );
 };

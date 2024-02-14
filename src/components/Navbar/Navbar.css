@@ -3,18 +3,28 @@
   height: fit-content;
   position: fixed;
   z-index: 100;
-  padding: 16px;
+  padding: 24px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navbar__logo-container {
+.navbar__socials-container {
   display: flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
   height: 100%;
+  margin-left: 24px;
+}
+
+.navbar__socials-container>a {
+  margin: 0 10px;
+}
+
+.navbar__socials-item {
+  color: var(--mainWhite);
+  cursor: pointer;
 }
 
 .navbar__menu {
@@ -32,7 +42,7 @@
   justify-content: center;
   height: 100%;
   margin: 0 1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: var(--mainWhite);
   cursor: pointer;

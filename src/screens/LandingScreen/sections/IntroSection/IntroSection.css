@@ -64,24 +64,29 @@
   outline: none;
   background: none;
   color: var(--mainWhite);
-  margin-top: 24px;
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  margin-top: 40px;
+  padding: 0.75rem 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
 }
 
 .isec__left .cta-icon {
-  width: 30px;
+  width: 20px;
   margin-top: 2px;
-  margin-left: 0.5rem;
-  fill: var(--mainWhite);
+  margin-left: 0.6rem;
+  /* fill: var(--mainWhite); */
+  transition: all 0.25s ease;
 }
 
 .isec__left .cta-button:hover {
   background-color: var(--mainWhite);
   color: var(--mainBlack);
+}
+
+.isec__left .cta-button:hover .cta-icon {
+  margin-left: 0.85rem;
 }

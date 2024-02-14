@@ -6,12 +6,16 @@ import { ReactComponent as RightArrow } from "../../../../assets/arrow-right.svg
 
 type IntroSectionProps = {
   blobCurrXY: Coord;
+  iblobEnabled: boolean;
 };
 
 const IntroSection = (props: IntroSectionProps) => {
   return (
     <div className="intro-section">
-      <BlobBackground blobCurrXY={props.blobCurrXY} />
+      <BlobBackground
+        blobCurrXY={props.blobCurrXY}
+        iblobEnabled={props.iblobEnabled}
+      />
       <div className="isec__left">
         <div className="text-container">
           <h1 className="title">hey, i'm krushay.</h1>

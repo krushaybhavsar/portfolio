@@ -3,6 +3,7 @@ import "./BlobBackground.css";
 
 type BlobBackgroundProps = {
   blobCurrXY: { x: number; y: number };
+  iblobEnabled: boolean;
 };
 
 const BlobBackground = (props: BlobBackgroundProps) => {
@@ -32,12 +33,14 @@ const BlobBackground = (props: BlobBackgroundProps) => {
         <div className="g3"></div>
         <div className="g4"></div>
         {/* <div className="g5"></div> */}
-        <div
-          className="interactive"
-          style={{
-            transform: `translate(${props.blobCurrXY.x}px, ${props.blobCurrXY.y}px)`,
-          }}
-        ></div>
+        {props.iblobEnabled && (
+          <div
+            className="interactive"
+            style={{
+              transform: `translate(${props.blobCurrXY.x}px, ${props.blobCurrXY.y}px)`,
+            }}
+          ></div>
+        )}
       </div>
     </div>
   );
