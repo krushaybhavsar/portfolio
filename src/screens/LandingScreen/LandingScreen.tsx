@@ -32,7 +32,7 @@ const LandingScreen = () => {
         window.removeEventListener("touchmove", update);
       };
     }
-  }, []);
+  }, [interactiveBlobIsEnabled]);
 
   const moveInteractiveBlob = () => {
     const newX = blobCurrXY.x + (targetXY.x - blobCurrXY.x) / 10;

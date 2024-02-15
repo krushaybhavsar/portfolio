@@ -79,6 +79,7 @@ html {
 .animated-underline {
   display: block;
   position: relative;
+  cursor: pointer;
 }
 
 .animated-underline::after {

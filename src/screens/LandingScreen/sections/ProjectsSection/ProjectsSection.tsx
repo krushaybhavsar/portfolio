@@ -1,8 +1,6 @@
 import React from "react";
 import "./ProjectsSection.css";
 import { LandingPageSectionProps } from "../../../../types";
-import BlobBackground from "../../../../components/BlobBackground/BlobBackground";
-
 type ProjectsSectionProps = {} & LandingPageSectionProps;
 
 const ProjectsSection = (props: ProjectsSectionProps) => {

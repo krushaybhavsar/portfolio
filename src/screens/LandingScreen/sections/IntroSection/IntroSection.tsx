@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./IntroSection.css";
 import BlobBackground from "../../../../components/BlobBackground/BlobBackground";
 import { Coord, LandingPageSectionProps } from "../../../../types";
@@ -21,8 +21,11 @@ const IntroSection = (props: IntroSectionProps) => {
         <div className="text-container">
           <h1 className="title">hey, i'm krushay.</h1>
           <h3 className="subtitle">
-            software developer <div className="bullet-dot" /> cs student
-            <div className="bullet-dot" /> tech enthusiast
+            <p className="animated-underline">software developer</p>{" "}
+            <div className="bullet-dot" />
+            <p className="animated-underline">cs student</p>
+            <div className="bullet-dot" />
+            <p className="animated-underline">tech enthusiast</p>
           </h3>
           <Link className="cta-button" to="#experience" smooth>
             discover my journey <RightArrow className="cta-icon" />

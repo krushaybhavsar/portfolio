@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import "./Timeline.css";
 import { TimelineElementExperience } from "../../types";
-import moment from "moment";
 
 type TimelineSegmentProps = {
   key?: any;
