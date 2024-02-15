@@ -1,0 +1,13 @@
+.contact-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  /* ===== temp ===== */
+  height: 100vh;
+  border-top: 1px solid white;
+  /* ===== temp ===== */
+}

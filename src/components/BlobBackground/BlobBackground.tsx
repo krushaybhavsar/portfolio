@@ -8,7 +8,7 @@ type BlobBackgroundProps = {
 
 const BlobBackground = (props: BlobBackgroundProps) => {
   return (
-    <div className="gradient-bg noise">
+    <div className="gradient-bg">
       <svg xmlns="http://www.w3.org/2000/svg">
         <defs>
           <filter id="goo">

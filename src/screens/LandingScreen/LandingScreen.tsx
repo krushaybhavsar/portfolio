@@ -3,10 +3,12 @@ import "./LandingScreen.css";
 import IntroSection from "./sections/IntroSection/IntroSection";
 import Navbar from "../../components/Navbar/Navbar";
 import { Coord } from "../../types";
+import ExperienceSection from "./sections/ExperienceSection/ExperienceSection";
+import ProjectsSection from "./sections/ProjectsSection/ProjectsSection";
+import ContactSection from "./sections/ContactSection/ContactSection";
 
 const LandingScreen = () => {
   const interactiveBlobIsEnabled = false;
-
   const [targetXY, setTargetXY] = useState<Coord>({
     x: 0,
     y: 0,
@@ -18,21 +20,21 @@ const LandingScreen = () => {
   });
 
   useEffect(() => {
-    if (!interactiveBlobIsEnabled) return;
-    const update = (e: any) => {
-      const { clientX, clientY } = e.touches ? e.touches[0] : e;
-      setTargetXY({ x: clientX, y: clientY });
-    };
-    window.addEventListener("mousemove", update);
-    window.addEventListener("touchmove", update);
-    return () => {
-      window.removeEventListener("mousemove", update);
-      window.removeEventListener("touchmove", update);
-    };
+    if (interactiveBlobIsEnabled) {
+      const update = (e: any) => {
+        const { clientX, clientY } = e.touches ? e.touches[0] : e;
+        setTargetXY({ x: clientX, y: clientY });
+      };
+      window.addEventListener("mousemove", update);
+      window.addEventListener("touchmove", update);
+      return () => {
+        window.removeEventListener("mousemove", update);
+        window.removeEventListener("touchmove", update);
+      };
+    }
   }, []);
 
   const moveInteractiveBlob = () => {
-    if (!interactiveBlobIsEnabled) return;
     const newX = blobCurrXY.x + (targetXY.x - blobCurrXY.x) / 10;
     const newY = blobCurrXY.y + (targetXY.y - blobCurrXY.y) / 10;
     setBlobCurrXY({ x: newX, y: newY });
@@ -41,14 +43,18 @@ const LandingScreen = () => {
   return (
     <div
       className="landing-screen"
-      onMouseMove={moveInteractiveBlob}
-      onTouchMove={moveInteractiveBlob}
+      onMouseMove={interactiveBlobIsEnabled ? moveInteractiveBlob : undefined}
+      onTouchMove={interactiveBlobIsEnabled ? moveInteractiveBlob : undefined}
     >
       <Navbar />
       <IntroSection
+        sectionID="intro"
         blobCurrXY={blobCurrXY}
         iblobEnabled={interactiveBlobIsEnabled}
       />
+      <ExperienceSection sectionID="experience" />
+      <ProjectsSection sectionID="projects" />
+      <ContactSection sectionID="contact" />
     </div>
   );
 };

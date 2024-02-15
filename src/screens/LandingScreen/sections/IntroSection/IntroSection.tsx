@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./IntroSection.css";
 import BlobBackground from "../../../../components/BlobBackground/BlobBackground";
-import { Coord } from "../../../../types";
+import { Coord, LandingPageSectionProps } from "../../../../types";
 import { ReactComponent as RightArrow } from "../../../../assets/arrow-right.svg";
+import { HashLink as Link } from "react-router-hash-link";
 
 type IntroSectionProps = {
   blobCurrXY: Coord;
   iblobEnabled: boolean;
-};
+} & LandingPageSectionProps;
 
 const IntroSection = (props: IntroSectionProps) => {
   return (
-    <div className="intro-section">
+    <div className="intro-section noise" id={props.sectionID}>
       <BlobBackground
         blobCurrXY={props.blobCurrXY}
         iblobEnabled={props.iblobEnabled}
@@ -23,9 +24,9 @@ const IntroSection = (props: IntroSectionProps) => {
             software developer <div className="bullet-dot" /> cs student
             <div className="bullet-dot" /> tech enthusiast
           </h3>
-          <button className="cta-button">
+          <Link className="cta-button" to="#experience" smooth>
             discover my journey <RightArrow className="cta-icon" />
-          </button>
+          </Link>
         </div>
       </div>
       <div className="isec__right"></div>

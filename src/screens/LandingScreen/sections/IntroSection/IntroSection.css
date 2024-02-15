@@ -72,6 +72,8 @@
   align-items: center;
   justify-content: center;
   transition: all 0.25s ease;
+  width: fit-content;
+  text-decoration: none;
 }
 
 .isec__left .cta-icon {

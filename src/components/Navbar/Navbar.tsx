@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { ReactComponent as LinkedIn } from "../../assets/linkedin.svg";
 import { ReactComponent as Github } from "../../assets/github.svg";
 import { ReactComponent as Instagram } from "../../assets/instagram.svg";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   return (
@@ -35,10 +36,41 @@ const Navbar = () => {
         </a>
       </div>
       <div className="navbar__menu">
-        <div className="navbar__menu-item animated-underline">journey</div>
-        <div className="navbar__menu-item animated-underline">projects</div>
-        <div className="navbar__menu-item animated-underline">blog</div>
-        <div className="navbar__menu-item animated-underline">contact</div>
+        <Link
+          to={"#intro"}
+          smooth
+          className="navbar__menu-item animated-underline"
+        >
+          about
+        </Link>
+        <Link
+          to={"#experience"}
+          smooth
+          className="navbar__menu-item animated-underline"
+        >
+          journey
+        </Link>
+        <Link
+          to={"#projects"}
+          smooth
+          className="navbar__menu-item animated-underline"
+        >
+          projects
+        </Link>
+        <Link
+          to={"#contact"}
+          smooth
+          className="navbar__menu-item animated-underline"
+        >
+          contact
+        </Link>
+        {/* <Link
+          to={"blog"}
+          smooth
+          className="navbar__menu-item animated-underline"
+        >
+          blog
+        </Link> */}
         <div
           className="navbar__menu-item animated-underline"
           onClick={() => {
