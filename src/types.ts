@@ -20,3 +20,17 @@ export type TimelineElementExperience = {
     hyperlink: string;
   }[];
 };
+
+export type ProjectCarouselCard = {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+  skillsUsed: string[];
+  links: {
+    icon?: string;
+    previewImage?: string;
+    displayText?: string;
+    hyperlink: string;
+  }[];
+};

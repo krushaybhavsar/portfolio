@@ -8,7 +8,6 @@
   z-index: 1;
   padding-top: var(--navbarHeight);
   /* ===== temp ===== */
-  height: fit-content;
   min-height: 100vh;
   /* border-top: 1px solid white; */
   /* ===== temp ===== */
@@ -19,4 +18,5 @@
   font-weight: normal;
   color: var(--mainWhite);
   margin: 1rem 0;
+  z-index: 1;
 }

@@ -91,12 +91,17 @@
 
 /* Style content */
 .timeline .content {
-  border: 1px solid var(--mainWhite);
+  /* border: 1px solid var(--mainWhite); */
   position: absolute;
   width: fit-content;
   min-width: var(--timeline-content-width);
   top: 50%;
   transform: translateY(-50%);
+  transition: all 0.2s ease;
+}
+
+.timeline .content:hover {
+  transform: translateY(-50%) scale(1.025);
 }
 
 .timeline li:nth-child(odd) .content {
@@ -180,7 +185,7 @@
   font-weight: normal;
   color: var(--mainWhite);
   margin-top: 1.5rem;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   width: 100%;
   text-align: start;
 }
@@ -213,5 +218,5 @@
   color: var(--mainWhite);
   font-size: 0.8rem;
   font-weight: normal;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }

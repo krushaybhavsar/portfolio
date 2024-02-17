@@ -1,14 +1,21 @@
 .projects-section {
   width: 100%;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   z-index: 1;
-  /* ===== temp ===== */
-  overflow: hidden;
+  padding-top: var(--navbarHeight);
   height: 100vh;
+  /* ===== temp ===== */
   /* border-top: 1px solid white; */
   /* ===== temp ===== */
+}
+
+.projects-section-title {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  margin-top: 1rem;
+  margin-bottom: -3.5rem;
 }

@@ -23,7 +23,7 @@ const TimelineSegment = (props: TimelineSegmentProps) => {
       }}
       data-content={props.index + 1}
     >
-      <div className="content" ref={contentRef}>
+      <div className="content glass" ref={contentRef}>
         <div className="content-inner">
           <div className="hori-flex company-info-container">
             <div className="company-logo-container">
