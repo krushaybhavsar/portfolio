@@ -27,6 +27,7 @@
   background-position: center;
   background-size: cover;
   width: 20vw !important;
+  min-width: 290px !important;
   height: fit-content !important;
 }
 
@@ -213,4 +214,18 @@
   outline: none;
   border: 1px solid var(--mainWhite);
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.cc__instant-link-btn>p {
+  white-space: nowrap;
+}
+
+.cc__instant-link-btn>svg {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-left: 0.3rem;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Carousel.css";
 import "swiper/css";
@@ -10,12 +10,23 @@ import { ProjectCarouselCard } from "../../types";
 import CarouselCard from "./CarouselCard";
 import { ReactComponent as ArrowRight } from "../../assets/slider-right-arrow.svg";
 import { ReactComponent as ArrowLeft } from "../../assets/slider-left-arrow.svg";
+import Modal from "../Modal/Modal";
+import ProjectModalContent from "../Modal/ProjectModalContent";
 
 type CarouselProps = {
   data: ProjectCarouselCard[];
+  setModalShow: React.Dispatch<React.SetStateAction<boolean>>;
+  setModalContentData: React.Dispatch<
+    React.SetStateAction<ProjectCarouselCard | undefined>
+  >;
 };
 
 const Carousel = (props: CarouselProps) => {
+  const openModal = (cardData: ProjectCarouselCard) => {
+    props.setModalContentData(cardData);
+    props.setModalShow(true);
+  };
+
   return (
     <div className="custom-swiper-container">
       <Swiper
@@ -43,7 +54,7 @@ const Carousel = (props: CarouselProps) => {
         {props.data.map((card) => {
           return (
             <SwiperSlide key={card.id} className="swiper-slide">
-              <CarouselCard cardData={card} />
+              <CarouselCard cardData={card} openModal={openModal} />
             </SwiperSlide>
           );
         })}

@@ -1,10 +1,12 @@
 import React from "react";
 import { ProjectCarouselCard } from "../../types";
 import "./Carousel.css";
+import { ReactComponent as ArrowUpRight } from "../../assets/arrow-up-right.svg";
 
 type CarouselCard = {
   key?: any;
   cardData: ProjectCarouselCard;
+  openModal: (cardData: ProjectCarouselCard) => void;
 };
 
 const CarouselCard = (props: CarouselCard) => {
@@ -18,7 +20,7 @@ const CarouselCard = (props: CarouselCard) => {
       <div className="carousel-card__instant-links">
         <button
           className="cc__instant-link-btn fill-transition-btn"
-          // onClick={() => window.open(props.cardData.projectLink, "_blank")}
+          onClick={() => props.openModal(props.cardData)}
         >
           <p>Learn More</p>
         </button>
@@ -27,6 +29,7 @@ const CarouselCard = (props: CarouselCard) => {
           onClick={() => window.open(props.cardData.projectLink, "_blank")}
         >
           <p>View Project</p>
+          <ArrowUpRight />
         </button>
       </div>
     </div>
