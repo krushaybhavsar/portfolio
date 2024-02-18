@@ -27,7 +27,11 @@ const IntroSection = (props: IntroSectionProps) => {
             <div className="bullet-dot" />
             <p className="animated-underline">tech enthusiast</p>
           </h3>
-          <Link className="cta-button" to="#experience" smooth>
+          <Link
+            className="cta-button fill-transition-btn"
+            to="#experience"
+            smooth
+          >
             discover my journey <RightArrow className="cta-icon" />
           </Link>
         </div>

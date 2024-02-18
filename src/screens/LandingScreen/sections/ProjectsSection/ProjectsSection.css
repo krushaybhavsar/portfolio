@@ -18,4 +18,5 @@
   color: var(--mainWhite);
   margin-top: 1rem;
   margin-bottom: -3.5rem;
+  z-index: 1;
 }

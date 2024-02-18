@@ -8,7 +8,7 @@ import ProjectsSection from "./sections/ProjectsSection/ProjectsSection";
 import ContactSection from "./sections/ContactSection/ContactSection";
 
 const LandingScreen = () => {
-  const interactiveBlobIsEnabled = false;
+  const interactiveBlobIsEnabled = true;
   const [targetXY, setTargetXY] = useState<Coord>({
     x: 0,
     y: 0,

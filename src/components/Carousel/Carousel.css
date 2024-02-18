@@ -37,26 +37,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  min-height: 400px;
-}
-
-.carousel-card__title {
-  font-size: 1.5rem;
-  font-weight: normal;
-  color: var(--mainWhite);
-  margin-top: 1rem;
-  width: 100%;
-  text-align: center;
-}
-
-.carousel-card__description {
-  font-size: 1rem;
-  font-weight: normal;
-  color: var(--mainWhite);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  text-align: center;
+  min-height: 200px;
 }
 
 /* .swiper-pagination {
@@ -144,6 +125,7 @@
   justify-content: center;
   padding: 0.75rem;
   border: 1px solid var(--mainWhite);
+  transition: all 0.2s ease !important;
 }
 
 .slider-controler .slider-arrow svg {
@@ -153,11 +135,12 @@
 
 .slider-controler .slider-arrow::after {
   content: '';
+  display: none;
 }
 
 .swiper-pagination {
   position: relative;
-  width: 15rem !important;
+  width: fit-content !important;
   left: 50% !important;
   bottom: -0.5rem !important;
   transform: translateX(-50%) translateY(50%) !important;
@@ -173,4 +156,61 @@
 .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--mainWhite);
   opacity: 1;
+}
+
+.carousel-card__image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.carousel-card__image>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-card__title {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-card__description {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-card__instant-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.cc__instant-link-btn {
+  background: transparent;
+  color: var(--mainWhite);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  border: 1px solid var(--mainWhite);
+  width: 100%;
 }

@@ -10,7 +10,7 @@ const ProjectsSection = (props: ProjectsSectionProps) => {
   return (
     <div className="projects-section noise" id={props.sectionID}>
       {/* <BlobBackground blobCurrXY={{ x: 0, y: 0 }} iblobEnabled={false} /> */}
-      <h1 className="projects-section-title">technical projects</h1>
+      <h1 className="projects-section-title">featured projects</h1>
       <Carousel data={ProjectsSectionData} />
     </div>
   );

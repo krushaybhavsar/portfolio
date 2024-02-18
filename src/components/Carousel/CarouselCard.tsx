@@ -10,11 +10,25 @@ type CarouselCard = {
 const CarouselCard = (props: CarouselCard) => {
   return (
     <div className="carousel-card glass">
-      {/* <div className="carousel-card__image">
+      <div className="carousel-card__image">
         <img src={props.cardData.image} alt={props.cardData.title} />
       </div>
-      <p className="carousel-card__title">{props.cardData.title}</p>
+      {/* <p className="carousel-card__title">{props.cardData.title}</p>
       <p className="carousel-card__description">{props.cardData.description}</p> */}
+      <div className="carousel-card__instant-links">
+        <button
+          className="cc__instant-link-btn fill-transition-btn"
+          // onClick={() => window.open(props.cardData.projectLink, "_blank")}
+        >
+          <p>Learn More</p>
+        </button>
+        <button
+          className="cc__instant-link-btn fill-transition-btn"
+          onClick={() => window.open(props.cardData.projectLink, "_blank")}
+        >
+          <p>View Project</p>
+        </button>
+      </div>
     </div>
   );
 };

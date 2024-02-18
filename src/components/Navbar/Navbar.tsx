@@ -27,7 +27,7 @@ const Navbar = () => {
           <Github className="navbar__socials-item github" />
         </a>
         <a
-          href="https://www.instagram.com/krushaybhavsar"
+          href="https://www.instagram.com/krushaybhavsar?igsh=MTlsYXYxN3Z4azF6bQ=="
           target="_blank"
           rel="noreferrer"
           className="animated-underline"
@@ -64,13 +64,13 @@ const Navbar = () => {
         >
           contact
         </Link>
-        {/* <Link
+        <Link
           to={"blog"}
           smooth
           className="navbar__menu-item animated-underline"
         >
           blog
-        </Link> */}
+        </Link>
         <div
           className="navbar__menu-item animated-underline"
           onClick={() => {

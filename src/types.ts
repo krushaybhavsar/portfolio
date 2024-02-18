@@ -26,8 +26,10 @@ export type ProjectCarouselCard = {
   image: string;
   title: string;
   description: string;
+  fullDescription?: string;
   skillsUsed: string[];
-  links: {
+  projectLink: string;
+  additionalLinks: {
     icon?: string;
     previewImage?: string;
     displayText?: string;

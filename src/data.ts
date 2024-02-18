@@ -56,77 +56,52 @@ export const ExperienceSectionData: TimelineElementExperience[] = [
 export const ProjectsSectionData: ProjectCarouselCard[] = [
   {
     id: 1,
-    image: "",
-    title: "Tutor Connect",
+    image: require("../src/assets/munch.png"),
+    title: "Munch",
     description:
-      "A web application that connects students with tutors for personalized learning experiences.",
+      "A social culinary hub for college students to buy/sell homecooked meals and discover recipes created by other students.",
     skillsUsed: ["React.js", "Node.js", "Firebase"],
-    links: [
-      {
-        previewImage: "",
-        displayText: "View Project",
-        hyperlink: "https://tutorconnect.sboe.org",
-      },
-    ],
+    projectLink: "https://joinmunch.app",
+    additionalLinks: [],
   },
   {
     id: 2,
-    image: "",
+    image: require("../src/assets/tutorconnect.png"),
     title: "Tutor Connect",
     description:
       "A web application that connects students with tutors for personalized learning experiences.",
     skillsUsed: ["React.js", "Node.js", "Firebase"],
-    links: [
-      {
-        previewImage: "",
-        displayText: "View Project",
-        hyperlink: "https://tutorconnect.sboe.org",
-      },
-    ],
+    projectLink: "https://tutorconnect.sboe.org",
+    additionalLinks: [],
   },
   {
     id: 3,
-    image: "",
-    title: "Tutor Connect",
+    image: require("../src/assets/tileshift.png"),
+    title: "Tileshift",
     description:
       "A web application that connects students with tutors for personalized learning experiences.",
     skillsUsed: ["React.js", "Node.js", "Firebase"],
-    links: [
-      {
-        previewImage: "",
-        displayText: "View Project",
-        hyperlink: "https://tutorconnect.sboe.org",
-      },
-    ],
+    projectLink: "https://tileshiftgame.com",
+    additionalLinks: [],
   },
   {
     id: 4,
-    image: "",
-    title: "Tutor Connect",
+    image: require("../src/assets/signslate.png"),
+    title: "Signslate",
     description:
       "A web application that connects students with tutors for personalized learning experiences.",
     skillsUsed: ["React.js", "Node.js", "Firebase"],
-    links: [
-      {
-        previewImage: "",
-        displayText: "View Project",
-        hyperlink: "https://tutorconnect.sboe.org",
-      },
-    ],
+    projectLink: "https://github.com/krushaybhavsar/signslate",
+    additionalLinks: [],
   },
   {
     id: 5,
-    image: "",
-    title: "Tutor Connect",
+    image: require("../src/assets/privalink.png"),
+    title: "Privalink",
     description:
       "A web application that connects students with tutors for personalized learning experiences.",
     skillsUsed: ["React.js", "Node.js", "Firebase"],
-    links: [
-      {
-        previewImage: "",
-        displayText: "View Project",
-        hyperlink: "https://tutorconnect.sboe.org",
-      },
-    ],
+    projectLink: "https://privalink.app",
+    additionalLinks: [],
   },
 ];
