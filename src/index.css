@@ -191,6 +191,14 @@ html {
 }
 
 @font-face {
+  font-family: 'Monarcha';
+  src: url('./assets/fonts/Monarcha/Monarcha-Italic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Degular';
   src: url('assets/fonts/Degular/Degular-MediumItalic.ttf') format('truetype');
   font-weight: 500;

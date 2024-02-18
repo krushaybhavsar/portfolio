@@ -6,9 +6,91 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
-  /* ===== temp ===== */
-  height: 100vh;
-  border-top: 1px solid white;
-  /* ===== temp ===== */
-  overflow: hidden;
+  padding-top: var(--navbarHeight);
+  /* height: 100vh; */
+}
+
+.contact-section-title {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  z-index: 1;
+}
+
+.contact-section-title>i {
+  font-family: 'Monarcha', sans-serif;
+}
+
+.contact-section-content {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.csc-content-container:first-child {
+  margin-right: 3rem;
+}
+
+.csc-description {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  z-index: 1;
+  margin-bottom: 0.75rem;
+}
+
+.csc-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.csc-email>svg {
+  margin-right: 0.5rem;
+  width: 26px;
+  height: 26px;
+  stroke: var(--mainWhite)
+}
+
+.csc-email>a {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  z-index: 1;
+  text-decoration: none;
+}
+
+.website-credits {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  z-index: 1;
+  margin-top: 1rem;
+  opacity: 0.5;
+}
+
+.view-source {
+  margin-bottom: 1rem;
+}
+
+.view-source>a {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  z-index: 1;
+  text-decoration: none;
+}
+
+.view-source>svg {
+  margin-right: 0.25rem;
+  width: 16px;
+  height: 16px;
+  stroke: var(--mainWhite)
 }

@@ -21,11 +21,26 @@ const IntroSection = (props: IntroSectionProps) => {
         <div className="text-container">
           <h1 className="title">hey, i'm krushay.</h1>
           <h3 className="subtitle">
-            <p className="animated-underline">software developer</p>{" "}
+            <Link
+              to={"#projects"}
+              smooth
+              className="intro-link animated-underline"
+            >
+              software developer
+            </Link>
             <div className="bullet-dot" />
-            <p className="animated-underline">cs student</p>
+            <a
+              className="intro-link animated-underline"
+              href="https://www.cc.gatech.edu"
+              target="_blank"
+              rel="noreferrer"
+            >
+              cs student
+            </a>
             <div className="bullet-dot" />
-            <p className="animated-underline">tech enthusiast</p>
+            <Link to="/blog" className="intro-link animated-underline">
+              tech enthusiast
+            </Link>
           </h3>
           <Link
             className="cta-button fill-transition-btn"

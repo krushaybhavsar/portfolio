@@ -84,11 +84,7 @@
   /* transition: all 0.25s ease; */
 }
 
-/* .isec__left .cta-button:hover {
-  background-color: var(--mainWhite);
-  color: var(--mainBlack);
+.intro-link {
+  text-decoration: none;
+  color: var(--mainWhite);
 }
-
-.isec__left .cta-button:hover .cta-icon {
-  margin-left: 0.85rem;
-} */
