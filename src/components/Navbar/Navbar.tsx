@@ -3,7 +3,9 @@ import "./Navbar.css";
 import { ReactComponent as LinkedIn } from "../../assets/linkedin.svg";
 import { ReactComponent as Github } from "../../assets/github.svg";
 import { ReactComponent as Instagram } from "../../assets/instagram.svg";
+import { ReactComponent as Twitter } from "../../assets/twitter.svg";
 import { HashLink as Link } from "react-router-hash-link";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   return (
@@ -25,6 +27,14 @@ const Navbar = () => {
           className="animated-underline"
         >
           <Github className="navbar__socials-item github" />
+        </a>
+        <a
+          href="https://twitter.com/krushaybhavsar"
+          target="_blank"
+          rel="noreferrer"
+          className="animated-underline"
+        >
+          <Twitter className="navbar__socials-item twitter" />
         </a>
         <a
           href="https://www.instagram.com/krushaybhavsar?igsh=MTlsYXYxN3Z4azF6bQ=="
@@ -64,13 +74,13 @@ const Navbar = () => {
         >
           contact
         </Link>
-        <Link
+        {/* <Link
           to={"blog"}
           smooth
           className="navbar__menu-item animated-underline"
         >
           blog
-        </Link>
+        </Link> */}
         <div
           className="navbar__menu-item animated-underline"
           onClick={() => {
@@ -83,6 +93,7 @@ const Navbar = () => {
           resume
         </div>
       </div>
+      <MobileMenu />
     </div>
   );
 };

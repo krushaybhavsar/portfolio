@@ -52,3 +52,9 @@
   text-decoration: none;
   /* font-family: 'Monarcha', sans-serif !important; */
 }
+
+@media screen and (max-width: 740px) {
+  .navbar__menu {
+    display: none;
+  }
+}

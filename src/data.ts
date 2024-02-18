@@ -23,7 +23,7 @@ export const ExperienceSectionData: TimelineElementExperience[] = [
     location: "New York, NY",
     date: "Aug 2021 – Apr 2022",
     description:
-      "On a cross-functional development team of MIT and Harvard engineers, I delivered critical product features on the main React.js site, the Java Spring Boot backend, and PostgreSQL database. I also led standup meetings, discussed the company's next steps at team lead meetings, and helped amass 10,000+ users globally.",
+      "On a cross-functional development team of MIT and Harvard engineers, I delivered critical product features on the main React.js site, the Java Spring Boot backend, and PostgreSQL database. I also led standup meetings, discussed the company's next steps at team lead meetings, and helped amass 10,000+ users globally. Since then, the company has been acquired by Crimson Education.",
     skillsUsed: ["React.js", "PostgreSQL", "Java Spring", "AWS"],
     links: [],
   },
