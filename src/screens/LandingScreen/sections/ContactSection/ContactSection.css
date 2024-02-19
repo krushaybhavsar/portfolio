@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
-  padding-top: var(--navbarHeight);
+  padding-top: calc(1.5*var(--navbarHeight));
   /* height: 100vh; */
 }
 
@@ -14,9 +14,11 @@
   font-size: 2.5rem;
   font-weight: normal;
   color: var(--mainWhite);
+  margin: 0 2rem;
   margin-top: 1rem;
   margin-bottom: 2.5rem;
   z-index: 1;
+  text-align: center;
 }
 
 .contact-section-title>i {
@@ -93,4 +95,68 @@
   width: 16px;
   height: 16px;
   stroke: var(--mainWhite)
+}
+
+@media screen and (max-width: 650px) {
+  .contact-section-title {
+    font-size: 1.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .contact-section-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    padding: 1.5rem;
+  }
+
+  .csc-content-container:first-child {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .csc-description {
+    font-size: 1.1rem;
+  }
+
+  .csc-email {
+    margin-top: -0.5rem;
+  }
+
+  .csc-email>a {
+    font-size: 1.25rem;
+  }
+
+  .csc-email>svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.4rem;
+  }
+
+  .csc-content-container>.navbar__socials-container {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact-section-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-section-content {
+    width: 90vw;
+    padding: 1rem;
+  }
+
+  .csc-email>a {
+    font-size: 1.25rem;
+  }
+
+  .csc-email>svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.3rem;
+  }
+
 }

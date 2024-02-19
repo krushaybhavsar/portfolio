@@ -119,6 +119,7 @@
 @media screen and (max-width: 740px) {
   .isec__left .title {
     font-size: 3rem;
+    /* text-align: left; */
   }
 
   .isec__left .subtitle {

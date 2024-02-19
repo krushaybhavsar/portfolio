@@ -12,7 +12,7 @@ type ContactSectionProps = {} & LandingPageSectionProps;
 const ContactSection = (props: ContactSectionProps) => {
   return (
     <div className="contact-section noise" id={props.sectionID}>
-      <h1 className="contact-section-title" style={{ margin: 0 }}>
+      <h1 className="contact-section-title" style={{ margin: "0 2rem" }}>
         want to make <i>something great</i> together?
       </h1>
       <h1 className="contact-section-title">i'm always up for a chat.</h1>

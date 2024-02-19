@@ -3,9 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   z-index: 1;
-  padding-top: var(--navbarHeight);
+  padding-top: calc(1.5*var(--navbarHeight));
   height: 100vh;
   /* ===== temp ===== */
   /* border-top: 1px solid white; */
@@ -19,4 +19,17 @@
   margin-top: 1rem;
   margin-bottom: -2rem;
   z-index: 1;
+}
+
+@media screen and (max-width: 650px) {
+  .projects-section-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .projects-section {
+    height: fit-content !important;
+    padding-bottom: 175px;
+  }
 }

@@ -12,6 +12,7 @@ import { ReactComponent as ArrowRight } from "../../assets/slider-right-arrow.sv
 import { ReactComponent as ArrowLeft } from "../../assets/slider-left-arrow.svg";
 import Modal from "../Modal/Modal";
 import ProjectModalContent from "../Modal/ProjectModalContent";
+import useWindowDimensions from "../../utils/useWindowDimensions";
 
 type CarouselProps = {
   data: ProjectCarouselCard[];
@@ -27,6 +28,15 @@ const Carousel = (props: CarouselProps) => {
     props.setModalShow(true);
   };
 
+  const { width } = useWindowDimensions();
+
+  const calcInitialSlide = () => {
+    if (width > 900) {
+      return props.data.length / 2;
+    }
+    return 0;
+  };
+
   return (
     <div className="custom-swiper-container">
       <Swiper
@@ -34,7 +44,7 @@ const Carousel = (props: CarouselProps) => {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        initialSlide={props.data.length / 2}
+        initialSlide={calcInitialSlide()}
         slidesPerView={"auto"}
         // loop={true}
         modules={[EffectCoverflow, Pagination, Navigation]}

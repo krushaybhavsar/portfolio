@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./Timeline.css";
 import { TimelineElementExperience } from "../../types";
+import useWindowDimensions from "../../utils/useWindowDimensions";
 
 type TimelineSegmentProps = {
   key?: any;
@@ -13,8 +14,9 @@ export const timelineHeight = 300;
 const TimelineSegment = (props: TimelineSegmentProps) => {
   const contentRef = useRef<HTMLDivElement>(null);
   const topOffset = 50;
+  const { width } = useWindowDimensions();
 
-  return (
+  return width > 900 ? (
     <li
       className="timeline-segment"
       style={{
@@ -50,6 +52,38 @@ const TimelineSegment = (props: TimelineSegmentProps) => {
         </div>
       </div>
     </li>
+  ) : (
+    <div className="mobile-content-segment-container">
+      <div className="mobile-timeline-segment-line">
+        <div className="mobile-timeline-segment-dot" />
+      </div>
+      <div className="mobile content glass">
+        <div className="content-inner">
+          <div className="hori-flex company-info-container">
+            <div className="company-logo-container">
+              <img
+                src={props.data.companyLogo}
+                alt={props.data.companyName + " Logo"}
+                className="company-logo"
+              />
+            </div>
+            <div className="vert-flex company-text-info">
+              <h3 className="company-name">{props.data.companyName}</h3>
+              <h4 className="job-position">{props.data.jobPosition}</h4>
+              <p className="job-dates">{props.data.date}</p>
+            </div>
+          </div>
+          <p className="description">{props.data.description}</p>
+          <div className="skills-container hori-flex">
+            {props.data.skillsUsed.map((skill, index) => (
+              <div key={index} className="skill">
+                {skill}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

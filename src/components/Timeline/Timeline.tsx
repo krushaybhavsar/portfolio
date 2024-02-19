@@ -1,12 +1,15 @@
 import React, { Children } from "react";
 import { timelineHeight } from "./TimelineSegment";
+import useWindowDimensions from "../../utils/useWindowDimensions";
 
 type TimelineProps = {
   children: React.ReactNode;
 };
 
 const Timeline = (props: TimelineProps) => {
-  return (
+  const { width } = useWindowDimensions();
+
+  return width > 900 ? (
     <div
       className="timeline-container"
       style={{
@@ -16,6 +19,10 @@ const Timeline = (props: TimelineProps) => {
       }}
     >
       <ul className="timeline">{props.children}</ul>
+    </div>
+  ) : (
+    <div className="mobile-timeline-container">
+      <ul className="mobile timeline">{props.children}</ul>
     </div>
   );
 };
