@@ -12,6 +12,7 @@
   width: fit-content;
   height: fit-content;
   margin-bottom: 0 !important;
+  margin-right: 1rem;
 }
 
 .project-modal-description {
@@ -34,4 +35,25 @@
 .pm.skills-container {
   justify-content: flex-start;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px) {
+  .project-modal-description {
+    font-size: 1rem;
+  }
+
+  .pm.cc__instant-link-btn {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .project-modal-header>.project-modal-title {
+    margin: 0;
+    margin-bottom: 1rem !important;
+  }
+
+  .project-modal-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

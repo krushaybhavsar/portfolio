@@ -122,6 +122,10 @@
     /* text-align: left; */
   }
 
+  .bullet-dot {
+    margin-top: 0px;
+  }
+
   .isec__left .subtitle {
     font-size: 1.25rem;
   }
@@ -134,4 +138,28 @@
   .isec__left .cta-icon {
     width: 16px;
   }
+}
+
+@media screen and (max-width: 450px) {
+  .isec__left .title {
+    font-size: 2.5rem;
+  }
+
+  .isec__left .subtitle {
+    font-size: 1rem;
+  }
+
+  .bullet-dot {
+    margin: 0 0.25rem;
+  }
+
+  .isec__left .cta-button {
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .isec__left .cta-icon {
+    width: 14px;
+  }
+
 }

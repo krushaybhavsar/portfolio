@@ -299,3 +299,14 @@
   left: -4px;
   z-index: 2;
 }
+
+@media screen and (max-width: 500px) {
+
+  .mobile-content-segment-container .description {
+    font-size: 0.9rem !important;
+  }
+
+  .skills-container>.skill {
+    font-size: 0.75rem;
+  }
+}
