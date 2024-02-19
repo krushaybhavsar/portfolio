@@ -22,6 +22,7 @@ const ContactSection = (props: ContactSectionProps) => {
           <p className="csc-email">
             <Mail />
             <a
+              aria-label="Email"
               className="animated-underline"
               href="mailto:krushaybhavsar@gmail.com"
             >
@@ -33,8 +34,8 @@ const ContactSection = (props: ContactSectionProps) => {
           <p className="csc-description">{"Connect with me on"}</p>
           <div className="navbar__socials-container">
             <a
-              href="
-          https://www.linkedin.com/in/krushaybhavsar/"
+              aria-label="LinkedIn"
+              href="https://www.linkedin.com/in/krushaybhavsar/"
               target="_blank"
               rel="noreferrer"
               className="animated-underline"
@@ -42,6 +43,7 @@ const ContactSection = (props: ContactSectionProps) => {
               <LinkedIn className="navbar__socials-item linkedin" />
             </a>
             <a
+              aria-label="Twitter"
               href="https://twitter.com/krushaybhavsar"
               target="_blank"
               rel="noreferrer"
@@ -50,6 +52,7 @@ const ContactSection = (props: ContactSectionProps) => {
               <Twitter className="navbar__socials-item twitter" />
             </a>
             <a
+              aria-label="Instagram"
               href="https://www.instagram.com/krushaybhavsar?igsh=MTlsYXYxN3Z4azF6bQ=="
               target="_blank"
               rel="noreferrer"
@@ -66,6 +69,7 @@ const ContactSection = (props: ContactSectionProps) => {
       <p className="view-source hori-flex">
         <CodeIcon />
         <a
+          aria-label="View source code"
           href="https://www.github.com/krushaybhavsar/portfolio"
           target="_blank"
           rel="noreferrer"

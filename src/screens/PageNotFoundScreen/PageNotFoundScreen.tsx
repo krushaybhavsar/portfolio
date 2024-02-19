@@ -51,6 +51,8 @@ const PageNotFoundScreen = () => {
         <h1>{"page not found"}</h1>
         <h3>ah the dreaded 404. let's get you back on track.</h3>
         <button
+          name="Back to home"
+          aria-label="Back to home"
           className="page-not-found-cta-button fill-transition-btn"
           onClick={() => {
             window.location.href = "/";

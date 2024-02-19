@@ -9,6 +9,8 @@ const MobileMenu = () => {
   return (
     <div className="mobile-menu">
       <button
+        name="Toggle Menu"
+        aria-label="Toggle Menu"
         className={"hamburger mobile-menu-btn glass" + (open ? " active" : "")}
         onClick={() => setOpen(!open)}
       >

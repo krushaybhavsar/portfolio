@@ -20,7 +20,7 @@ const IntroSection = (props: IntroSectionProps) => {
       <div className="isec__left">
         <div className="text-container">
           <h1 className="title">hey, i'm krushay.</h1>
-          <h3 className="subtitle">
+          <h2 className="subtitle">
             <Link
               to={"#projects"}
               smooth
@@ -30,8 +30,9 @@ const IntroSection = (props: IntroSectionProps) => {
             </Link>
             <div className="bullet-dot" />
             <a
+              aria-label="Georgia Tech"
               className="intro-link animated-underline"
-              href="https://www.cc.gatech.edu"
+              href="https://www.gatech.edu"
               target="_blank"
               rel="noreferrer"
             >
@@ -41,7 +42,7 @@ const IntroSection = (props: IntroSectionProps) => {
             <Link to="/blog" className="intro-link animated-underline">
               tech enthusiast
             </Link>
-          </h3>
+          </h2>
           <Link
             className="cta-button fill-transition-btn"
             to="#experience"

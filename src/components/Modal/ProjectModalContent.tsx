@@ -18,6 +18,8 @@ const ProjectModalContent = (props: ProjectModalContentProps) => {
       <div className="project-modal-header hori-flex">
         <h1 className="project-modal-title">{props.projectData?.title}</h1>
         <button
+          name="View Project"
+          aria-label="View Project"
           className="pm cc__instant-link-btn fill-transition-btn"
           onClick={() => window.open(props.projectData?.projectLink, "_blank")}
         >

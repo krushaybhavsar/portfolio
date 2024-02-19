@@ -12,8 +12,8 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar__socials-container">
         <a
-          href="
-          https://www.linkedin.com/in/krushaybhavsar/"
+          aria-label="LinkedIn"
+          href="https://www.linkedin.com/in/krushaybhavsar/"
           target="_blank"
           rel="noreferrer"
           className="animated-underline"
@@ -21,6 +21,7 @@ const Navbar = () => {
           <LinkedIn className="navbar__socials-item linkedin" />
         </a>
         <a
+          aria-label="Github"
           href="https://www.github.com/krushaybhavsar"
           target="_blank"
           rel="noreferrer"
@@ -29,6 +30,7 @@ const Navbar = () => {
           <Github className="navbar__socials-item github" />
         </a>
         <a
+          aria-label="Twitter"
           href="https://twitter.com/krushaybhavsar"
           target="_blank"
           rel="noreferrer"
@@ -37,6 +39,7 @@ const Navbar = () => {
           <Twitter className="navbar__socials-item twitter" />
         </a>
         <a
+          aria-label="Instagram"
           href="https://www.instagram.com/krushaybhavsar?igsh=MTlsYXYxN3Z4azF6bQ=="
           target="_blank"
           rel="noreferrer"
@@ -50,6 +53,7 @@ const Navbar = () => {
           to={"#intro"}
           smooth
           className="navbar__menu-item animated-underline"
+          aria-label="About"
         >
           about
         </Link>
@@ -57,6 +61,7 @@ const Navbar = () => {
           to={"#experience"}
           smooth
           className="navbar__menu-item animated-underline"
+          aria-label="Experience"
         >
           journey
         </Link>
@@ -64,6 +69,7 @@ const Navbar = () => {
           to={"#projects"}
           smooth
           className="navbar__menu-item animated-underline"
+          aria-label="Projects"
         >
           projects
         </Link>
@@ -71,6 +77,7 @@ const Navbar = () => {
           to={"#contact"}
           smooth
           className="navbar__menu-item animated-underline"
+          aria-label="Contact"
         >
           contact
         </Link>

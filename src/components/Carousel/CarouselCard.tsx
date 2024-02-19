@@ -19,12 +19,16 @@ const CarouselCard = (props: CarouselCard) => {
       <p className="carousel-card__description">{props.cardData.description}</p> */}
       <div className="carousel-card__instant-links">
         <button
+          name="Learn More"
+          aria-label="Learn More"
           className="cc__instant-link-btn fill-transition-btn"
           onClick={() => props.openModal(props.cardData)}
         >
           <p>Learn More</p>
         </button>
         <button
+          name="View Project"
+          aria-label="View Project"
           className="cc__instant-link-btn fill-transition-btn"
           onClick={() => window.open(props.cardData.projectLink, "_blank")}
         >
