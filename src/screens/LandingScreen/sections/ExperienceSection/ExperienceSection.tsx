@@ -12,9 +12,11 @@ const ExperienceSection = (props: ExperienceSectionProps) => {
     <div className="experience-section noise" id={props.sectionID}>
       <h1 className="experience-section-title">discover my career journey</h1>
       <Timeline>
-        {ExperienceSectionData.map((experience, index) => (
-          <TimelineSegment key={index} index={index} data={experience} />
-        ))}
+        {ExperienceSectionData.slice(0)
+          .reverse()
+          .map((experience, index) => (
+            <TimelineSegment key={index} index={index} data={experience} />
+          ))}
       </Timeline>
     </div>
   );
