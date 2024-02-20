@@ -6,17 +6,47 @@ import { ReactComponent as LinkedIn } from "../../../../assets/linkedin.svg";
 import { ReactComponent as Instagram } from "../../../../assets/instagram.svg";
 import { ReactComponent as Twitter } from "../../../../assets/twitter.svg";
 import { ReactComponent as CodeIcon } from "../../../../assets/code-icon.svg";
+import { motion } from "framer-motion";
 
 type ContactSectionProps = {} & LandingPageSectionProps;
 
 const ContactSection = (props: ContactSectionProps) => {
   return (
     <div className="contact-section noise" id={props.sectionID}>
-      <h1 className="contact-section-title" style={{ margin: "0 2rem" }}>
+      <motion.h1
+        className="contact-section-title"
+        style={{ margin: "0 2rem" }}
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.75, delay: 0.25 },
+        }}
+        viewport={{ once: true, amount: 1 }}
+      >
         want to make <i>something great</i> together?
-      </h1>
-      <h1 className="contact-section-title">i'm always up for a chat.</h1>
-      <div className="contact-section-content glass">
+      </motion.h1>
+      <motion.h1
+        className="contact-section-title"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.75, delay: 0.5 },
+        }}
+        viewport={{ once: true, amount: 1 }}
+      >
+        i'm always up for a chat.
+      </motion.h1>
+      <motion.div
+        className="contact-section-content glass"
+        initial={{ opacity: 0 }}
+        whileInView={{
+          opacity: 1,
+          transition: { duration: 1.5, delay: 0.75 },
+        }}
+        viewport={{ once: true, amount: 1 }}
+      >
         <div className="csc-content-container vert-flex">
           <p className="csc-description">{"Reach out to me at"}</p>
           <p className="csc-email">
@@ -62,7 +92,7 @@ const ContactSection = (props: ContactSectionProps) => {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
       <p className="website-credits">
         {"Designed and developed by Krushay Bhavsar"}
       </p>

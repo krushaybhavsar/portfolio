@@ -6,10 +6,16 @@ import { ReactComponent as Instagram } from "../../assets/instagram.svg";
 import { ReactComponent as Twitter } from "../../assets/twitter.svg";
 import { HashLink as Link } from "react-router-hash-link";
 import MobileMenu from "./MobileMenu";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <motion.div
+      className="navbar"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2.25, delay: 1.75 }}
+    >
       <div className="navbar__socials-container">
         <a
           aria-label="LinkedIn"
@@ -101,7 +107,7 @@ const Navbar = () => {
         </div>
       </div>
       <MobileMenu />
-    </div>
+    </motion.div>
   );
 };
 

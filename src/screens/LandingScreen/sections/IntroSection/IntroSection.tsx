@@ -4,6 +4,7 @@ import BlobBackground from "../../../../components/BlobBackground/BlobBackground
 import { Coord, LandingPageSectionProps } from "../../../../types";
 import { ReactComponent as RightArrow } from "../../../../assets/arrow-right.svg";
 import { HashLink as Link } from "react-router-hash-link";
+import { motion } from "framer-motion";
 
 type IntroSectionProps = {
   blobCurrXY: Coord;
@@ -18,9 +19,52 @@ const IntroSection = (props: IntroSectionProps) => {
         iblobEnabled={props.iblobEnabled}
       />
       <div className="isec__left">
-        <div className="text-container">
-          <h1 className="title">hey, i'm krushay.</h1>
-          <h2 className="subtitle">
+        <motion.div
+          className="text-container"
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 1,
+            },
+          }}
+          initial={{
+            opacity: 0,
+            y: -75,
+          }}
+        >
+          <motion.h1
+            className="title"
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+                delay: 0.5,
+              },
+            }}
+            initial={{
+              opacity: 0,
+              y: -20,
+            }}
+          >
+            hey, i'm krushay.
+          </motion.h1>
+          <motion.h2
+            className="subtitle"
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+                delay: 0.75,
+              },
+            }}
+            initial={{
+              opacity: 0,
+              y: -20,
+            }}
+          >
             <Link
               to={"#projects"}
               smooth
@@ -42,15 +86,31 @@ const IntroSection = (props: IntroSectionProps) => {
             <Link to="/blog" className="intro-link animated-underline">
               tech enthusiast
             </Link>
-          </h2>
-          <Link
-            className="cta-button fill-transition-btn"
-            to="#experience"
-            smooth
+          </motion.h2>
+          <motion.div
+            className="cta-container"
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+                delay: 1,
+              },
+            }}
+            initial={{
+              opacity: 0,
+              y: -20,
+            }}
           >
-            discover my journey <RightArrow className="cta-icon" />
-          </Link>
-        </div>
+            <Link
+              className="cta-button fill-transition-btn"
+              to="#experience"
+              smooth
+            >
+              discover my journey <RightArrow className="cta-icon" />
+            </Link>
+          </motion.div>
+        </motion.div>
       </div>
       <div className="isec__right"></div>
     </div>

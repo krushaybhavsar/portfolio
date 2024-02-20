@@ -66,8 +66,8 @@
   align-items: flex-start;
   justify-content: center;
   pointer-events: none;
-  transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
-  -webkit-transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  transition: all 1s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  -webkit-transition: all 1s cubic-bezier(0.230, 1.000, 0.320, 1.000);
   transition-delay: 250ms;
   overflow: hidden;
 }
@@ -87,11 +87,13 @@
   pointer-events: all;
   max-height: 50vh;
   transition-delay: 0s;
+  transition: all 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  -webkit-transition: all 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000);
 }
 
 .divider {
   width: 0%;
-  height: 0.5px;
+  height: 1px;
   background-color: var(--mainWhite);
   margin: 0;
   animation: shrink 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards;
@@ -101,7 +103,7 @@
 .mobile-menu-content.active>.divider {
   animation: expand 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards;
   -webkit-animation: expand 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards;
-  animation-delay: 250ms;
+  animation-delay: 275ms;
 }
 
 @keyframes expand {

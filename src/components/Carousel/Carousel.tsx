@@ -13,6 +13,7 @@ import { ReactComponent as ArrowLeft } from "../../assets/slider-left-arrow.svg"
 import Modal from "../Modal/Modal";
 import ProjectModalContent from "../Modal/ProjectModalContent";
 import useWindowDimensions from "../../utils/useWindowDimensions";
+import { motion } from "framer-motion";
 
 type CarouselProps = {
   data: ProjectCarouselCard[];
@@ -38,7 +39,12 @@ const Carousel = (props: CarouselProps) => {
   };
 
   return (
-    <div className="custom-swiper-container">
+    <motion.div
+      className="custom-swiper-container"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1, transition: { duration: 0.75 } }}
+      viewport={{ once: true, amount: 0.3 }}
+    >
       <Swiper
         className="swiper_container"
         effect={"coverflow"}
@@ -78,7 +84,7 @@ const Carousel = (props: CarouselProps) => {
           <div className="swiper-pagination"></div>
         </div>
       </Swiper>
-    </div>
+    </motion.div>
   );
 };
 

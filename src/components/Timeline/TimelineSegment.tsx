@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "./Timeline.css";
 import { TimelineElementExperience } from "../../types";
 import useWindowDimensions from "../../utils/useWindowDimensions";
+import { motion } from "framer-motion";
 
 type TimelineSegmentProps = {
   key?: any;
@@ -25,7 +26,22 @@ const TimelineSegment = (props: TimelineSegmentProps) => {
       }}
       data-content={props.index + 1}
     >
-      <div className="content glass" ref={contentRef}>
+      <motion.div
+        className="content glass"
+        ref={contentRef}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: { duration: 0.75, delay: 0.25 },
+        }}
+        initial={{
+          opacity: 0,
+          x: props.index % 2 === 0 ? "5%" : "-5%",
+          y: "-50%",
+        }}
+        viewport={{ once: true, amount: 0.5 }}
+        whileHover={{ scale: 1.025 }}
+      >
         <div className="content-inner">
           <div className="hori-flex company-info-container">
             <div className="company-logo-container">
@@ -50,14 +66,26 @@ const TimelineSegment = (props: TimelineSegmentProps) => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </li>
   ) : (
     <div className="mobile-content-segment-container">
       <div className="mobile-timeline-segment-line">
         <div className="mobile-timeline-segment-dot" />
       </div>
-      <div className="mobile content glass">
+      <motion.div
+        className="mobile content glass"
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: { duration: 0.75, delay: 0.25 },
+        }}
+        initial={{
+          opacity: 0,
+          x: "5%",
+        }}
+        viewport={{ once: true, amount: 0.5 }}
+      >
         <div className="content-inner">
           <div className="hori-flex company-info-container">
             <div className="company-logo-container">
@@ -82,7 +110,7 @@ const TimelineSegment = (props: TimelineSegmentProps) => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

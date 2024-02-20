@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./MobileMenu.css";
-import { ReactComponent as MenuIcon } from "../../assets/menu-icon.svg";
 import { HashLink as Link } from "react-router-hash-link";
 
 const MobileMenu = () => {

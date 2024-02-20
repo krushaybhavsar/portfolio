@@ -9,6 +9,8 @@ import Carousel from "../../../../components/Carousel/Carousel";
 import { ProjectsSectionData } from "../../../../data";
 import ProjectModalContent from "../../../../components/Modal/ProjectModalContent";
 import Modal from "../../../../components/Modal/Modal";
+import { motion } from "framer-motion";
+
 type ProjectsSectionProps = {} & LandingPageSectionProps;
 
 const ProjectsSection = (props: ProjectsSectionProps) => {
@@ -21,7 +23,14 @@ const ProjectsSection = (props: ProjectsSectionProps) => {
     <>
       <div className="projects-section noise" id={props.sectionID}>
         {/* <BlobBackground blobCurrXY={{ x: 0, y: 0 }} iblobEnabled={false} /> */}
-        <h1 className="projects-section-title">featured projects</h1>
+        <motion.h1
+          className="projects-section-title"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.75 } }}
+          viewport={{ once: true, amount: 1 }}
+        >
+          featured projects
+        </motion.h1>
         <Carousel
           data={ProjectsSectionData}
           setModalShow={setModalShow}
