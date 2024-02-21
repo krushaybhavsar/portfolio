@@ -4,6 +4,7 @@ import "./BlobBackground.css";
 type BlobBackgroundProps = {
   blobCurrXY: { x: number; y: number };
   iblobEnabled: boolean;
+  opacity?: number;
 };
 
 const BlobBackground = (props: BlobBackgroundProps) => {
@@ -27,7 +28,12 @@ const BlobBackground = (props: BlobBackgroundProps) => {
           </filter>
         </defs>
       </svg>
-      <div className="gradients-container">
+      <div
+        className="gradients-container"
+        style={{
+          opacity: props.opacity ? props.opacity : 0.35,
+        }}
+      >
         <div className="g1"></div>
         <div className="g2"></div>
         <div className="g3"></div>

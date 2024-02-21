@@ -6,9 +6,10 @@ import { Coord } from "../../types";
 import ExperienceSection from "./sections/ExperienceSection/ExperienceSection";
 import ProjectsSection from "./sections/ProjectsSection/ProjectsSection";
 import ContactSection from "./sections/ContactSection/ContactSection";
+import SkillsSection from "./sections/SkillsSection/SkillsSection";
 
 const LandingScreen = () => {
-  const interactiveBlobIsEnabled = true;
+  const interactiveBlobIsEnabled = false;
   const [targetXY, setTargetXY] = useState<Coord>({
     x: 0,
     y: 0,
@@ -54,6 +55,7 @@ const LandingScreen = () => {
       />
       <ExperienceSection sectionID="experience" />
       <ProjectsSection sectionID="projects" />
+      <SkillsSection sectionID="skills" />
       <ContactSection sectionID="contact" />
     </div>
   );

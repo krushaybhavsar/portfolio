@@ -71,14 +71,26 @@ const TimelineSegment = (props: TimelineSegmentProps) => {
   ) : (
     <div className="mobile-content-segment-container">
       <div className="mobile-timeline-segment-line">
-        <div className="mobile-timeline-segment-dot" />
+        <motion.div
+          className="mobile-timeline-segment-dot"
+          whileInView={{
+            opacity: 1,
+            scale: 1,
+            transition: { duration: 0.75, delay: 0, type: "spring" },
+          }}
+          initial={{
+            opacity: 0,
+            scale: 0,
+          }}
+          viewport={{ once: true, amount: 0.85 }}
+        />
       </div>
       <motion.div
         className="mobile content glass"
         whileInView={{
           opacity: 1,
           x: 0,
-          transition: { duration: 0.75, delay: 0.25 },
+          transition: { duration: 0.75, delay: 0.5 },
         }}
         initial={{
           opacity: 0,

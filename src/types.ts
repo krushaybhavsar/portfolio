@@ -36,3 +36,15 @@ export type ProjectCarouselCard = {
     hyperlink: string;
   }[];
 };
+
+export type SkillsByCategory = {
+  categoryTitle: string;
+  skills: Skill[];
+};
+
+export type Skill = {
+  name: string;
+  icon?: string;
+  description?: string;
+  link?: string;
+};

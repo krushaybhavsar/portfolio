@@ -22,7 +22,11 @@ const ProjectsSection = (props: ProjectsSectionProps) => {
   return (
     <>
       <div className="projects-section noise" id={props.sectionID}>
-        {/* <BlobBackground blobCurrXY={{ x: 0, y: 0 }} iblobEnabled={false} /> */}
+        <BlobBackground
+          blobCurrXY={{ x: 0, y: 0 }}
+          iblobEnabled={false}
+          opacity={0.25}
+        />
         <motion.h1
           className="projects-section-title"
           initial={{ opacity: 0, y: -20 }}

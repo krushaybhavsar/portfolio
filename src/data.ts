@@ -1,4 +1,9 @@
-import { ProjectCarouselCard, TimelineElementExperience } from "./types";
+import {
+  ProjectCarouselCard,
+  Skill,
+  SkillsByCategory,
+  TimelineElementExperience,
+} from "./types";
 
 // https://heroicons.com/outline
 
@@ -154,5 +159,58 @@ export const ProjectsSectionData: ProjectCarouselCard[] = [
     ],
     projectLink: "https://privalink.app",
     additionalLinks: [],
+  },
+];
+
+export const SkillsSectionData: SkillsByCategory[] = [
+  {
+    categoryTitle: "Programming & Markup Languages",
+    skills: [
+      { name: "TypeScript" },
+      { name: "JavaScript" },
+      { name: "Python" },
+      { name: "Java" },
+      { name: "C#" },
+      { name: "MATLAB" },
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "XML" },
+    ],
+  },
+  {
+    categoryTitle: "Frameworks",
+    skills: [
+      { name: "React.js" },
+      { name: "React Native" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "Next.js" },
+      { name: "Electron" },
+      { name: "GraphQL" },
+      { name: "Prisma" },
+      { name: "Redux" },
+      { name: "Spring Boot" },
+      { name: "Flask" },
+      { name: "Django" },
+      { name: "OpenCV" },
+      { name: "NumPy" },
+      { name: "TensorFlow" },
+    ],
+  },
+  // PostgreSQL, Amazon Web Services (Cognito, EC2, S3), Firebase, Git, Jira, Figma, Android Studio, Unity, Arduino
+  {
+    categoryTitle: "Tools",
+    skills: [
+      { name: "PostgreSQL" },
+      { name: "Amazon Web Services (AWS)" },
+      { name: "Firebase" },
+      { name: "Git" },
+      { name: "Jira" },
+      { name: "Figma" },
+      { name: "Android Studio" },
+      { name: "Unity" },
+      { name: "Arduino" },
+      { name: "Processing" },
+    ],
   },
 ];

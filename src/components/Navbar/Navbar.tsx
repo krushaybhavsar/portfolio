@@ -80,6 +80,14 @@ const Navbar = () => {
           projects
         </Link>
         <Link
+          to={"#skills"}
+          smooth
+          className="navbar__menu-item animated-underline"
+          aria-label="Skills"
+        >
+          skills
+        </Link>
+        <Link
           to={"#contact"}
           smooth
           className="navbar__menu-item animated-underline"

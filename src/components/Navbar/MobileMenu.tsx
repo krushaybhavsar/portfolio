@@ -47,6 +47,15 @@ const MobileMenu = () => {
         </Link>
         <div className="divider" />
         <Link
+          to={"#skills"}
+          smooth
+          className="navbar__menu-item "
+          onClick={() => setOpen(false)}
+        >
+          skills
+        </Link>
+        <div className="divider" />
+        <Link
           to={"#contact"}
           smooth
           className="navbar__menu-item "

@@ -1,0 +1,70 @@
+import React, { useEffect, useRef, useState } from "react";
+import "./SkillsSection.css";
+import { Coord, LandingPageSectionProps } from "../../../../types";
+import { SkillsSectionData } from "../../../../data";
+import { motion } from "framer-motion";
+
+type SkillsSection = {} & LandingPageSectionProps;
+
+const SkillsSection = (props: SkillsSection) => {
+  return (
+    <div className="skills-section noise" id={props.sectionID}>
+      <motion.h1
+        className="skills-section-title"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0, transition: { duration: 0.75 } }}
+        viewport={{ once: true, amount: 1 }}
+      >
+        technical skills
+      </motion.h1>
+      <div className="skills-section-wrapper">
+        <div className="skills-section-content">
+          {SkillsSectionData.map((category, index) => {
+            return (
+              <div key={index} className="skills-section-category-container">
+                <motion.h2
+                  className="skills-section-category-title"
+                  initial={{ opacity: 0, y: -20 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 0.75, delay: 0.25 },
+                  }}
+                  viewport={{ once: true, amount: 1 }}
+                >
+                  {category.categoryTitle}
+                </motion.h2>
+                <div className="skills-section-category">
+                  {category.skills.map((skill, index) => {
+                    return (
+                      <motion.div
+                        key={index}
+                        className="skill-card glass"
+                        whileHover={{ scale: 1.05 }}
+                        whileInView={{
+                          opacity: 1,
+                          transition: {
+                            duration: 0.45,
+                            delay: 0.5 + Math.random(),
+                          },
+                        }}
+                        initial={{
+                          opacity: 0,
+                        }}
+                        viewport={{ once: true, amount: 0.8 }}
+                      >
+                        <p className="skill-card-name">{skill.name}</p>
+                      </motion.div>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SkillsSection;
