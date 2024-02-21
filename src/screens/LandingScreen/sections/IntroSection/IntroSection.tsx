@@ -83,7 +83,7 @@ const IntroSection = (props: IntroSectionProps) => {
               cs student
             </a>
             <div className="bullet-dot" />
-            <Link to="/blog" className="intro-link animated-underline">
+            <Link to="#skills" smooth className="intro-link animated-underline">
               tech enthusiast
             </Link>
           </motion.h2>
