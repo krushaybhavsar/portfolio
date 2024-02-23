@@ -91,9 +91,24 @@
   cursor: pointer;
   display: flex;
   width: 100%;
+  opacity: 1;
 }
 
-.photo-placeholder {
+.photo-album .photo.blurhash {
+  position: absolute !important;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  -webkit-transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  animation-delay: 500ms;
+}
+
+.photo-album .photo.blurhash.loaded {
+  opacity: 0;
+}
+
+/* .photo-placeholder {
   width: 100%;
   aspect-ratio: 3/4;
   display: flex;
@@ -102,7 +117,7 @@
   z-index: 1;
   border-radius: 0;
   animation: 1.25s flicker infinite;
-}
+} */
 
 @media screen and (max-width: 650px) {
   .photo-album .title {

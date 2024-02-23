@@ -1,12 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "./SkillsSection.css";
-import { Coord, LandingPageSectionProps } from "../../../../types";
+import { LandingPageSectionProps } from "../../../../types";
 import { SkillsSectionData } from "../../../../data";
 import { motion } from "framer-motion";
 
-type SkillsSection = {} & LandingPageSectionProps;
+type SkillsSectionProps = {} & LandingPageSectionProps;
 
-const SkillsSection = (props: SkillsSection) => {
+const SkillsSection = (props: SkillsSectionProps) => {
   return (
     <div className="skills-section noise" id={props.sectionID}>
       <motion.h1

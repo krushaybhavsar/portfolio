@@ -3,13 +3,13 @@ import { ProjectCarouselCard } from "../../types";
 import "./Carousel.css";
 import { ReactComponent as ArrowUpRight } from "../../assets/arrow-up-right.svg";
 
-type CarouselCard = {
+type CarouselCardProps = {
   key?: any;
   cardData: ProjectCarouselCard;
   openModal: (cardData: ProjectCarouselCard) => void;
 };
 
-const CarouselCard = (props: CarouselCard) => {
+const CarouselCard = (props: CarouselCardProps) => {
   return (
     <div className="carousel-card glass">
       <div className="carousel-card__image">

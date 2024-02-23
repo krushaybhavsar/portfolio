@@ -1,28 +1,19 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./PhotoAlbum.css";
 import { PhotographyAlbum } from "../../types";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { ReactComponent as ExpandIcon } from "../../assets/slider-right-arrow.svg";
 import { motion, useAnimationControls } from "framer-motion";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import LazyLoadedImage from "../LazyLoadedImage/LazyLoadedImage";
 
 type PhotoAlbumProps = {
   album: PhotographyAlbum;
+  index: number;
 };
 
 const PhotoAlbum = (props: PhotoAlbumProps) => {
   const [open, setOpen] = useState(props.album.id === 1 ? true : false);
   const controls = useAnimationControls();
-
-  // useEffect(() => {
-  //   if (open && !maxHeight) {
-  //     setTimeout(() => {
-  //       if (masonryRef.current) {
-  //         setMaxHeight(masonryRef.current.clientHeight);
-  //       }
-  //     }, 600);
-  //   }
-  // }, [open]);
 
   useEffect(() => {
     if (open) {
@@ -30,10 +21,22 @@ const PhotoAlbum = (props: PhotoAlbumProps) => {
     } else {
       controls.start({ height: 0 });
     }
-  }, [open]);
+  }, [open, controls]);
 
   return (
-    <div className="photo-album">
+    <motion.div
+      className="photo-album"
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 0.75,
+          delay: 0.75,
+        },
+      }}
+      viewport={{ once: true, amount: 0 }}
+    >
       <div
         className="toggleable-header vert-flex"
         onClick={() => setOpen(!open)}
@@ -71,27 +74,19 @@ const PhotoAlbum = (props: PhotoAlbumProps) => {
           >
             {Array.from({ length: props.album.length }, (_, i) => (
               <div key={i} className="photo-wrapper">
-                <LazyLoadImage
-                  src={`${process.env.PUBLIC_URL}/photography/${
-                    props.album.dir
-                  }/${i + 1}.jpg`}
+                <LazyLoadedImage
+                  index={i}
+                  src={`/photography/${props.album.dir}/${i + 1}.jpg`}
                   alt={props.album.title + " " + (i + 1)}
                   className="photo"
-                  placeholder={
-                    <div
-                      className="photo-placeholder glass"
-                      style={{
-                        animationDelay: `${i * 0.15}s`,
-                      }}
-                    />
-                  }
+                  hash={props.album.imageHashes[i]}
                 />
               </div>
             ))}
           </Masonry>
         </ResponsiveMasonry>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -55,4 +55,5 @@ export type PhotographyAlbum = {
   description?: string;
   dir: string;
   length: number;
+  imageHashes: string[];
 };

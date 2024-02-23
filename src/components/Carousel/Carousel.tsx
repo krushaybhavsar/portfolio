@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Carousel.css";
 import "swiper/css";
@@ -10,8 +10,6 @@ import { ProjectCarouselCard } from "../../types";
 import CarouselCard from "./CarouselCard";
 import { ReactComponent as ArrowRight } from "../../assets/slider-right-arrow.svg";
 import { ReactComponent as ArrowLeft } from "../../assets/slider-left-arrow.svg";
-import Modal from "../Modal/Modal";
-import ProjectModalContent from "../Modal/ProjectModalContent";
 import useWindowDimensions from "../../utils/useWindowDimensions";
 import { motion } from "framer-motion";
 
