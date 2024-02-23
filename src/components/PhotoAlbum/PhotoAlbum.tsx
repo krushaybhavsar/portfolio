@@ -58,7 +58,7 @@ const PhotoAlbum = (props: PhotoAlbumProps) => {
       >
         <ResponsiveMasonry
           className="album-masonry-container"
-          columnsCountBreakPoints={{ 700: 2 }}
+          columnsCountBreakPoints={{ 650: 1, 800: 2 }}
         >
           <Masonry
             gutter={"20px"}
