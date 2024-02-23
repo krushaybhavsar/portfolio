@@ -4,7 +4,8 @@ import { ReactComponent as LinkedIn } from "../../assets/linkedin.svg";
 import { ReactComponent as Github } from "../../assets/github.svg";
 import { ReactComponent as Instagram } from "../../assets/instagram.svg";
 import { ReactComponent as Twitter } from "../../assets/twitter.svg";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink as HLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
 import { motion } from "framer-motion";
 
@@ -55,53 +56,52 @@ const Navbar = () => {
         </a>
       </div>
       <div className="navbar__menu">
-        <Link
-          to={"#intro"}
+        <HLink
+          to={"/#intro"}
           smooth
           className="navbar__menu-item animated-underline"
           aria-label="About"
         >
           about
-        </Link>
-        <Link
-          to={"#experience"}
+        </HLink>
+        <HLink
+          to={"/#experience"}
           smooth
           className="navbar__menu-item animated-underline"
           aria-label="Experience"
         >
           journey
-        </Link>
-        <Link
-          to={"#projects"}
+        </HLink>
+        <HLink
+          to={"/#projects"}
           smooth
           className="navbar__menu-item animated-underline"
           aria-label="Projects"
         >
           projects
-        </Link>
-        <Link
-          to={"#skills"}
+        </HLink>
+        <HLink
+          to={"/#skills"}
           smooth
           className="navbar__menu-item animated-underline"
           aria-label="Skills"
         >
           skills
-        </Link>
-        <Link
-          to={"#contact"}
+        </HLink>
+        <HLink
+          to={"/#contact"}
           smooth
           className="navbar__menu-item animated-underline"
           aria-label="Contact"
         >
           contact
-        </Link>
-        {/* <Link
-          to={"blog"}
-          smooth
+        </HLink>
+        <Link
+          to={"/photography"}
           className="navbar__menu-item animated-underline"
         >
-          blog
-        </Link> */}
+          photography
+        </Link>
         <div
           className="navbar__menu-item animated-underline"
           onClick={() => {

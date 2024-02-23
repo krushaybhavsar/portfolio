@@ -66,7 +66,7 @@ const IntroSection = (props: IntroSectionProps) => {
             }}
           >
             <Link
-              to={"#projects"}
+              to={"/#projects"}
               smooth
               className="intro-link animated-underline"
             >
@@ -83,7 +83,11 @@ const IntroSection = (props: IntroSectionProps) => {
               cs student
             </a>
             <div className="bullet-dot" />
-            <Link to="#skills" smooth className="intro-link animated-underline">
+            <Link
+              to="/#skills"
+              smooth
+              className="intro-link animated-underline"
+            >
               tech enthusiast
             </Link>
           </motion.h2>
@@ -104,7 +108,7 @@ const IntroSection = (props: IntroSectionProps) => {
           >
             <Link
               className="cta-button fill-transition-btn"
-              to="#experience"
+              to="/#experience"
               smooth
             >
               discover my journey <RightArrow className="cta-icon" />

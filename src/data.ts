@@ -1,6 +1,6 @@
 import {
+  PhotographyAlbum,
   ProjectCarouselCard,
-  Skill,
   SkillsByCategory,
   TimelineElementExperience,
 } from "./types";
@@ -197,7 +197,6 @@ export const SkillsSectionData: SkillsByCategory[] = [
       { name: "TensorFlow" },
     ],
   },
-  // PostgreSQL, Amazon Web Services (Cognito, EC2, S3), Firebase, Git, Jira, Figma, Android Studio, Unity, Arduino
   {
     categoryTitle: "Tools",
     skills: [
@@ -212,5 +211,32 @@ export const SkillsSectionData: SkillsByCategory[] = [
       { name: "Arduino" },
       { name: "Processing" },
     ],
+  },
+];
+
+export const PhotographyScreenData: PhotographyAlbum[] = [
+  {
+    id: 1,
+    title: "Açores",
+    dir: "acores",
+    length: 21,
+  },
+  {
+    id: 2,
+    title: "Atlanta",
+    dir: "atlanta",
+    length: 8,
+  },
+  {
+    id: 3,
+    title: "New York City",
+    dir: "nyc",
+    length: 8,
+  },
+  {
+    id: 4,
+    title: "Costa Rica",
+    dir: "costa-rica",
+    length: 14,
   },
 ];

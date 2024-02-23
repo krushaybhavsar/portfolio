@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./MobileMenu.css";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink as HLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);
@@ -22,58 +23,54 @@ const MobileMenu = () => {
         </button>
 
         <div className={"mobile-menu-content glass" + (open ? " active" : "")}>
-          <Link
-            to={"#intro"}
+          <HLink
+            to={"/#intro"}
             smooth
             className="navbar__menu-item "
             onClick={() => setOpen(false)}
           >
             about
-          </Link>
+          </HLink>
           <div className="divider" />
-          <Link
-            to={"#experience"}
+          <HLink
+            to={"/#experience"}
             smooth
             className="navbar__menu-item "
             onClick={() => setOpen(false)}
           >
             journey
-          </Link>
+          </HLink>
           <div className="divider" />
-          <Link
-            to={"#projects"}
+          <HLink
+            to={"/#projects"}
             smooth
             className="navbar__menu-item "
             onClick={() => setOpen(false)}
           >
             projects
-          </Link>
+          </HLink>
           <div className="divider" />
-          <Link
-            to={"#skills"}
+          <HLink
+            to={"/#skills"}
             smooth
             className="navbar__menu-item "
             onClick={() => setOpen(false)}
           >
             skills
-          </Link>
+          </HLink>
           <div className="divider" />
-          <Link
-            to={"#contact"}
+          <HLink
+            to={"/#contact"}
             smooth
             className="navbar__menu-item "
             onClick={() => setOpen(false)}
           >
             contact
+          </HLink>
+          <div className="divider" />
+          <Link to={"/photography"} className="navbar__menu-item">
+            photography
           </Link>
-          {/* <div className="divider" />
-        <Link
-          to={"blog"}
-          smooth
-          className="navbar__menu-item "
-        >
-          blog
-        </Link> */}
           <div className="divider" />
           <div
             className="navbar__menu-item "

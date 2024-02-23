@@ -48,3 +48,11 @@ export type Skill = {
   description?: string;
   link?: string;
 };
+
+export type PhotographyAlbum = {
+  id: number;
+  title: string;
+  description?: string;
+  dir: string;
+  length: number;
+};

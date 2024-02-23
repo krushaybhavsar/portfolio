@@ -44,8 +44,8 @@ const SkillsSection = (props: SkillsSection) => {
                         whileInView={{
                           opacity: 1,
                           transition: {
-                            duration: 0.45,
-                            delay: 0.5 + Math.random(),
+                            duration: 0.5,
+                            delay: 0.5 + index * 0.1,
                           },
                         }}
                         initial={{
