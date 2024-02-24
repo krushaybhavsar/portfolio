@@ -266,12 +266,10 @@ export const PhotographyScreenData: PhotographyAlbum[] = [
     dir: "nyc",
     length: 8,
     imageHashes: [
-      // start placeholder
-      "UjGuwS%1jEof~qxVjsofOZofoJjZE3WrofoL",
-      "UjGuwS%1jEof~qxVjsofOZofoJjZE3WrofoL",
-      "UjGuwS%1jEof~qxVjsofOZofoJjZE3WrofoL",
-      "UjGuwS%1jEof~qxVjsofOZofoJjZE3WrofoL",
-      // end placeholder
+      "UoE|GGX9t7ogpfbcj[bIIAoJWBaes7WBkCay",
+      "U;E:rco#RjjZ?wkDayj[o#WCs:ogRjRij[j]",
+      "U+FZKdt7oJoe.TkCfkj]OaW=a#a}NLjsayf6",
+      "USE|JJxttQxsG1xsofWVDjNHWXf6jEt6kCof",
       "U]9Iu;yGtSkCkDkCf6aeaeayazayj]j]j[fQ",
       "U15N_p5t00}Q0|$L}s1O}tEM5Q^3JVxa$y9v",
       "UjGuwS%1jEof~qxVjsofOZofoJjZE3WrofoL",

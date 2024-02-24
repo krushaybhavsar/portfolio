@@ -21,7 +21,7 @@ const LazyLoadedImage = (props: LazyLoadedImageProps) => {
     image.onload = () => {
       setImageLoaded(true);
     };
-  }, [props.src]);
+  }, []);
 
   useEffect(() => {
     if (imageLoaded) {
@@ -66,7 +66,7 @@ const LazyLoadedImage = (props: LazyLoadedImageProps) => {
       />
       <div className={props.className}>
         <img
-          // loading="lazy"
+          loading="lazy"
           src={props.src}
           alt={props.alt}
           className={props.className}
