@@ -21,14 +21,11 @@ const LazyLoadedImage = (props: LazyLoadedImageProps) => {
     image.onload = () => {
       setImageLoaded(true);
     };
-  }, []);
+  }, [props.src]);
 
   useEffect(() => {
     if (imageLoaded) {
-      setContainerStyle({
-        width: "100%",
-        height: "100%",
-      });
+      // setContainerStyle({});
     } else if (width) {
       if (width <= 800) {
         setContainerStyle({

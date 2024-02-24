@@ -290,9 +290,7 @@ export const PhotographyScreenData: PhotographyAlbum[] = [
       "U*FZNfxujYod?wt7ofoLofj[ogofRjWBaeof",
       "UEMshvozD,-.~lxGWB$~M}x?9d9J=@NHR*s+",
       "U7F7p@DAEv%^I^03mpM|01Dk,LrvHcDR*D.Q",
-      // start placeholder
-      "UjGuwS%1jEof~qxVjsofOZofoJjZE3WrofoL",
-      // end placeholder
+      "UHGI;tTH.O??J5fUjK%cICR$M|I.InD*IUIU",
       "UbF6wrO_pLxv%iNGRjt6RORNaKW?R*jct7Rk",
       "UN9*ogx|t:x_R4neoYV?9ERiRORibcWGWEax",
       "UJG7*h$%5SxC~Bs:R+oIOsS#WEslNeofkCjY",
