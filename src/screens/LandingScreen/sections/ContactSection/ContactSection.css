@@ -40,6 +40,10 @@
   margin-right: 3rem;
 }
 
+.csc-content-container>.navbar__socials-container {
+  margin: 0 !important;
+}
+
 .csc-description {
   font-size: 1.2rem;
   font-weight: normal;
