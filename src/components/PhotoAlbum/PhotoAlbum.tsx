@@ -3,8 +3,9 @@ import "./PhotoAlbum.css";
 import { PhotographyAlbum } from "../../types";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { ReactComponent as ExpandIcon } from "../../assets/slider-right-arrow.svg";
-import { motion, useAnimationControls } from "framer-motion";
+import { AnimatePresence, motion, useAnimationControls } from "framer-motion";
 import LazyLoadedImage from "../LazyLoadedImage/LazyLoadedImage";
+import ImageViewer from "../ImageViewer/ImageViewer";
 
 type PhotoAlbumProps = {
   album: PhotographyAlbum;
@@ -12,8 +13,12 @@ type PhotoAlbumProps = {
 };
 
 const PhotoAlbum = (props: PhotoAlbumProps) => {
-  const [open, setOpen] = useState(props.album.id === 1 ? true : false);
+  const [open, setOpen] = useState(true);
   const controls = useAnimationControls();
+  const [selectedImageId, setSelectedImageId] = useState<{
+    id: string;
+    index: number;
+  } | null>(null);
 
   useEffect(() => {
     if (open) {
@@ -73,7 +78,16 @@ const PhotoAlbum = (props: PhotoAlbumProps) => {
             }}
           >
             {Array.from({ length: props.album.length }, (_, i) => (
-              <div key={i} className="photo-wrapper">
+              <motion.div
+                key={i}
+                className="photo-wrapper"
+                onClick={() =>
+                  setSelectedImageId({
+                    id: props.album.dir + "-" + i,
+                    index: i,
+                  })
+                }
+              >
                 <LazyLoadedImage
                   index={i}
                   src={`/photography/${props.album.dir}/${i + 1}.jpg`}
@@ -81,8 +95,20 @@ const PhotoAlbum = (props: PhotoAlbumProps) => {
                   className="photo"
                   hash={props.album.imageHashes[i]}
                 />
-              </div>
+              </motion.div>
             ))}
+            <div className="image-viewer-bg" />
+            <ImageViewer
+              setSelectedImageId={setSelectedImageId}
+              show={!!selectedImageId}
+              src={
+                selectedImageId
+                  ? `/photography/${props.album.dir}/${
+                      selectedImageId.index + 1
+                    }.jpg`
+                  : ""
+              }
+            />
           </Masonry>
         </ResponsiveMasonry>
       </motion.div>

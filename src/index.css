@@ -182,6 +182,38 @@ html {
   right: 0;
 }
 
+.spinner {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid rgba(250, 250, 250, 0.2);
+  border-top-color: var(--mainWhite);
+  animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
 @font-face {
   font-family: 'Monarcha';
   src: url('./assets/fonts/Monarcha/Monarcha.ttf') format('truetype');
