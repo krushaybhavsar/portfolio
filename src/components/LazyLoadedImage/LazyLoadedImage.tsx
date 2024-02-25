@@ -25,7 +25,10 @@ const LazyLoadedImage = (props: LazyLoadedImageProps) => {
 
   useEffect(() => {
     if (imageLoaded) {
-      // setContainerStyle({});
+      setContainerStyle({
+        width: "100%",
+        height: "100%",
+      });
     } else if (width) {
       if (width <= 800) {
         setContainerStyle({
@@ -61,14 +64,12 @@ const LazyLoadedImage = (props: LazyLoadedImageProps) => {
         width={"100%"}
         height={"100%"}
       />
-      <div className={props.className}>
-        <img
-          loading="lazy"
-          src={props.src}
-          alt={props.alt}
-          className={props.className}
-        />
-      </div>
+      <img
+        loading="lazy"
+        src={props.src}
+        alt={props.alt}
+        className={props.className}
+      />
     </div>
   );
 };

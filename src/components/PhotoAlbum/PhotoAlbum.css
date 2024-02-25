@@ -87,7 +87,7 @@
 }
 
 .photo-album .photo {
-  object-fit: contain;
+  object-fit: cover;
   cursor: pointer;
   display: flex;
   width: 100%;
