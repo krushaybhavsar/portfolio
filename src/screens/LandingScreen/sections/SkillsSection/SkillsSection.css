@@ -7,6 +7,7 @@
   justify-content: flex-start;
   z-index: 1;
   padding: calc(1.5*var(--navbarHeight)) 0;
+  pointer-events: none;
 }
 
 .skills-section-title {
