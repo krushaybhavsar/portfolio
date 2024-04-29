@@ -3,7 +3,7 @@ import "./PhotoAlbum.css";
 import { PhotographyAlbum } from "../../types";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { ReactComponent as ExpandIcon } from "../../assets/slider-right-arrow.svg";
-import { AnimatePresence, motion, useAnimationControls } from "framer-motion";
+import { motion, useAnimationControls } from "framer-motion";
 import LazyLoadedImage from "../LazyLoadedImage/LazyLoadedImage";
 import ImageViewer from "../ImageViewer/ImageViewer";
 

@@ -56,7 +56,6 @@
   cursor: pointer;
   transition: color 0.3s ease;
   text-decoration: none;
-  /* font-family: 'Monarcha', sans-serif !important; */
 }
 
 @media screen and (max-width: 940px) {

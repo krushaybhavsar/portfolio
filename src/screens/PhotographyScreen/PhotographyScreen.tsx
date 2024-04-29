@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./PhotographyScreen.css";
 import { PhotographyScreenData } from "../../data";
 import Navbar from "../../components/Navbar/Navbar";
