@@ -71,9 +71,9 @@ const MobileMenu = () => {
           <Link to={"/photography"} className="navbar__menu-item">
             photography
           </Link>
-          <Link to={"/blog"} className="navbar__menu-item">
+          {/* <Link to={"/blog"} className="navbar__menu-item">
             blogs
-          </Link>
+          </Link> */}
           <div className="divider" />
           <div
             className="navbar__menu-item"

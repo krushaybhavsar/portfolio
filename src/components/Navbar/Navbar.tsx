@@ -102,12 +102,12 @@ const Navbar = () => {
         >
           photography
         </Link>
-        <Link
+        {/* <Link
           to={"/blog"}
           className="navbar__menu-item animated-underline"
         >
           blogs
-        </Link>
+        </Link> */}
         <div
           className="navbar__menu-item resume"
           onClick={() => {
