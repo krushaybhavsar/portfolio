@@ -5,8 +5,8 @@ import { ReactComponent as Mail } from "../../../../assets/mail.svg";
 import { ReactComponent as LinkedIn } from "../../../../assets/linkedin.svg";
 import { ReactComponent as Instagram } from "../../../../assets/instagram.svg";
 import { ReactComponent as Twitter } from "../../../../assets/twitter.svg";
-import { ReactComponent as CodeIcon } from "../../../../assets/code-icon.svg";
 import { motion } from "framer-motion";
+import ScreenFooter from "../../../../components/ScreenFooter/ScreenFooter";
 
 type ContactSectionProps = {} & LandingPageSectionProps;
 
@@ -93,21 +93,7 @@ const ContactSection = (props: ContactSectionProps) => {
           </div>
         </div>
       </motion.div>
-      <p className="website-credits">
-        {"Designed and developed by Krushay Bhavsar"}
-      </p>
-      <p className="view-source hori-flex">
-        <CodeIcon />
-        <a
-          aria-label="View source code"
-          href="https://www.github.com/krushaybhavsar/portfolio"
-          target="_blank"
-          rel="noreferrer"
-          className="animated-underline"
-        >
-          {"View source code"}
-        </a>
-      </p>
+      <ScreenFooter />
     </div>
   );
 };

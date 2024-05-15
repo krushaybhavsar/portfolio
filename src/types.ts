@@ -57,3 +57,12 @@ export type PhotographyAlbum = {
   length: number;
   imageHashes: string[];
 };
+
+export type BlogTableEntry = {
+  id: string;
+  date: Date;
+  title: string;
+  readingLength: number;
+  preview: string;
+  tags: string[];
+};

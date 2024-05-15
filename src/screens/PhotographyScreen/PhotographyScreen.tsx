@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./PhotographyScreen.css";
 import { PhotographyScreenData } from "../../data";
 import Navbar from "../../components/Navbar/Navbar";
 import PhotoAlbum from "../../components/PhotoAlbum/PhotoAlbum";
 import { motion } from "framer-motion";
+import ScreenFooter from "../../components/ScreenFooter/ScreenFooter";
 
 type PhotographyScreenProps = {};
 
 const PhotographyScreen = (props: PhotographyScreenProps) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="photography-screen noise">
       <Navbar />
@@ -26,6 +31,7 @@ const PhotographyScreen = (props: PhotographyScreenProps) => {
       {PhotographyScreenData.map((album, index) => (
         <PhotoAlbum key={index} album={album} index={index} />
       ))}
+      <ScreenFooter />
     </div>
   );
 };

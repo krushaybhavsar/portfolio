@@ -109,7 +109,7 @@ const Navbar = () => {
           blogs
         </Link> */}
         <div
-          className="navbar__menu-item resume"
+          className="navbar__menu-item animated-underline resume"
           onClick={() => {
             window.open(
               window.origin + "/assets/Krushay_Bhavsar_Resume.pdf",
