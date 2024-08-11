@@ -28,9 +28,11 @@ const PhotographyScreen = (props: PhotographyScreenProps) => {
       >
         digital photography
       </motion.h1>
-      {PhotographyScreenData.map((album, index) => (
-        <PhotoAlbum key={index} album={album} index={index} />
-      ))}
+      {PhotographyScreenData.slice(0)
+        .reverse()
+        .map((album, index) => (
+          <PhotoAlbum key={index} album={album} index={index} />
+        ))}
       <ScreenFooter />
     </div>
   );

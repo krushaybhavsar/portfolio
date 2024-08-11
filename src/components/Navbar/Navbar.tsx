@@ -15,7 +15,7 @@ const Navbar = () => {
       className="navbar"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2.25, delay: 1.75 }}
+      transition={{ duration: 1.5, delay: 1.6 }}
     >
       <div className="navbar__socials-container">
         <a

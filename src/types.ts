@@ -11,7 +11,7 @@ export type TimelineElementExperience = {
   companyLogo: string;
   location: string;
   date: string;
-  description: string;
+  description: string | string[];
   skillsUsed: string[];
   links: {
     icon?: string;

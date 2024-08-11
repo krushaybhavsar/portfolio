@@ -10,14 +10,14 @@ type TimelineSegmentProps = {
   data: TimelineElementExperience;
 };
 
-export const timelineHeight = 300;
+export const timelineHeight = 350;
 
 const TimelineSegment = (props: TimelineSegmentProps) => {
   const contentRef = useRef<HTMLDivElement>(null);
   const topOffset = 50;
   const { width } = useWindowDimensions();
 
-  return width > 900 ? (
+  return width > 1100 ? (
     <li
       className="timeline-segment"
       style={{
@@ -57,7 +57,17 @@ const TimelineSegment = (props: TimelineSegmentProps) => {
               <p className="job-dates">{props.data.date}</p>
             </div>
           </div>
-          <p className="description">{props.data.description}</p>
+          {typeof props.data.description === "string" ? (
+            <p className="description">{props.data.description}</p>
+          ) : (
+            <ul className="description bulleted">
+              {(props.data.description as string[]).map((bulletLine, index) => (
+                <li className="bullet" key={index}>
+                  {bulletLine}
+                </li>
+              ))}
+            </ul>
+          )}
           <div className="skills-container hori-flex">
             {props.data.skillsUsed.map((skill, index) => (
               <div key={index} className="skill">
@@ -113,7 +123,17 @@ const TimelineSegment = (props: TimelineSegmentProps) => {
               <p className="job-dates">{props.data.date}</p>
             </div>
           </div>
-          <p className="description">{props.data.description}</p>
+          {typeof props.data.description === "string" ? (
+            <p className="description">{props.data.description}</p>
+          ) : (
+            <ul className="description bulleted">
+              {(props.data.description as string[]).map((bulletLine, index) => (
+                <li className="bullet" key={index}>
+                  {bulletLine}
+                </li>
+              ))}
+            </ul>
+          )}
           <div className="skills-container hori-flex">
             {props.data.skillsUsed.map((skill, index) => (
               <div key={index} className="skill">

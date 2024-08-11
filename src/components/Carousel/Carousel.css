@@ -29,6 +29,7 @@
   background-position: center;
   background-size: cover;
   width: 20vw !important;
+  max-width: 500px !important;
   min-width: 290px !important;
   height: fit-content !important;
 }

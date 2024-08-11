@@ -51,7 +51,7 @@ const SkillsSection = (props: SkillsSectionProps) => {
                         initial={{
                           opacity: 0,
                         }}
-                        viewport={{ once: true, amount: 0.8 }}
+                        viewport={{ once: true, amount: "all" }}
                       >
                         <p className="skill-card-name">{skill.name}</p>
                       </motion.div>

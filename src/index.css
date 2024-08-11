@@ -15,7 +15,7 @@ code {
   padding: 0;
   font-family: 'Degular', sans-serif;
   box-sizing: border-box;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -69,7 +69,7 @@ html {
 
 .noise::before {
   content: "";
-  background-image: url('./assets/noise-light-compressed.png');
+  background-image: url('./assets/noise-light.webp');
   /* background-size: auto; */
   position: absolute;
   top: 0px;

@@ -9,10 +9,11 @@ type TimelineProps = {
 const Timeline = (props: TimelineProps) => {
   const { width } = useWindowDimensions();
 
-  return width > 900 ? (
+  return width > 1100 ? (
     <div
       className="timeline-container"
       style={{
+        marginTop: 85000 / (width * 0.8) + 15,
         height: `calc(${
           (Children.count(props.children) + 1) * timelineHeight
         }px - 5vw)`,
