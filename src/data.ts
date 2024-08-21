@@ -274,8 +274,8 @@ export const PhotographyScreenData: PhotographyAlbum[] = [
   },
   {
     id: 2,
-    title: "Dubai",
-    dir: "dubai",
+    title: "Abu Dhabi",
+    dir: "abu-dhabi",
     length: 6,
     imageHashes: [
       "UhGuRPofIpof~qj[Rkj[S*j[s,a}9vj[t5az",
