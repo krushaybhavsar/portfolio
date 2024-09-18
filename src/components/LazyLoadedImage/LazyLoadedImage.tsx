@@ -1,4 +1,4 @@
-import React, { useState, useEffect, CSSProperties } from "react";
+import { useState, useEffect, CSSProperties } from "react";
 import { Blurhash } from "react-blurhash";
 import useWindowDimensions from "../../utils/useWindowDimensions";
 
@@ -16,12 +16,14 @@ const LazyLoadedImage = (props: LazyLoadedImageProps) => {
   const [containerStyle, setContainerStyle] = useState<CSSProperties>({});
 
   useEffect(() => {
-    const image = new Image();
-    image.src = props.src;
-    image.onload = () => {
-      setImageLoaded(true);
-    };
-  }, [props.src]);
+    if (!imageLoaded) {
+      const image = new Image();
+      image.src = props.src;
+      image.onload = () => {
+        setImageLoaded(true);
+      };
+    }
+  }, [imageLoaded, props.src]);
 
   useEffect(() => {
     if (imageLoaded) {

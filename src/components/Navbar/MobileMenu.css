@@ -46,7 +46,7 @@
   transform: rotate(-45deg) translate(2.15px, 2.15px);
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1080px) {
   .mobile-menu {
     display: block;
   }

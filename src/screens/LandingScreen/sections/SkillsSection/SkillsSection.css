@@ -91,7 +91,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1080px) {
   .skills-section-content {
     flex-direction: column;
     align-items: center;

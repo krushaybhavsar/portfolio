@@ -49,6 +49,14 @@ export type Skill = {
   link?: string;
 };
 
+export type Endorsement = {
+  headshot: string;
+  name: string;
+  title: string;
+  content: string;
+  context: string;
+};
+
 export type PhotographyAlbum = {
   id: number;
   title: string;

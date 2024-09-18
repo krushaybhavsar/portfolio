@@ -1,4 +1,5 @@
 import {
+  Endorsement,
   PhotographyAlbum,
   ProjectCarouselCard,
   SkillsByCategory,
@@ -246,6 +247,33 @@ export const SkillsSectionData: SkillsByCategory[] = [
       { name: "Arduino" },
       { name: "Processing" },
     ],
+  },
+];
+
+export const EndorsementsSectionData: Endorsement[] = [
+  {
+    headshot: require("./assets/patrick-moloney.jpeg"),
+    name: "Patrick Moloney",
+    title: "Head of Product at Vertice AI",
+    content:
+      "Krushay was a phenomenal addition to the team throughout the duration of his internship with Vertice AI. He constantly impressed us, beating deadlines, taking leadership, coming up with innovative solutions.",
+    context: "Worked with Krushay at Vertice AI",
+  },
+  {
+    headshot: require("./assets/robert-wachen.jpeg"),
+    name: "Robert Wachen",
+    title: "Co-Founder & COO at Etched, Thiel Fellow",
+    content:
+      "Krushay is an awesome team member and software engineer. He consistently puts out clean, efficient, well-functioning code and does it faster than most programmers I know.\n\nKrushay worked on a team of MIT and Harvard engineers. Krushay not only pulled his own weight but also taught them how to write more scaleable code and use new frameworks and libraries. He's sharp, thinks from first principles, and is a joy to work with.",
+    context: "Managed Krushay directly at Mentor Labs (acquired)",
+  },
+  {
+    headshot: require("./assets/luke-weidner.jpeg"),
+    name: "Luke Weidner",
+    title: "Head of Engineering at Vertice AI",
+    content:
+      "100% recommend Krushay - we expected a lot from him at Vertice and he delivered. He's great to work with and was able to pick up our system very quickly.",
+    context: "Managed Krushay directly at Vertice AI",
   },
 ];
 

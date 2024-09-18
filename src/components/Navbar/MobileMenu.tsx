@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./MobileMenu.css";
 import { HashLink as HLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
@@ -57,6 +57,15 @@ const MobileMenu = () => {
             onClick={() => setOpen(false)}
           >
             skills
+          </HLink>
+          <div className="divider" />
+          <HLink
+            to={"/#endorsements"}
+            smooth
+            className="navbar__menu-item "
+            onClick={() => setOpen(false)}
+          >
+            endorsements
           </HLink>
           <div className="divider" />
           <HLink

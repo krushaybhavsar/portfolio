@@ -1,4 +1,3 @@
-import React from "react";
 import "./LandingScreen.css";
 import IntroSection from "./sections/IntroSection/IntroSection";
 import Navbar from "../../components/Navbar/Navbar";
@@ -7,6 +6,7 @@ import ExperienceSection from "./sections/ExperienceSection/ExperienceSection";
 import ProjectsSection from "./sections/ProjectsSection/ProjectsSection";
 import ContactSection from "./sections/ContactSection/ContactSection";
 import SkillsSection from "./sections/SkillsSection/SkillsSection";
+import EndorsementsSection from "./sections/EndorsementsSection/EndorsementsSection";
 
 type LandingScreenProps = {
   interactiveBlobIsEnabled: boolean;
@@ -34,6 +34,7 @@ const LandingScreen = (props: LandingScreenProps) => {
       <ExperienceSection sectionID="experience" />
       <ProjectsSection sectionID="projects" />
       <SkillsSection sectionID="skills" />
+      <EndorsementsSection sectionID="endorsements" />
       <ContactSection sectionID="contact" />
     </div>
   );

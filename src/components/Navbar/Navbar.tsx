@@ -1,4 +1,3 @@
-import React from "react";
 import "./Navbar.css";
 import { ReactComponent as LinkedIn } from "../../assets/linkedin.svg";
 import { ReactComponent as Github } from "../../assets/github.svg";
@@ -87,6 +86,14 @@ const Navbar = () => {
           aria-label="Skills"
         >
           skills
+        </HLink>
+        <HLink
+          to={"/#endorsements"}
+          smooth
+          className="navbar__menu-item animated-underline"
+          aria-label="Endorsements"
+        >
+          endorsements
         </HLink>
         <HLink
           to={"/#contact"}

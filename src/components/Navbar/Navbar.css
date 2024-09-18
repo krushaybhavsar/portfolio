@@ -58,7 +58,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1080px) {
   .navbar__menu {
     display: none;
   }
