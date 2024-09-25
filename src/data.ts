@@ -216,7 +216,7 @@ export const SkillsSectionData: SkillsByCategory[] = [
     ],
   },
   {
-    categoryTitle: "Frameworks",
+    categoryTitle: "Frameworks & Libraries",
     skills: [
       { name: "React.js" },
       { name: "React Native" },
