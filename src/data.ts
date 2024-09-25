@@ -126,7 +126,7 @@ export const ProjectsSectionData: ProjectCarouselCard[] = [
     description:
       "A web application that connects students with tutors for personalized learning experiences.",
     fullDescription:
-      "Tutor Connect is an online platform that allows high school students to instantly connect with qualified and verified tutors. The site began as a service for the Secaucus Public School District, but is currently being scaled to allow for other school districts to purchase the service. The platform comes fully equipped with an administator dashboard that allows school staff to manage student permissions, view analytics, and gain insight into the platform's usage.",
+      "Tutor Connect is an online platform that allows high school students to instantly connect with qualified and verified tutors. The site was quickly adopted by the Secaucus Public School District and serves over 500 students and 60 verified tutors daily. The platform comes fully equipped with an administator dashboard that allows school staff to manage student permissions, view analytics, and gain insight into the platform's usage.",
     skillsUsed: [
       "React.js",
       "TypeScript",
@@ -140,24 +140,6 @@ export const ProjectsSectionData: ProjectCarouselCard[] = [
   },
   {
     id: 3,
-    image: require("../src/assets/tileshift.png"),
-    title: "Tileshift",
-    description: "A daily web-based word puzzle game.",
-    fullDescription:
-      "Tileshift is a daily web-based word puzzle game. The goal of the game is to align tiles to spell a word and turn them green. To win the game, players must use all the tiles within thirty moves. Players can also compete against friends and share their results. The site has gained over 125,000 hits on Reddit with an estimated 410 players across 3 different continents and an average engagement time of 7 minutes and 40 seconds per user. The game was developed ",
-    skillsUsed: [
-      "React.js",
-      "TypeScript",
-      "HTML",
-      "CSS",
-      "Node.js",
-      "Firebase",
-    ],
-    projectLink: "https://tileshiftgame.com",
-    additionalLinks: [],
-  },
-  {
-    id: 4,
     image: require("../src/assets/signslate.png"),
     title: "Signslate",
     description:
@@ -175,6 +157,24 @@ export const ProjectsSectionData: ProjectCarouselCard[] = [
       "Firebase",
     ],
     projectLink: "https://github.com/krushaybhavsar/signslate",
+    additionalLinks: [],
+  },
+  {
+    id: 4,
+    image: require("../src/assets/tileshift.png"),
+    title: "Tileshift",
+    description: "A daily web-based word puzzle game.",
+    fullDescription:
+      "Tileshift is a daily web-based word puzzle game. The goal of the game is to align tiles to spell a word and turn them green. To win the game, players must use all the tiles within thirty moves. Players can also compete against friends and share their results. The site has gained over 125,000 hits on Reddit with an estimated 410 players across 3 different continents and an average engagement time of 7 minutes and 40 seconds per user.",
+    skillsUsed: [
+      "React.js",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "Node.js",
+      "Firebase",
+    ],
+    projectLink: "https://tileshiftgame.com",
     additionalLinks: [],
   },
   {
