@@ -1,10 +1,4 @@
-import {
-  Endorsement,
-  PhotographyAlbum,
-  ProjectCarouselCard,
-  SkillsByCategory,
-  TimelineElementExperience,
-} from "./types";
+import { Endorsement, PhotographyAlbum, ProjectCarouselCard, SkillsByCategory, TimelineElementExperience } from "./types";
 
 // https://heroicons.com/outline
 
@@ -81,15 +75,18 @@ export const ExperienceSectionData: TimelineElementExperience[] = [
       "Automated the generation of transaction models by implementing a component-based system with vectorized full-text search to analyze member behaviors, resulting in a 40% reduction in code volume and a 50% improvement in runtime efficiency",
       "Devised predictive models to efficiently analyze $5 billion+ in member transactions, track spending trends, and categorize members for partnered credit unions to know, grow, and measure their overall membership",
     ],
-    skillsUsed: [
-      "React.js",
-      "Typescript",
-      "PostgreSQL",
-      "Express.js",
-      "Python",
-      "AWS",
-      "Data Science",
-    ],
+    skillsUsed: ["React.js", "Typescript", "PostgreSQL", "Express.js", "Python", "AWS", "Data Science"],
+    links: [],
+  },
+  {
+    id: 6,
+    jobPosition: "Backend Software Engineer Intern",
+    companyName: "Wealthfront",
+    companyLogo: require("../src/assets/wealthfront-logo.png"),
+    location: "Palo Alto, CA",
+    date: "May 2025 – Aug 2025",
+    description: ["Incoming Summer 2025"],
+    skillsUsed: ["Java", "JUnit"],
     links: [],
   },
 ];
@@ -99,23 +96,10 @@ export const ProjectsSectionData: ProjectCarouselCard[] = [
     id: 1,
     image: require("../src/assets/munch.png"),
     title: "Munch",
-    description:
-      "A social culinary hub for college students to buy/sell homecooked meals and discover recipes created by other students.",
+    description: "A social culinary hub for college students to buy/sell homecooked meals and discover recipes created by other students.",
     fullDescription:
       "Munch is a social culinary hub for college students to buy/sell homecooked meals and discover recipes created by other students. The application was developed using a cross-platform mobile application with cached state-management, scalable persistent data storage, and a gateway authentication layer using relational database systems, a Prisma object relational mapper, and AWS services.",
-    skillsUsed: [
-      "React Native",
-      "Redux",
-      "AWS",
-      "PostgreSQL",
-      "GraphQL",
-      "Firebase",
-      "Node.js",
-      "React.js",
-      "TypeScript",
-      "HTML",
-      "CSS",
-    ],
+    skillsUsed: ["React Native", "Redux", "AWS", "PostgreSQL", "GraphQL", "Firebase", "Node.js", "React.js", "TypeScript", "HTML", "CSS"],
     projectLink: "https://joinmunch.app",
     additionalLinks: [],
   },
@@ -123,18 +107,10 @@ export const ProjectsSectionData: ProjectCarouselCard[] = [
     id: 2,
     image: require("../src/assets/tutorconnect.png"),
     title: "Tutor Connect",
-    description:
-      "A web application that connects students with tutors for personalized learning experiences.",
+    description: "A web application that connects students with tutors for personalized learning experiences.",
     fullDescription:
       "Tutor Connect is an online platform that allows high school students to instantly connect with qualified and verified tutors. The site was quickly adopted by the Secaucus Public School District and serves over 500 students and 60 verified tutors daily. The platform comes fully equipped with an administator dashboard that allows school staff to manage student permissions, view analytics, and gain insight into the platform's usage.",
-    skillsUsed: [
-      "React.js",
-      "TypeScript",
-      "HTML",
-      "CSS",
-      "Node.js",
-      "Firebase",
-    ],
+    skillsUsed: ["React.js", "TypeScript", "HTML", "CSS", "Node.js", "Firebase"],
     projectLink: "https://tutorconnect.sboe.org",
     additionalLinks: [],
   },
@@ -142,20 +118,10 @@ export const ProjectsSectionData: ProjectCarouselCard[] = [
     id: 3,
     image: require("../src/assets/signslate.png"),
     title: "Signslate",
-    description:
-      "A web application that allows users to speak and translate English to American Sign Language (ASL) and ASL to English in real-time.",
+    description: "A web application that allows users to speak and translate English to American Sign Language (ASL) and ASL to English in real-time.",
     fullDescription:
       "Signslate is a web application that allows users to speak and translate English to American Sign Language (ASL) and ASL to English in real-time via webcam or microphone input and displays the ASL translation using web-scraped videos. The site web-scrapes videos off the internet using a Flask python server and displays them on a ReactJS frontend for translating speech to ASL. To translate ASL to English, the site uses a custom trained machine learning model to recognize ASL gestures and translate them to English. The site received 1st place in the Diversity and Inclusion Category of the High Tech Hacks 2021 Hackathon, 1st place overall in the Simplihacks 2021 Hackathon, and won the Wolfram Alpha Award.",
-    skillsUsed: [
-      "React.js",
-      "Python",
-      "Flask",
-      "TypeScript",
-      "HTML",
-      "CSS",
-      "Node.js",
-      "Firebase",
-    ],
+    skillsUsed: ["React.js", "Python", "Flask", "TypeScript", "HTML", "CSS", "Node.js", "Firebase"],
     projectLink: "https://github.com/krushaybhavsar/signslate",
     additionalLinks: [],
   },
@@ -166,14 +132,7 @@ export const ProjectsSectionData: ProjectCarouselCard[] = [
     description: "A daily web-based word puzzle game.",
     fullDescription:
       "Tileshift is a daily web-based word puzzle game. The goal of the game is to align tiles to spell a word and turn them green. To win the game, players must use all the tiles within thirty moves. Players can also compete against friends and share their results. The site has gained over 125,000 hits on Reddit with an estimated 410 players across 3 different continents and an average engagement time of 7 minutes and 40 seconds per user.",
-    skillsUsed: [
-      "React.js",
-      "TypeScript",
-      "HTML",
-      "CSS",
-      "Node.js",
-      "Firebase",
-    ],
+    skillsUsed: ["React.js", "TypeScript", "HTML", "CSS", "Node.js", "Firebase"],
     projectLink: "https://tileshiftgame.com",
     additionalLinks: [],
   },
@@ -181,18 +140,10 @@ export const ProjectsSectionData: ProjectCarouselCard[] = [
     id: 5,
     image: require("../src/assets/privalink.png"),
     title: "Privalink",
-    description:
-      "A platform to generate secure, private, and encrypted self-destructive links for sharing sensitive information.",
+    description: "A platform to generate secure, private, and encrypted self-destructive links for sharing sensitive information.",
     fullDescription:
       "Privalink allows you to send any sensitive data or information to people you trust using self-destructing links. After someone has viewed the link, all sensitive data will be deleted from the Firebase firestore and the link will no longer be available for use. The site also gives users the option to instantly get notified via email after the link is opened and to set an expiration date for the link.",
-    skillsUsed: [
-      "React.js",
-      "TypeScript",
-      "HTML",
-      "CSS",
-      "Node.js",
-      "Firebase",
-    ],
+    skillsUsed: ["React.js", "TypeScript", "HTML", "CSS", "Node.js", "Firebase"],
     projectLink: "https://privalink.app",
     additionalLinks: [],
   },

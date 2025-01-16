@@ -7,6 +7,7 @@ import ProjectsSection from "./sections/ProjectsSection/ProjectsSection";
 import ContactSection from "./sections/ContactSection/ContactSection";
 import SkillsSection from "./sections/SkillsSection/SkillsSection";
 import EndorsementsSection from "./sections/EndorsementsSection/EndorsementsSection";
+import PhotographySection from "./sections/PhotographySection/PhotographySection";
 
 type LandingScreenProps = {
   interactiveBlobIsEnabled: boolean;
@@ -18,23 +19,16 @@ const LandingScreen = (props: LandingScreenProps) => {
   return (
     <div
       className="landing-screen"
-      onMouseMove={
-        props.interactiveBlobIsEnabled ? props.moveInteractiveBlob : undefined
-      }
-      onTouchMove={
-        props.interactiveBlobIsEnabled ? props.moveInteractiveBlob : undefined
-      }
+      onMouseMove={props.interactiveBlobIsEnabled ? props.moveInteractiveBlob : undefined}
+      onTouchMove={props.interactiveBlobIsEnabled ? props.moveInteractiveBlob : undefined}
     >
       <Navbar />
-      <IntroSection
-        sectionID="intro"
-        blobCurrXY={props.blobCurrXY}
-        iblobEnabled={props.interactiveBlobIsEnabled}
-      />
+      <IntroSection sectionID="intro" blobCurrXY={props.blobCurrXY} iblobEnabled={props.interactiveBlobIsEnabled} />
       <ExperienceSection sectionID="experience" />
       <ProjectsSection sectionID="projects" />
       <SkillsSection sectionID="skills" />
       <EndorsementsSection sectionID="endorsements" />
+      <PhotographySection sectionID="photography" />
       <ContactSection sectionID="contact" />
     </div>
   );

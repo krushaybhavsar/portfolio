@@ -1,0 +1,67 @@
+.photography-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1;
+  padding: calc(1.5*var(--navbarHeight)) 0;
+}
+
+.photography-section-title {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  margin: 0 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  z-index: 1;
+  text-align: center;
+}
+
+.photography-section-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.photography-section-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  gap: 1rem;
+}
+
+.preview-photo-album {
+  max-height: 500px !important;
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+  mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+}
+
+.photography-section .cta-button {
+  border: 1px solid var(--mainWhite);
+  outline: none;
+  background: none;
+  color: var(--mainWhite);
+  margin-top: 40px;
+  padding: 0.55rem 1rem;
+  font-size: 1.15rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  text-decoration: none;
+  transform: translateY(-350%);
+}
