@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: flex-start;
   z-index: 1;
-  padding: calc(1.5*var(--navbarHeight)) 0;
+  padding: calc(1.25*var(--navbarHeight)) 0;
 }
 
 .photography-section-title {
