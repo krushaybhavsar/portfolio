@@ -20,7 +20,7 @@ export const ExperienceSectionData: TimelineElementExperience[] = [
   },
   {
     id: 2,
-    jobPosition: "Senior Software Developer",
+    jobPosition: "Software Engineer",
     companyName: "Mentor Labs",
     companyLogo: require("../src/assets/mission-mentor-logo.png"),
     location: "Boston, MA",
@@ -50,7 +50,7 @@ export const ExperienceSectionData: TimelineElementExperience[] = [
   },
   {
     id: 4,
-    jobPosition: "Academy of Math and Programming Intern",
+    jobPosition: "Academy of Math and Programming Fellow",
     companyName: "Jane Street",
     companyLogo: require("../src/assets/jane-street-logo.png"),
     location: "New York, NY",
@@ -85,7 +85,7 @@ export const ExperienceSectionData: TimelineElementExperience[] = [
     companyLogo: require("../src/assets/wealthfront-logo.png"),
     location: "Palo Alto, CA",
     date: "May 2025 – Aug 2025",
-    description: ["Incoming Summer 2025"],
+    description: ["Incoming Summer 2025 – Trading Team"],
     skillsUsed: ["Java", "JUnit"],
     links: [],
   },
