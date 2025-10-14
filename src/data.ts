@@ -86,8 +86,8 @@ export const ExperienceSectionData: TimelineElementExperience[] = [
     location: "Palo Alto, CA",
     date: "May 2025 – Aug 2025",
     description: [
-      "Designed and implemented a low-latency trade order pricing system for low-liquidity, wide bid/ask spread instruments to improve allocation prices trades and reduce order cancellations using Java, Hibernate, and MariaDB",
-      "Authored and presented in-depth technical design documents with historical incident analysis, UML diagrams, and code-level insights to the VP of Engineering & senior leadership to deploy the optimized pricing system across trading infrastructure",
+      "Designed and implemented a low-latency trade order pricing system for low-liquidity, wide bid/ask spread instruments to improve allocation prices and reduce order cancellations using Java, Hibernate, and MariaDB",
+      "Authored and presented in-depth technical design documents with historical incident analyses, UML diagrams, and code-level insights to senior leadership, enabling deployment of the optimized pricing system across trading infrastructure",
       "Automated the pruning of stale trade account data via batch processing jobs on Apache Airflow, removing over 600K rows daily and 40 million rows of data total to improve query performance and ensure high concurrency for account processes",
     ],
     skillsUsed: ["Java", "JUnit", "MariaDB", "Hibernate ORM", "Apache Airflow", "Guice", "Guava"],
